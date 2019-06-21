@@ -3,11 +3,22 @@ body {
 }
 
 .header {
+    display: block;
     padding: 25px;
     text-align: center;
-    background: #13a4dd;
+    background: #137baf;
     color: white;
-    display: block; 
+    /* Testing out animated background */
+    /* background:url("../images/night-sky.png") repeat 0 bottom #ACE6FF;
+    height:230px;
+    min-height:230px;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    -webkit-transform:translate3d(0,0,0.01);
+    transform:translate3d(0,0,0.01); */
+    
 }
 
 .header h1 {

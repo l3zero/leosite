@@ -1,3 +1,7 @@
+import TimelineMax from "gsap/TimelineMax";out 
+
+//@TODO Figure background animation later
+
 // wait until DOM is ready
 document.addEventListener("DOMContentLoaded", function(event) {
 
@@ -25,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         repeat: -1
       });
   
-      tl.to("#clouds", 52, {
+      tl.to("#header", 52, {
         backgroundPosition: "-2247px bottom",
         force3D:true,
         rotation:0.01,
@@ -43,10 +47,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
     
     // window load event makes sure image is 
   // loaded before running animation
-  window.onload = function() {
+  window.onload = function gogogo() {
     
     masterTL
-    .add(ground(),0)
+    /* .add(ground(),0) */
     .add(clouds(),0)
     .timeScale(0.7)
     .progress(1).progress(0)

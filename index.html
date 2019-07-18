@@ -2,9 +2,9 @@
 
 <link rel="stylesheet" href="styles/leosite.css">
 <link rel="stylesheet" href="styles/leosite-navbar.css">
-<link rel="stylesheet" href="styles/leosite-scrollbg.css">
 
 <head>
+ 
     <html lang="en">
     <title>Leonid Yanchis</title>
     <meta charset="UTF-8">
@@ -16,8 +16,8 @@
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="header">         
-        
+    <div class="header">
+
         <!--Pop-out panel-->
         <div class="collapsible-menu">
             <input type="checkbox" id="menu">
@@ -34,24 +34,49 @@
         <h1>Leonid Yanchis</h1>
         <p>"Insert quote of the day here somewhere"</p>
     </div>
-
-    <div id="ground"></div>
-    
+    <!-- @TO DO MAKE THIS AN SPA #links -->
     <div class="navbar">
         <a href="./projects">Projects</a>
-        <a href="./resume">Resume</a>
+        <a href="./resume.html">Resume</a>
         <a href="./biography">Biography</a>
         <!-- <a href="#" class="right">Link</a> -->
     </div>
+    <!-- @TO DO: Style with CSS-->
+    <div class="weekly-container">
+        <h1>Article of the Week</h1>
+        <div id="article-container">
+            <p>The article will go here, with a picture, mini blurb and link to full article</p>
+        </div>
+    </div>
 
-    <!--  <div class="row">
-        <div class="side">...</div>
-        <div class="main">...</div>
+    <div class="weekly-container">
+        <h1>Video of the Week</h1>
+        <div id="video-container">
+            <!-- @TO DO: Make src pull from my local DB, 
+            @TO DO: style with css-->
+            <iframe width="560" height="250" src="https://www.youtube.com/embed/taWzoLpdxaI" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;
+            picture-in-picture"></iframe>
+        </div>
+    </div>
+
+    <div class="weekly-container">
+        <h1>Song of the Week</h1>
+        <div id="audio-container">
+            <!-- @TO DO: Make src pull from my local DB, 
+                @TO DO: style with css-->
+            <iframe width="560" height="250" src="https://www.youtube.com/embed/Eps1N8Gv_RU" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;
+            picture-in-picture"></iframe>
+        </div>
     </div>
 
     <div class="footer">
-        <h2>Footer</h2>
-    </div> -->
+        <h2>You made it to the bottom!</h2>
+        <ul id="footer-list">
+            <li>About this site</li>
+            <li>Need help with your website?</li>
+            <li>Hire me (legal tasks only please)</li>
+        </ul>
+    </div>
 
     <script src="" async defer></script>
 

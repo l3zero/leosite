@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -14,15 +16,15 @@ body {
     display: block;
     padding: 25px;
     text-align: center;
-    background: #137baf;
+    background-image: radial-gradient(rgba(15, 16, 78, 0.95) 10%, black 50%);
     color: white;
     
 }
 
-.header h1 {
+/* .header h1 {
     font-family: 'Playfair Display';
     font-size: 40px;
-}
+} */
 
 .header p {
     font-family: 'Playfair Display';
@@ -31,7 +33,7 @@ body {
 
 .navbar {
     overflow: hidden;
-    background-color: #d64208;
+    background-image: linear-gradient(rgba(43, 41, 41,1) 20%,rgba(0,0,0,1) 50%);
     text-align: center;
 }
 
@@ -44,15 +46,15 @@ body {
     text-align: center;
     padding: 10px 50px;
     text-decoration: none;
-    /* Remove underline */
+    transition: background-color 0.5s, color 0.7s;
+    transition-delay: 0.1s; /*might keep this weird delay on the letter coloring*/
 }
 
 /* Change color on hover/mouse-over */
 
 .navbar a:hover {
-    background-color: #ff8759;
+    background-color: rgba(0, 0, 0, 0.35);
     color: white;
-    /* Black text color */
 }
 
 .weekly-container {
@@ -106,7 +108,68 @@ body {
 
 @media screen and (max-width: 400px) {
     .navbar a {
+        display: block;
         float: none;
         width: 100%;
     }
 }
+
+.logo {
+    font: 64px 'Cinzel', serif;/* I picked this font because it's the closest looking 'web safe' font http://cssfontstack.com/ */
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: -4px;
+  }
+  
+  /* stuff for both words */
+  .logo span {
+    position: relative;
+  }
+  .logo span:before,
+  .logo span:after {
+    content: '';
+    position: absolute;
+    border-width: 0px;/* makes a nice, big 64px square */
+    border-style: solid;
+    border-color: transparent;
+    height: 0;
+    z-index: 10;
+  }
+  
+  /* stuff for 1st word */
+  .logo .word1 {
+    color: white;
+    margin-right: -38px;
+    transform: rotateY(25deg);/* using Prefix free */
+    display: inline-block;/* required for transform */
+    z-index: 10;/* stack 1st word on top */
+  }
+  .logo .word1:before {
+    right: -4px;/* would be left, but we flipped the word */
+    top: -9px;
+    border-top-color: #282828;/* match background color */
+    border-right-color: #282828;/* would be left, but we flipped the word */
+  }
+  .logo .word1:after {
+    left: 17px;/* would be right, but we flipped the word */
+    bottom: -15px;
+    border-bottom-color: #282828;
+    border-left-color: #282828;/* would be right, but we flipped the word */
+  }
+  
+  /* stuff for 2nd word */
+  .logo .word2 {
+    z-index: 0;/* stack 2nd word below */
+  }
+  .logo .word2:before {
+    left: -4px;
+    top: -6px;
+    border-top-color: #282828;
+    border-left-color: #282828;
+  }
+  .logo .word2:after {
+    right: -4px;  
+    bottom: 4px;
+    border-bottom-color: #282828;
+    border-right-color: #282828;
+  }

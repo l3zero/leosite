@@ -1,0 +1,11 @@
+body {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 25% 25% 25% 25%;
+    gap: 10px 15px; /* Row gap and column gap */
+/*     Play with align-items (for column align) and justify-items (for row align)
+ */
+    
+
+
+}

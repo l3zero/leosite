@@ -6,6 +6,8 @@ body {
   /*     background-image: repeating-linear-gradient(75deg, rgba(0, 0, 0, 0.6), rgba(255,255,255,0.3));
  */
   background-color: white;
+  border: 6px groove rgb(48, 47, 47);
+  border-radius: 4px;
 }
 
 /* Ensure proper sizing */
@@ -40,22 +42,10 @@ body {
   background-clip: text;
   /* Animate Background Image */
   -webkit-text-fill-color: transparent;
-  -webkit-animation: aitf 80s linear infinite;
+  -webkit-animation: title-animation 80s linear infinite;
   /* Activate hardware acceleration for smoother animations */
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
-}
-
-/* Animate Background Image */
-
-@-webkit-keyframes aitf {
-	0% { background-position: 0% 50%; }
-	100% { background-position: 100% 50%; }
-}
-
-.header p {
-  font-size: 20px;
-  font-style: italic;
 }
 
 .navbar {
@@ -84,14 +74,35 @@ body {
 
 .navbar a:hover {
   font-size: 115%;
-  transition: font-size 0.2s;
   background-color: rgba(0, 0, 0, 0.35);
+  transition: font-size 0.2s, background-color 0.3s;
   color: white;
 }
 
 .weekly-container {
   text-align: center;
 }
+
+.weekly-container span {
+  border-bottom: 0.5px groove black;
+  border-bottom-left-radius: 20px;
+}
+
+.weekly-container iframe {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 4px 4px 14px #000;
+    -webkit-box-shadow: 4px 4px 14px #000;
+    box-shadow: 4px 4px 14px #000;
+  /*   -moz-transform:rotate(5deg);
+    -webkit-transform:rotate(5deg);
+    -o-transform:rotate(5deg);
+    -ms-transform:rotate(5deg); */
+/*      filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=.2);
+ */ }
 
 .footer {
   padding: 20px;
@@ -146,4 +157,11 @@ body {
     float: none;
     width: 100%;
   }
+}
+
+/* Animate Background Image */
+
+@-webkit-keyframes title-animation {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
 }

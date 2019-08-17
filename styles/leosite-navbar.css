@@ -1,10 +1,77 @@
-.collapsible-menu {
-/*     background-color: rgb(255, 255, 255);
- */    display: inherit;
+  .overlay {
+    text-align: start;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 0.97;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: rgb(202, 200, 200);
+    border-radius: 5px;
+    width: 30%;
+    height: 40%;
+    position: relative;
+    transition: all 1s ease-in-out;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  .popup .close:hover {
+    /*put jawn here to make X bigger*/
+
+  }
+  .popup .content {
+    overflow: hidden;
+  }
+  .popup .content ul {
+    list-style-type: none;
+  }
+  .popup .content a {
+    text-decoration: none;
+  }
+  
+  @media screen and (max-width: 700px){
+    .popup{
+      width: 70%;
+    }
+  }
+  @media screen and (max-height: 450px){
+    .popup{
+      height: 70%;
+    }
+  }
+
+/*.collapsible-menu {
+/~     background-color: rgb(255, 255, 255);
+ ~/    display: inherit;
     float: center;
     padding: 0px 30px;
-/*     border-bottom: 3px solid rgb(0, 0, 0);
- */   /*  box-shadow: 1px 2px 3px rgba(0,0,0,0.2); */
+/~     border-bottom: 3px solid rgb(0, 0, 0);
+ ~/   /~  box-shadow: 1px 2px 3px rgba(0,0,0,0.2); ~/
 }
 
 .collapsible-menu ul {
@@ -25,7 +92,7 @@
     display: inherit;
     cursor: pointer;
     background: url(../images/arrow-down.png) no-repeat center;
-    background-size: contain;
+    background-size: cover;
     padding: 10px 0 10px 50px;
 }
 
@@ -34,11 +101,11 @@
     -ms-animation-name: wiggle;
     -ms-animation-duration: 1000ms;
     -webkit-animation-duration: 1000ms;
-    -webkit-animation-iteration-count: 3;
-    -ms-animation-iteration-count: 3;
+    -webkit-animation-iteration-count: 2;
+    -ms-animation-iteration-count: 2;
     -webkit-animation-timing-function: ease-in-out;
     -ms-animation-timing-function: ease-in-out;
-    animation-delay: 2.5s;
+    animation-delay: 2.2s;
   }
   
   @-webkit-keyframes wiggle {
@@ -66,10 +133,6 @@
   }
 
 
-
-
-
-
 input#menu {
     display: none;
 }
@@ -77,11 +140,11 @@ input#menu {
 .menu-content {
     max-height: 0;
     overflow: hidden;
-    font-family: 'Oswald', sans-serif; 
+    font-family: 'Oswald', sans-serif;
     padding: 0 0 0 50px;
 }
 
-/* Toggle Effect */
+/~ Toggle Effect ~/
 input:checked ~ label {
     background-image: url(../images/arrow-up.png);
 }
@@ -96,4 +159,4 @@ input:checked +label {
 #left-panel-list img {
     border: 0;
 
-}
+}*/

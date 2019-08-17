@@ -19,7 +19,7 @@
     <div class="header">
 
         <!--Pop-out panel-->
-        <div class="collapsible-menu">
+        <!--    <div class="collapsible-menu">
             <input type="checkbox" id="menu">
             <label for="menu"></label>
             <div class="menu-content">
@@ -29,7 +29,7 @@
                     <li><a href="#"><img src="" alt="Yell at Me"></a></li>
                 </ul>
             </div>
-        </div>
+        </div> -->
 
         <h1>
             I am <span class="leo">Leo</span>,<br>a <span class="software">Software</span> Guy.</span>
@@ -37,34 +37,46 @@
     </div>
     <!-- @TO DO MAKE THIS AN SPA #links -->
     <div class="navbar">
-        <a href="./projects">Projects</a>
-        <a href="./resume.html">Resume</a>
-        <a href="./biography">Biography</a>
+        <a class="button" href="#popup1">Projects</a>
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>My Projects</h2>
+                <a class="close" href="">&times;</a><!--maybe add # in href-->
+                <div class="content">
+                    <ul>
+                        <li><a href="#">Weather App</a></li>
+                        <li><a href="#">App #2</a></li>
+                        <li><a href="#">App #3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <a class="button" href="./resume.html">Resume</a>
+        <a class="button" href="./biography">Biography</a>
         <!-- <a href="#" class="right">Link</a> -->
     </div>
-    <!-- @TO DO: Style with CSS + add encompassing div-->
     <div class="weekly-container">
-        <h1><span>Article of the Week</span></h1>
+        <span><strong>A</strong>rticle of the Week</span>
         <div id="article-container">
             <p>The article will go here, with a picture, mini blurb and link to full article</p>
         </div>
     </div>
 
     <div class="weekly-container">
-        <h1><span>Video of the Week</span></h1>
+        <span><strong>V</strong>ideo of the Week</span>
         <div id="video-container">
-            <!-- @TO DO: Make src pull from my local DB, 
-            @TO DO: style with css-->
+            <!-- @TO DO: Make src pull from my local DB-->
             <iframe width="560" height="250" src="https://www.youtube.com/embed/taWzoLpdxaI" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;
             picture-in-picture"></iframe>
         </div>
     </div>
 
     <div class="weekly-container">
-        <h1><span>Song of the Week</span></h1>
+        <span><strong>S</strong>ong of the Week</span>
         <div id="audio-container">
-            <!-- @TO DO: Make src pull from my local DB, 
-                @TO DO: style with css-->
+            <!-- @TO DO: Make src pull from my local DB-->
             <iframe width="560" height="250" src="https://www.youtube.com/embed/Eps1N8Gv_RU" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;
             picture-in-picture"></iframe>
         </div>

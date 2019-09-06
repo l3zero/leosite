@@ -114,12 +114,23 @@ body {
 .footer {
   padding: 20px;
   text-align: center;
-  /*     background: #ddd;
- */
 }
 
 #footer-list {
   list-style: none;
+  text-decoration: none;
+  font-size: 110%;
+  color: black;
+}
+
+#footer-list a.footer-links:link, a.footer-links:visited {
+  text-decoration: none;
+  color: black;
+}
+
+#footer-list a.footer-links:hover {
+  font-size: 112%;
+  color: red;
 }
 
 /* Column container */

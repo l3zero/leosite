@@ -42,7 +42,8 @@
         <div id="popup1" class="overlay">
             <div class="popup">
                 <h2>My Projects</h2>
-                <a class="close" href="">&times;</a><!--maybe add # in href-->
+                <a class="close" href="">&times;</a>
+                <!--maybe add # in href-->
                 <div class="content">
                     <ul>
                         <li><a href="#">Weather App</a></li>
@@ -85,9 +86,47 @@
     <div class="footer">
         <h2>You made it to the bottom!</h2>
         <ul id="footer-list">
-            <li>About this site</li>
-            <li>Need help with your website?</li>
-            <li>Hire me (legal tasks only please)</li>
+            <li><a class="footer-links" href="#popup2">What is this site about?</a></li>
+            <div id="popup2" class="overlay">
+                <div class="popup">
+                    <h2>About this site</h2>
+                    <a class="close" href="#footer-list">&times;</a>
+                    <!--maybe add # in href-->
+                    <div class="content">
+                        <p>This is my personal site that I enjoy experimenting on. Check back every so often for new
+                            updates.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <li><a class="footer-links" href="#popup3">Need help with your website?</a></li>
+            <div id="popup3" class="overlay">
+                <div class="popup">
+                    <h2>Let me help you out</h2>
+                    <a class="close" href="#footer-list">&times;</a>
+                    <!--maybe add # in href-->
+                    <div class="content">
+                        <p>I love upgrading websites and upgrading my skills in the process. Let's work together and I
+                            can help you solve your pesky website problems.
+                            Whether it's a new style layout, a user friendly menu, a new app integration or if your site
+                            simply sucks, I would love to help.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <li><a class="footer-links" href="#popup4">Contact Me</a></li>
+            <div id="popup4" class="overlay">
+                    <div class="popup">
+                        <h2>Let's get in touch</h2>
+                        <a class="close" href="#footer-list">&times;</a>
+                        <div class="content">
+                            <p>Put contact format here.</p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
         </ul>
     </div>
 

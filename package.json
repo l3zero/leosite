@@ -1,0 +1,27 @@
+{
+  "name": "mysite",
+  "version": "1.0.0",
+  "description": "my first site",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kRyM1337/leosite.git"
+  },
+  "author": "Leonid Yanchis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kRyM1337/leosite/issues"
+  },
+  "homepage": "https://github.com/kRyM1337/leosite#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "readline": "^1.3.0",
+    "url": "^0.11.0"
+  }
+}

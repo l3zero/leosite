@@ -19,6 +19,12 @@ app.get('/', function (req, res) {
   });
 });
 
+app.get('/resume', function (req, res) {
+  app.render('resume.html', function (err, renderedData) {
+    res.send(renderedData);
+  });
+});
+
 //Routes to handle illegal calls -@TODO all old stuff below, just keeping for reference
 /*app.get('/error', function (req, res) {
   app.render('error_page.html', function (err, renderedData) {

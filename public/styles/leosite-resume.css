@@ -1,28 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 2fr; /*these sizes follow and repeat no matter the amount of child elements under wrapper; can also use repeat()*/
-    grid-column-gap: 3px;
+    grid-column-gap: 5px;
     grid-auto-rows: minmax(100px, auto); /* auto set height of all rows, minmax with auto param will have elements stretch to fill space!*/
     justify-items: start; /*For row sizes; align-items is for column sizes. Use -self version for individual element sizes*/
     align-items: start;
-
-
-
-}
-
-.nested {
-    display: grid;
-    border: 3px solid yellow;
-    grid-auto-rows: minmax(70px, auto);
-  
+    background-color: white;
+    color: black;
 }
 
 .left-side {
     display: grid;
-    grid-column: 1/3; /*grid-column and -row is for stretching element across horizontal or vertical element border lines*/
+    /*grid-column: 1/3;*/ /*grid-column and -row is for stretching element across horizontal or vertical element border lines*/
     /*grid-column and -row can also overlap if used with same starting points!*/
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    font-family: 'Playfair Display', sans-serif;
+    
 }
+
+.left-side p {
+    font-size: 20px;
+    color: hsla(209, 95%, 45%, 0.72);
+}
+
+
+.photo {
+    border: 1px groove black;
+    /* display: grid; */
+        /* grid-auto-rows: minmax(70px, auto); */
+  
+}
+
+#blurb-list {
+    list-style-type: none;
+    border: none;
+}
+
+#blurb-list li {
+   display: flex;
+    /* justify-self: right; */
+    margin: 8px 0;
+}
+
+
 
 .right-side {
     border: 2px solid green;

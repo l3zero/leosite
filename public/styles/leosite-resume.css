@@ -2,12 +2,14 @@
 
 
 .wrapper {
+    /*CSS Grid*/
     display: grid;
     grid-template-columns: 1fr 2fr; /*these sizes follow and repeat no matter the amount of child elements under wrapper; can also use repeat()*/
-    grid-column-gap: 5px;
+    grid-column-gap: 70px;
     grid-auto-rows: minmax(100px, auto); /* auto set height of all rows, minmax with auto param will have elements stretch to fill space!*/
     justify-items: start; /*For row sizes; align-items is for column sizes. Use -self version for individual element sizes*/
     align-items: start;
+    /*Styling*/
     background-color: white;
     color: black;
 }
@@ -22,13 +24,18 @@
 }
 
 .left-side p {
-    font-size: 20px;
+    padding-left: 40px;
+    font-size: 25px;
     color: hsla(209, 95%, 45%, 0.72);
+    
 }
 
 
 .photo {
-    border: 1px groove black;
+    padding-left: 40px;
+
+    /* border: 1px groove black; */
+
     /* display: grid; */
         /* grid-auto-rows: minmax(70px, auto); */
   
@@ -40,6 +47,7 @@
 }
 
 #blurb-list li {
+
    display: flex;
     /* justify-self: right; */
     margin: 8px 0;
@@ -48,5 +56,14 @@
 
 
 .right-side {
-    border: 2px solid green;
+    display: grid;
+    padding-top: 75px;
+    /* border: 2px solid green; */
+    font-family: 'Playfair Display', sans-serif;
 }
+
+.right-side p {
+    font-size: 30px;
+    color: hsla(229, 91%, 27%, 0.658);
+}
+

@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 
+@import url('https://fonts.googleapis.com/css?family=Bungee|Bungee+Inline|Bungee+Outline|Bungee+Shade|Montserrat|Playfair+Display+SC|Space+Mono|Spectral|Spectral+SC&display=swap');
 
+body {
+    background-color: rgb(31, 31, 31);
+}
 .wrapper {
     /*CSS Grid*/
     display: grid;
@@ -10,60 +14,80 @@
     justify-items: start; /*For row sizes; align-items is for column sizes. Use -self version for individual element sizes*/
     align-items: start;
     /*Styling*/
-    background-color: white;
+    /* background-color: white; */
     color: black;
+    padding-left: 20px;
 }
 
 .left-side {
     display: grid;
+    background-color: black;
     /*grid-column: 1/3;*/ /*grid-column and -row is for stretching element across horizontal or vertical element border lines*/
     /*grid-column and -row can also overlap if used with same starting points!*/
-    /* border: 2px solid red; */
-    font-family: 'Playfair Display', sans-serif;
+    border: 1px solid red;
+    font-family: 'Playfair Display';
     
 }
 
 .left-side p {
-    padding-left: 40px;
     font-size: 25px;
-    color: hsla(209, 95%, 45%, 0.72);
-    
+    /* color: hsla(231, 71%, 46%, 0.72); */
+    color: white;
+}
+
+#name-title {
+    font-family: 'Spectral', serif;
+    font-size: 40px;
+    letter-spacing: 1px;
 }
 
 
-.photo {
-    padding-left: 40px;
+#leo-photo {
+    padding-left: 0px;
 
-    /* border: 1px groove black; */
+    /* border: 2px groove black; */
 
     /* display: grid; */
         /* grid-auto-rows: minmax(70px, auto); */
   
 }
 
+#divider {
+    background: white;
+    /* border: 2px solid white; */
+}
+
 #blurb-list {
     list-style-type: none;
     border: none;
+    color: white;
 }
 
 #blurb-list li {
 
    display: flex;
     /* justify-self: right; */
-    margin: 8px 0;
+    margin-top: 8px;
+}
+
+#blurb-list img {
+    background: white;
 }
 
 
 
 .right-side {
     display: grid;
-    padding-top: 75px;
-    /* border: 2px solid green; */
-    font-family: 'Playfair Display', sans-serif;
+    align-self: stretch;
+    margin-top: 140px;
+    /* padding-top: 20px; */
+    background-color: black;
+    border: 1px solid green;
 }
 
 .right-side p {
+    font-family: 'Playfair Display';
     font-size: 30px;
-    color: hsla(229, 91%, 27%, 0.658);
+    color: white;
 }
 

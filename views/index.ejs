@@ -18,19 +18,6 @@
 
     <div class="header">
 
-        <!--Pop-out panel-->
-        <!--    <div class="collapsible-menu">
-            <input type="checkbox" id="menu">
-            <label for="menu"></label>
-            <div class="menu-content">
-                <ul id="left-panel-list">
-                    <li><a href="#"><img src="" alt="Email Me"></a></li>
-                    <li><a href="#"><img src="" alt="Call Me"></a></li>
-                    <li><a href="#"><img src="" alt="Yell at Me"></a></li>
-                </ul>
-            </div>
-        </div> -->
-
         <h1>
             I am <span class="leo">Leo</span>,<br>a <span class="software">Software</span> Guy.</span>
         </h1>
@@ -69,7 +56,7 @@
         <span><strong>V</strong>ideo of the Week</span>
         <div id="video-container">
             <!-- @TO DO: Make src pull from my local DB-->
-            <iframe width="560" height="250" src="https://www.youtube.com/embed/taWzoLpdxaI" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;
+            <iframe width="560" height="250" src="<%= videoUrl %>" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;
             picture-in-picture"></iframe>
         </div>
     </div>
@@ -78,7 +65,7 @@
         <span><strong>S</strong>ong of the Week</span>
         <div id="audio-container">
             <!-- @TO DO: Make src pull from my local DB-->
-            <iframe width="560" height="250" src="https://www.youtube.com/embed/Eps1N8Gv_RU" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;
+            <iframe width="560" height="250" src="<%= songUrl %>" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;
             picture-in-picture"></iframe>
         </div>
     </div>

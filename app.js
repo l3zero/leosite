@@ -47,7 +47,7 @@ db.close((err) => {
   if (err) {
     console.error(err.message);
   }
-  console.log('Close the database connection.');
+  console.log('Closed the database connection.');
 });
 
 //Main page route
@@ -58,7 +58,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/resume', function (req, res) {
-  app.render('resume.html', function (err, html) {
+  app.render('resume', function (err, html) {
     res.send(html);
   });
 });

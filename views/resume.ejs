@@ -40,23 +40,15 @@
         <div class="right-side">
 
             <div class="tab">
-                <button id="defaultOpen" class="tablinks" onclick="openTab(event, 'Skills')"><span
-                        id="exp-title">Skills</span></button>
+                <button id="defaultOpen" class="tablinks" onclick="openTab(event, 'grid-skills')">Skills</button>
                 <button class="tablinks" onclick="openTab(event, 'grid-jobs')">Experience</button>
-                <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
+                <button class="tablinks" onclick="openTab(event, 'projects')">Projects</button>
             </div>
-
-
-
-
-
-
-
             <!-- <p><span id="exp-title"><strong>Experience</strong></span></p> -->
-            <p id="grid-jobs" class="tabcontent">
+            <div id="grid-jobs" class="tabcontent">
                 <span class="main-job-title">Content Specialist</span>
-                <span class="job-info">AJ Madison</span>
-                <span class="job-info">7/2017 to 5/2019</span>
+                <span class="info">AJ Madison</span>
+                <span class="info">7/2017 to 5/2019</span>
                 <span class="job-bullets">
                     ○ Assisted in launching a new site wide product category<br>
                     ○ Managed Jira tickets for web development team<br>
@@ -65,8 +57,8 @@
                 </span>
 
                 <span class="main-job-title">Data Team Manager</span>
-                <span class="job-info">Decor Planet</span>
-                <span class="job-info">1/2013 to 9/2015</span>
+                <span class="info">Decor Planet</span>
+                <span class="info">1/2013 to 9/2015</span>
                 <span class="job-bullets">
                     ○ Populated web space with 60+ brands<br>
                     ○ Managed and trained products team in Europe<br>
@@ -76,11 +68,33 @@
                     ○ Devised unique product configurations for web customers<br>
                     ○ Managed multi-department QA process
                 </span>
-            </p>
+            </div>
+            <div id="grid-skills" class="tabcontent">
+                    <span class="info">Javascript</span>
+                    <div><span class="meter"></span></div>
+                    <span class="info">CSS</span>
+                    <div><span class="meter" style="width: 65%;-webkit-animation: fill65 1.5s ease-in-out;
+                        animation: fill65 1.5s ease-in-out;"></span></div>
+                    <span class="info">HTML</span>
+                    <div><span class="meter" style="width: 65%;-webkit-animation: fill65 1.5s ease-in-out;
+                        animation: fill65 1.5s ease-in-out;"></span></div>
+                    <span class="info">NodeJS</span>
+                    <div><span class="meter" style="width: 55%;-webkit-animation: fill55 1.5s ease-in-out;
+                        animation: fill55 1.5s ease-in-out;"></span></div>
+                    <span class="info">Linux / Bash</span>
+                    <div><span class="meter" style="width: 55%;-webkit-animation: fill55 1.5s ease-in-out;
+                        animation: fill55 1.5s ease-in-out;"></span></div>
+                    <span class="info">Product / Team Management</span>
+                    <div><span class="meter" style="width: 70%;"></span></div>
+            </div>
+            <div id="projects" class="tabcontent">
+                    <img src="../images/building.gif" alt="still building">Still building</img>
+            </div>
+
 
         </div>
     </div>
-
+    <!--Little JS to control the tabs-->
     <script>
         function openTab(evt, name) {
             var i, tabcontent, tablinks;

@@ -77,6 +77,8 @@ body {
 
 .blurb-list img {
     background: white;
+    border: 1px solid white;
+    border-radius: 4px;
 }
 
 .right-side {

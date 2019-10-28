@@ -21,7 +21,7 @@
     background: rgb(202, 200, 200);
     border-radius: 5px;
     width: 30%;
-    height: 40%;
+    height: 45%;
     position: relative;
     transition: all 1s ease-in-out;
   }
@@ -64,99 +64,3 @@
       height: 70%;
     }
   }
-
-/*.collapsible-menu {
-/~     background-color: rgb(255, 255, 255);
- ~/    display: inherit;
-    float: center;
-    padding: 0px 30px;
-/~     border-bottom: 3px solid rgb(0, 0, 0);
- ~/   /~  box-shadow: 1px 2px 3px rgba(0,0,0,0.2); ~/
-}
-
-.collapsible-menu ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.collapsible-menu a {
-    display: inherit;
-    float: center;
-    padding: 10px;
-    text-decoration: none;
-}
-
-.collapsible-menu label {
-    font-family: 'Sedgwick Ave Display', cursive;
-    font-size: 56px;
-    display: inherit;
-    cursor: pointer;
-    background: url(../images/arrow-down.png) no-repeat center;
-    background-size: cover;
-    padding: 10px 0 10px 50px;
-}
-
-.collapsible-menu label {
-    -webkit-animation-name: wiggle;
-    -ms-animation-name: wiggle;
-    -ms-animation-duration: 1000ms;
-    -webkit-animation-duration: 1000ms;
-    -webkit-animation-iteration-count: 2;
-    -ms-animation-iteration-count: 2;
-    -webkit-animation-timing-function: ease-in-out;
-    -ms-animation-timing-function: ease-in-out;
-    animation-delay: 2.2s;
-  }
-  
-  @-webkit-keyframes wiggle {
-    0% {-webkit-transform: rotate(10deg);}
-    25% {-webkit-transform: rotate(-10deg);}
-    50% {-webkit-transform: rotate(20deg);}
-    75% {-webkit-transform: rotate(-5deg);}
-    100% {-webkit-transform: rotate(0deg);}
-  }
-  
-  @-ms-keyframes wiggle {
-    0% {-ms-transform: rotate(1deg);}
-    25% {-ms-transform: rotate(-1deg);}
-    50% {-ms-transform: rotate(1.5deg);}
-    75% {-ms-transform: rotate(-5deg);}
-    100% {-ms-transform: rotate(0deg);}
-  }
-  
-  @keyframes wiggle {
-    0% {transform: rotate(10deg);}
-    25% {transform: rotate(-10deg);}
-    50% {transform: rotate(20deg);}
-    75% {transform: rotate(-5deg);}
-    100% {transform: rotate(0deg);}
-  }
-
-
-input#menu {
-    display: none;
-}
-
-.menu-content {
-    max-height: 0;
-    overflow: hidden;
-    font-family: 'Oswald', sans-serif;
-    padding: 0 0 0 50px;
-}
-
-/~ Toggle Effect ~/
-input:checked ~ label {
-    background-image: url(../images/arrow-up.png);
-}
-input:checked ~ .menu-content {
-    max-height: 100%;
-}
-
-input:checked +label {
-    background-image: url(../images/arrow-down.png);
-}
-
-#left-panel-list img {
-    border: 0;
-
-}*/

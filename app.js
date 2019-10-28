@@ -1,10 +1,11 @@
-var url = require('url');
-var bodyParser = require('body-parser');
-var express = require('express'), ejs = require('ejs');
-const sqlite3 = require('sqlite3').verbose();
+const url = require('url');
+const sqlite = require('./public/scripts/sqlite');
+const devApi = require('./public/scripts/devapi');
+const bodyParser = require('body-parser');
+// const schedule = require('node-schedule');
+const express = require('express'), ejs = require('ejs');
 
-
-var app = express();
+const app = express();
 app.use(express.static('public')); //For serving css, js, imgs..
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -13,46 +14,21 @@ app.set('views', './views');
 app.set('view engine', 'ejs');
 app.engine('html', ejs.renderFile);
 
-//Setup local SQlite DB
-let db = new sqlite3.Database('ly_votw.db', sqlite3.OPEN_READONLY, (err) => {
-  if (err) {
-    console.error(err.message);
-  }
-  console.log('Connected to the local votw database.');
-});
+//Setup DB and retrieve info
+//@TODO Change script in sqlite.js to find the latest urls; Maybe setup caching too?
+let songUrl, videoUrl;
+let db = sqlite.setup();
+sqlite.getSong(db, (song) => { songUrl = song; });
+sqlite.getVideo(db, (vid) => { videoUrl = vid; });
+sqlite.closeDB(db);
 
-//@TODO Change script to find the latest urls; Maybe setup caching too?
-let songUrl;
-let videoUrl;
-let sql = `SELECT URL url FROM sotw WHERE Title = ?`;
-db.serialize(() => {
-  db.each(sql,['Tycho-Japan'], (err, row) => {
-    if (err) {
-      console.error(err.message);
-    }
-    songUrl = row.url;
-  });
-});
-sql = `SELECT URL url FROM votw WHERE Title = ?`;
-db.serialize(() => {
-  db.each(sql,['Dog-Thing'], (err, row) => {
-    if (err) {
-      console.error(err.message);
-    }
-    videoUrl = row.url;
-  });
-});
-//Closing SQLite DB
-db.close((err) => {
-  if (err) {
-    console.error(err.message);
-  }
-  console.log('Closed the database connection.');
-});
+//Dev API weekly article pull
+let articleInfo = []; //Array with url, title, image, likes
+devApi.grabArticle((info) => { articleInfo = [...info]; });
 
-//Main page route
+//Routes
 app.get('/', function (req, res) {
-  app.render('index', {songUrl:`${songUrl}`, videoUrl: `${videoUrl}`}, function (err, html) {
+  app.render('index', {songUrl: `${songUrl}`, videoUrl: `${videoUrl}`, articleTitle: `${articleInfo[1]}`, articleImageUrl: `${articleInfo[2]}`, articleUrl: `${articleInfo[0]}`, articleLikes: `${articleInfo[3]}`}, function (err, html) {
     res.send(html);
   });
 });

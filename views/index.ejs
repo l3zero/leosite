@@ -16,46 +16,56 @@
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="header">
+    <div class="header" id="header">
 
         <h1>
             I am <span class="leo">Leo</span>,<br>a <span class="software">Software</span> Guy.</span>
         </h1>
     </div>
-    <!-- @TO DO MAKE THIS AN SPA #links -->
     <div class="navbar">
         <a class="button" href="#popup1">Projects</a>
 
         <div id="popup1" class="overlay">
-            <div class="popup">
+            <div class="popup" style="width: 20%; height: 40%;">
                 <h2>My Projects</h2>
-                <a class="close" href="">&times;</a>
-                <!--maybe add # in href-->
+                <a class="close" href="#header">&times;</a>
                 <div class="content">
-                    <ul>
-                        <li><a href="#">Weather App</a></li>
-                        <li><a href="#">App #2</a></li>
-                        <li><a href="#">App #3</a></li>
-                    </ul>
+                        
+                    <a href="#">Coming Soon</a><br><br>
+                    <a href="#">Coming Soon</a><br><br>
+                    <a href="#">Coming Soon</a>
+                    
                 </div>
             </div>
         </div>
 
         <a class="button" href="./resume">Resume</a>
-        <a class="button" href="./biography">Biography</a>
-        <!-- <a href="#" class="right">Link</a> -->
+        <a class="button" href="#popup5">Biography</a>
+        <div id="popup5" class="overlay">
+                <div class="popup" style="width: 20%; height: 40%;">
+                    <h2>My Biography</h2>
+                    <a class="close" href="#header">&times;</a>
+                    <div class="content">
+                        <p>Still thinking of what to write :)</p>
+                        
+                    </div>
+                </div>
+            </div>
     </div>
     <div class="weekly-container">
         <span><strong>A</strong>rticle of the Week</span>
         <div id="article-container">
-            <p>The article will go here, with a picture, mini blurb and link to full article</p>
+            <div id="article-title"><%= articleTitle %></div>
+            <img id="article-image" src="<%= articleImageUrl %>"></img>
+            <a href="<%= articleUrl %>" target="_blank">Read full article</a>
+            <img id="article-heart" src="https://practicaldev-herokuapp-com.freetls.fastly.net/assets/emoji/emoji-one-heart-855b5a6263042e4c9448cf2cb0dd2e201598b77b1e3f1dc041492bc0128d9fb8.png"></img>
+            <div id="article-likes"><%= articleLikes %></div>
         </div>
     </div>
 
     <div class="weekly-container">
         <span><strong>V</strong>ideo of the Week</span>
         <div id="video-container">
-            <!-- @TO DO: Make src pull from my local DB-->
             <iframe width="560" height="250" src="<%= videoUrl %>" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;
             picture-in-picture"></iframe>
         </div>
@@ -64,7 +74,6 @@
     <div class="weekly-container">
         <span><strong>S</strong>ong of the Week</span>
         <div id="audio-container">
-            <!-- @TO DO: Make src pull from my local DB-->
             <iframe width="560" height="250" src="<%= songUrl %>" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;
             picture-in-picture"></iframe>
         </div>
@@ -75,12 +84,12 @@
         <ul id="footer-list">
             <li><a class="footer-links" href="#popup2">What is this site about?</a></li>
             <div id="popup2" class="overlay">
-                <div class="popup">
+                <div class="popup" style="height: 35%;">
                     <h2>About this site</h2>
                     <a class="close" href="#footer-list">&times;</a>
-                    <!--maybe add # in href-->
                     <div class="content">
-                        <p>This is my personal site that I built from scratch. I enjoy experimenting here so check back every so often for new
+                        <p>This is my personal site that I built from scratch. I enjoy experimenting here so check back
+                            every so often for new
                             updates.</p>
                     </div>
                 </div>
@@ -92,7 +101,6 @@
                 <div class="popup">
                     <h2>Let me help you out</h2>
                     <a class="close" href="#footer-list">&times;</a>
-                    <!--maybe add # in href-->
                     <div class="content">
                         <p>I love upgrading websites and upgrading my skills in the process. Let's work together and I
                             can help you solve your pesky website problems.
@@ -105,20 +113,20 @@
 
             <li><a class="footer-links" href="#popup4">Contact Me</a></li>
             <div id="popup4" class="overlay">
-                    <div class="popup">
-                        <h2>Let's get in touch</h2>
-                        <a class="close" href="#footer-list">&times;</a>
-                        <div class="content">
-                            <p>Put contact format here.</p>
-                            </p>
-                        </div>
+                <div class="popup" style="width: 20%; height: 40%;">
+                    <h2>Contact Me</h2>
+                    <a class="close" href="#footer-list">&times;</a>
+                    <div class="content">
+                        <p>
+                            <a href="mailto:leonid.yanchis@gmail.com?Subject=Hello%20Leonid" target="_top" style="text-decoration: underline; color: inherit;">Email Me</a><br><br>
+                            <a href="tel:+1-718-629-7347" style="text-decoration: underline; color: inherit;">Call Me</a><br><br>
+                            <a href="https://linkedin.com/in/leonidyanchis/" target="_blank" style="text-decoration: underline; color: inherit;">My LinkedIn</a>
+                        </p>
                     </div>
                 </div>
+            </div>
         </ul>
     </div>
-
-    <!--     <script src="" async defer></script>
- -->
 </body>
 
 </html>

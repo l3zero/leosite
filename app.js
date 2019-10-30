@@ -22,7 +22,7 @@ sqlite.getSong(db, (song) => { songUrl = song; });
 sqlite.getVideo(db, (vid) => { videoUrl = vid; });
 sqlite.closeDB(db);
 
-//Dev API weekly article pull
+//Dev API trending article pull
 let articleInfo = []; //Array with url, title, image, likes
 devApi.grabArticle((info) => { articleInfo = [...info]; });
 

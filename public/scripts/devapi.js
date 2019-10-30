@@ -6,6 +6,7 @@ const topParam = '&top=7'; //for top articles in past 7 days
 module.exports = {
     grabArticle: function (fn) {
         fetch(`${url}${tagParam}${topParam}`)
+            .then(checkStatus)
             .then((res) => res.json())
             .then((json) => {
                 let articleInfo = [];
@@ -17,13 +18,21 @@ module.exports = {
             })
             .catch(function (error) {
                 console.log(JSON.stringify(error));
+                let articleInfo = [];
+                articleInfo.push("There has been an error retrieving from API. See console for more details");
+                articleInfo.push("There has been an error retrieving from API. See console for more details");
+                articleInfo.push("There has been an error retrieving from API. See console for more details");
+                articleInfo.push("There has been an error retrieving from API. See console for more details");
+                fn(articleInfo);
             });
     }
-    // checkStatus: function (res) {
-    //     if (res.ok) { // res.status >= 200 && res.status < 300
-    //         return res;
-    //     } else {
-    //         throw MyCustomError(res.statusText);
-    //     }
-    // }
+  
+}
+
+function checkStatus(res) {
+    if (res.ok) { // res.status >= 200 && res.status < 300
+        return res;
+    } else {
+        throw Error(res.statusText);
+    }
 }

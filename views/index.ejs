@@ -53,13 +53,15 @@
             </div>
     </div>
     <div class="weekly-container">
-        <span><strong>A</strong>rticle of the Week</span>
+        <span><strong>T</strong>rending JS Article</span>
         <div id="article-container">
-            <div id="article-title"><%= articleTitle %></div>
+            <div id="article-title">"<%= articleTitle %>"</div>
             <img id="article-image" src="<%= articleImageUrl %>"></img>
-            <a href="<%= articleUrl %>" target="_blank">Read full article</a>
-            <img id="article-heart" src="https://practicaldev-herokuapp-com.freetls.fastly.net/assets/emoji/emoji-one-heart-855b5a6263042e4c9448cf2cb0dd2e201598b77b1e3f1dc041492bc0128d9fb8.png"></img>
-            <div id="article-likes"><%= articleLikes %></div>
+            <div id="bottom-article-row">
+                <img id="article-heart" alt="Likes" src="https://practicaldev-herokuapp-com.freetls.fastly.net/assets/emoji/emoji-one-heart-855b5a6263042e4c9448cf2cb0dd2e201598b77b1e3f1dc041492bc0128d9fb8.png"></img>
+                <div id="article-likes"><%= articleLikes %></div>
+                <a href="<%= articleUrl %>" target="_blank">Read full article on DEV</a>
+            </div>
         </div>
     </div>
 

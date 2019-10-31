@@ -23,42 +23,49 @@
         </h1>
     </div>
     <div class="navbar">
-        <a class="button" href="#popup1">Projects</a>
 
+        <a class="button" href="#popup1">Projects</a>
         <div id="popup1" class="overlay">
-            <div class="popup" style="width: 20%; height: 40%;">
-                <h2>My Projects</h2>
-                <a class="close" href="#header">&times;</a>
-                <div class="content">
-                        
+            <div class="popup">
+                <div class="popup-flex-row">
+                    <div class="popup-title" style="margin-left: 10px;">
+                        <h2>My Projects</h2>
+                    </div>
+                    <a class="close" href="#header">&times;</a>
+                </div>
+                <div class="popup-content">
                     <a href="#">Coming Soon</a><br><br>
                     <a href="#">Coming Soon</a><br><br>
                     <a href="#">Coming Soon</a>
-                    
                 </div>
             </div>
         </div>
 
         <a class="button" href="./resume">Resume</a>
+
         <a class="button" href="#popup5">Biography</a>
         <div id="popup5" class="overlay">
-                <div class="popup" style="width: 20%; height: 40%;">
-                    <h2>My Biography</h2>
-                    <a class="close" href="#header">&times;</a>
-                    <div class="content">
-                        <p>Still thinking of what to write :)</p>
-                        
+            <div class="popup">
+                <div class="popup-flex-row">
+                    <div class="popup-title">
+                        <h2>My Biography</h2>
                     </div>
+                    <a class="close" href="#header">&times;</a>
                 </div>
+                <div class="popup-content">Still thinking of what to write :)</div>
             </div>
+
+        </div>
     </div>
+
     <div class="weekly-container">
         <span><strong>T</strong>rending JS Article</span>
         <div id="article-container">
-            <div id="article-title">"<%= articleTitle %>"</div>
+            <div id="article-title"><%= articleTitle %></div>
             <img id="article-image" src="<%= articleImageUrl %>"></img>
             <div id="bottom-article-row">
-                <img id="article-heart" alt="Likes" src="https://practicaldev-herokuapp-com.freetls.fastly.net/assets/emoji/emoji-one-heart-855b5a6263042e4c9448cf2cb0dd2e201598b77b1e3f1dc041492bc0128d9fb8.png"></img>
+                <img id="article-heart" alt="Likes"
+                    src="https://practicaldev-herokuapp-com.freetls.fastly.net/assets/emoji/emoji-one-heart-855b5a6263042e4c9448cf2cb0dd2e201598b77b1e3f1dc041492bc0128d9fb8.png"></img>
                 <div id="article-likes"><%= articleLikes %></div>
                 <a href="<%= articleUrl %>" target="_blank">Read full article on DEV</a>
             </div>
@@ -83,16 +90,30 @@
 
     <div class="footer">
         <h2>You made it to the bottom!</h2>
+
         <ul id="footer-list">
+
             <li><a class="footer-links" href="#popup2">What is this site about?</a></li>
             <div id="popup2" class="overlay">
-                <div class="popup" style="height: 35%;">
-                    <h2>About this site</h2>
-                    <a class="close" href="#footer-list">&times;</a>
-                    <div class="content">
-                        <p>This is my personal site that I built from scratch. I enjoy experimenting here so check back
-                            every so often for new
-                            updates.</p>
+                <div class="popup">
+                    <div class="popup-flex-row">
+                        <div class="popup-title" style="margin-right: 130px;">
+                            <h2>About this site</h2>
+                        </div>
+                        <a class="close" href="#footer-list">&times;</a>
+                    </div>
+                    <div class="popup-content">
+                        This is my personal hub that I built from scratch.<br>I enjoy experimenting here so check back
+                        for new updates.<br><br>
+                        Things I picked up while working on this site:<br><br>
+                        <ul>
+                            <li>Node / NPM</li>
+                            <li>API Patterns</li>
+                            <li>SQLite3</li>
+                            <li>CSS3 / Flexbox / Grid / Animations</li>
+                            <li>Responsive Design</li>
+                            <li>HTML5</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -101,29 +122,38 @@
             <li><a class="footer-links" href="#popup3">Need help with your website?</a></li>
             <div id="popup3" class="overlay">
                 <div class="popup">
-                    <h2>Let me help you out</h2>
-                    <a class="close" href="#footer-list">&times;</a>
-                    <div class="content">
-                        <p>I love upgrading websites and upgrading my skills in the process. Let's work together and I
-                            can help you solve your pesky website problems.
-                            Whether it's a new style layout, a user friendly menu, a new app integration or if your site
-                            simply sucks, I would love to help.</p>
-                        </p>
+                    <div class="popup-flex-row">
+                        <div class="popup-title" style="margin-right: 240px;">
+                            <h2>Let me help you out</h2>
+                        </div>
+                        <a class="close" href="#footer-list">&times;</a>
+                    </div>
+                    <div class="popup-content">
+                        I love upgrading websites and upgrading my skills in the process.<br>Let's work together and I
+                        can help you solve your pesky website problems.<br>Whether it's a new layout, a user friendly
+                        menu or an app integration, I would love to help.
                     </div>
                 </div>
             </div>
 
             <li><a class="footer-links" href="#popup4">Contact Me</a></li>
             <div id="popup4" class="overlay">
-                <div class="popup" style="width: 20%; height: 40%;">
-                    <h2>Contact Me</h2>
-                    <a class="close" href="#footer-list">&times;</a>
-                    <div class="content">
-                        <p>
-                            <a href="mailto:leonid.yanchis@gmail.com?Subject=Hello%20Leonid" target="_top" style="text-decoration: underline; color: inherit;">Email Me</a><br><br>
-                            <a href="tel:+1-718-629-7347" style="text-decoration: underline; color: inherit;">Call Me</a><br><br>
-                            <a href="https://linkedin.com/in/leonidyanchis/" target="_blank" style="text-decoration: underline; color: inherit;">My LinkedIn</a>
-                        </p>
+                <div class="popup">
+                    <div class="popup-flex-row">
+                        <div class="popup-title" style="margin-left: 10px;">
+                            <h2>Contact Me</h2>
+                        </div>
+                        <a class="close" href="#footer-list">&times;</a>
+                    </div>
+                    <div class="popup-content">
+
+                        <a href="mailto:leonid.yanchis@gmail.com?Subject=Hello%20Leonid" target="_top"
+                            style="text-decoration: none; color: blue;">Email Me</a><br><br>
+                        <a href="tel:+1-718-629-7347" style="text-decoration: none; color: blue;">Call
+                            Me</a><br><br>
+                        <a href="https://linkedin.com/in/leonidyanchis/" target="_blank"
+                            style="text-decoration: none; color: blue;">My LinkedIn</a>
+
                     </div>
                 </div>
             </div>

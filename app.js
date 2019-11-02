@@ -2,6 +2,7 @@ const url = require('url');
 const sqlite = require('./public/scripts/sqlite');
 const devApi = require('./public/scripts/devapi');
 const bodyParser = require('body-parser');
+const path = require('path');
 // const schedule = require('node-schedule');
 const express = require('express'), ejs = require('ejs');
 
@@ -15,7 +16,6 @@ app.set('view engine', 'ejs');
 app.engine('html', ejs.renderFile);
 
 //Setup DB and retrieve info
-//@TODO Change script in sqlite.js to find the latest urls; Maybe setup caching too?
 let songUrl, videoUrl;
 let db = sqlite.setup();
 sqlite.getSong(db, (song) => { songUrl = song; });
@@ -26,18 +26,30 @@ sqlite.closeDB(db);
 let articleInfo = []; //Array with url, title, image, likes
 devApi.grabArticle((info) => { articleInfo = [...info]; });
 
-//Routes
-app.get('/', function (req, res) {
+//Index
+app.get('/', (req, res) => {
   app.render('index', {songUrl: `${songUrl}`, videoUrl: `${videoUrl}`, articleTitle: `${articleInfo[1]}`, articleImageUrl: `${articleInfo[2]}`, articleUrl: `${articleInfo[0]}`, articleLikes: `${articleInfo[3]}`}, function (err, html) {
+    res.set('Cache-Control', ['public', 'max-age=2419200']);
     res.send(html);
   });
 });
-
-app.get('/resume', function (req, res) {
+//Resume
+app.get('/resume', (req, res) => {
   app.render('resume', function (err, html) {
+    res.set('Cache-Control', ['public', 'max-age=2419200']);
     res.send(html);
   });
 });
+//Resume PDF Download
+app.get('/resume/:file(*)', (req,res) => {
+  let file = req.params.file;
+  let fileLocation = path.join('./public/images', file);
+  console.log(fileLocation);
+  res.download(fileLocation, file, (err) => {
+    console.log("Error downloading PDF file");
+    // res.redirect(301,'/resume');
+  })
+})
 
 //Routes to handle illegal calls -@TODO all old stuff below, just keeping for reference
 /*app.get('/error', function (req, res) {

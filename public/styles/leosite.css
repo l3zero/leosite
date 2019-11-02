@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 
+:root {
+  --mobileWidth: 480px;
+}
+
 body {
   font-family: 'Playfair Display';
-  /* background-image: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgb(1, 5, 19)); */
   background-color: rgb(0, 2, 12);
 }
 
-/* Ensure proper sizing */
+/* Ensures width and height of boxes include padding */
 
 * {
   box-sizing: border-box;
@@ -86,6 +89,22 @@ body {
   border-radius: 5px;
 }
 
+.weekly-container iframe {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 4px 4px 14px #000;
+  -webkit-box-shadow: 4px 4px 14px #000;
+  box-shadow: 4px 4px 14px #000;
+/*   -moz-transform:rotate(5deg);
+  -webkit-transform:rotate(5deg);
+  -o-transform:rotate(5deg);
+  -ms-transform:rotate(5deg); */
+/*      filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=.2);
+*/ }
+
 #article-container {
   display: flex;
   flex-direction: column;
@@ -142,22 +161,6 @@ body {
   padding-top: 5px;
 }
 
-.weekly-container iframe {
-    margin-top: 5px;
-    margin-bottom: 10px;
-    -moz-border-radius: 12px;
-    -webkit-border-radius: 12px;
-    border-radius: 12px;
-    -moz-box-shadow: 4px 4px 14px #000;
-    -webkit-box-shadow: 4px 4px 14px #000;
-    box-shadow: 4px 4px 14px #000;
-  /*   -moz-transform:rotate(5deg);
-    -webkit-transform:rotate(5deg);
-    -o-transform:rotate(5deg);
-    -ms-transform:rotate(5deg); */
-/*      filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=.2);
- */ }
-
 .footer {
   padding: 20px;
   text-align: center;
@@ -181,17 +184,29 @@ body {
   color: red;
 }
 
-/* Responsive layout - when the screen is less than 500px wide, make the navigation links 
+/* Responsive layout - when the screen is less than 600px wide, make the navigation links 
 stack on top of each other instead of next to each other */
 
 @media screen and (max-width: 700px) {
 
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .navbar a {
     display: block;
     float: none;
     width: 100%;
+  }
+  #article-image {
+    width: var(--mobileWidth);
+  }
+  #article-title {
+    width: var(--mobileWidth);
+  }
+  #bottom-article-row {
+    width: var(--mobileWidth);
+  }
+  .weekly-container iframe {
+    width: var(--mobileWidth);
   }
 }
 

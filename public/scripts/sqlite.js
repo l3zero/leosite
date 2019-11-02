@@ -4,7 +4,7 @@ const sqlite3 = require('sqlite3').verbose();
 module.exports = {
     //Sets up local SQlite DB and returns it
     setup: function () {
-        let db = new sqlite3.Database('./ly_votw.db', sqlite3.OPEN_READONLY, (err) => {
+        let db = new sqlite3.Database('./leosite.db', sqlite3.OPEN_READONLY, (err) => {
             if (err) {
                 console.error(err.message);
             }
@@ -14,9 +14,9 @@ module.exports = {
     },
     //Async 'returns' song of week from sqlite DB
     getSong: function (db, fn) {
-        let sql = `SELECT URL url FROM sotw WHERE Title = ?`;
+        let sql = `SELECT URL url FROM sotw ORDER BY ID DESC LIMIT 1`;
         db.serialize(() => {
-            db.each(sql, ['Tycho-Japan'], (err, row) => {
+            db.each(sql, (err, row) => {
                 if (err) {
                     console.error(err.message);
                 }
@@ -27,9 +27,9 @@ module.exports = {
     },
     //Async 'returns' video of week from sqlite DB
     getVideo: function (db, fn) {
-        let sql = `SELECT URL url FROM votw WHERE Title = ?`;
+        let sql = `SELECT URL url FROM votw ORDER BY ID DESC LIMIT 1`;
         db.serialize(() => {
-            db.each(sql, ['Dog-Thing'], (err, row) => {
+            db.each(sql, (err, row) => {
                 if (err) {
                     console.error(err.message);
                 }

@@ -12,6 +12,10 @@ app.set('views', './views');
 app.set('view engine', 'ejs');
 app.engine('html', ejs.renderFile);
 
-const server = app.listen(8001, () => {
-    console.log(`Express running → PORT ${server.address().port}`);
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
+const server = app.listen(port, () => {
+    console.log(`Express running → PORT ${port}`);
   });

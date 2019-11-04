@@ -40,7 +40,7 @@ router.get('/resume/:file(*)', (req, res) => {
     let file = req.params.file;
     let fileLocation = path.join('./public/images', file);
     res.download(fileLocation, file, (err) => {
-        console.log(`Error downloading PDF file from ${fileLocation}`);
+        // console.log(`Error downloading PDF file from ${fileLocation}`);
         res.render('error', (err, html) => {
             res.status(404);
             res.send(html);

@@ -6,7 +6,7 @@ body {
 
 * {
     box-sizing: border-box;
-  }  
+}
 
 .wrapper {
     /*CSS Grid*/
@@ -75,6 +75,7 @@ body {
     text-decoration: none;
     color: inherit;
 }
+
 .blurb-list>div a:hover {
     font-size: 112%;
     color: red;
@@ -92,7 +93,6 @@ body {
     color: white;
     margin-top: 140px;
     letter-spacing: 1.5px;
-
 }
 
 #grid-jobs {
@@ -109,7 +109,6 @@ body {
 #grid-skills {
     display: grid;
     grid-template-columns: 1fr;
-    /* grid-column-gap: 20px; */
     grid-auto-rows: minmax(10px, auto);
     align-items: stretch;
     justify-items: start;
@@ -132,7 +131,7 @@ body {
     display: inherit;
     height: inherit;
     width: 70%;
-    background-image: linear-gradient(-300deg,rgb(126, 132, 218) 3%, rgb(10, 27, 179) 50%);
+    background-image: linear-gradient(-300deg, rgb(126, 132, 218) 3%, rgb(10, 27, 179) 50%);
     -webkit-animation: fill70 1.5s ease-in-out;
     animation: fill70 1.5s ease-in-out;
 }
@@ -141,7 +140,7 @@ body {
     color: white;
     text-align: center;
     font-size: 22px;
-    background-image: repeating-linear-gradient(0deg,black 10%, rgb(7, 6, 82) 300%);
+    background-image: repeating-linear-gradient(0deg, black 10%, rgb(7, 6, 82) 300%);
     margin-top: 5px;
 }
 
@@ -212,47 +211,84 @@ body {
 /* Fade in tabs */
 
 @-webkit-keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @-webkit-keyframes fill70 {
-    0% {width: 0%;}
-    100% {width: 70%;}
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
 }
 
 @keyframes fill70 {
-    0% {width: 0%;}
-    100% {width: 70%;}
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
 }
 
 @-webkit-keyframes fill65 {
-    0% {width: 0%;}
-    100% {width: 65%;}
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 65%;
+    }
 }
 
 @keyframes fill65 {
-    0% {width: 0%;}
-    100% {width: 65%;}
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 65%;
+    }
 }
 
 @-webkit-keyframes fill55 {
-    0% {width: 0%;}
-    100% {width: 55%;}
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 55%;
+    }
 }
 
 @keyframes fill55 {
-    0% {width: 0%;}
-    100% {width: 55%;}
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .wrapper {
+        grid-column-gap: 50px;
+    }
 }
 
 @media screen and (max-width: 700px) {
-
     .wrapper {
         display: flex;
         flex-wrap: wrap;
@@ -262,8 +298,16 @@ body {
         align-items: center;
     }
     .right-side {
-        margin-top: 100px;
+        margin-top: 50px;
         padding-bottom: 20px;
+        padding-right: 110px;
+    }
+    @-moz-document url-prefix() {
+        .right-side {
+            margin-top: 80px;
+            padding-bottom: 20px;
+            padding-right: 90px;
+        }
     }
     #leo-photo {
         width: 60%;
@@ -275,8 +319,44 @@ body {
     .main-job-title {
         text-align: left;
     }
-  }
+}
 
-  @media screen and (max-width: 450px) {
-    
-  }
+@media screen and (max-width: 550px) {
+    @-moz-document url-prefix() {
+        .right-side {
+            margin-top: 120px;
+            padding-bottom: 20px;
+            padding-right: 90px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .right-side {
+        margin-top: 50px;
+        padding-bottom: 20px;
+        padding-right: 0px;
+    }
+    @-moz-document url-prefix() {
+        .right-side {
+            margin-top: 130px;
+            padding-bottom: 20px;
+            padding-right: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .right-side {
+        margin-top: 50px;
+        padding-bottom: 20px;
+        padding-right: 0px;
+    }
+    @-moz-document url-prefix() {
+        .right-side {
+            margin-top: 160px;
+            padding-bottom: 20px;
+            padding-right: 00px;
+        }
+    }
+}

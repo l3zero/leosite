@@ -31,6 +31,15 @@
   width: auto;
   height: auto;
 }
+#help-popup {
+  width:360px;
+}
+#contact-popup {
+  width: 200px;
+}
+#project-popup {
+  width: 230px;
+}
 .popup-flex-row {
   display: flex;
   flex-direction: row;
@@ -39,7 +48,28 @@
 .popup-title {
   color: black;
   font-family: 'Playfair Display';
-  margin-right: 70px;
+}
+#about-title {
+  margin-right: 330px;
+}
+#project-title {
+  margin-right: 50px;
+}
+#help-title {
+  margin-right: 95px;
+}
+@-moz-document url-prefix() {
+  #help-title {
+    margin-right: 170px;
+  }
+}
+#contact-title {
+  margin-right: 30px;
+}
+@-moz-document url-prefix() {
+  #contact-title {
+    margin-right: 20px;
+  }
 }
 .close {
   color: rgb(0, 0, 0);
@@ -50,6 +80,8 @@
   padding-right: 10px;
 }
 .popup-content {
+  text-align: start;
+  letter-spacing: 1px;
   overflow: hidden;
   padding: 10px;
 }
@@ -59,4 +91,13 @@
 .popup-content>ul {
   font-style: italic;
   list-style-type: none;
+}
+
+@media screen and (max-width: 530px) {
+  #about-popup {
+    width: 360px;
+  }
+  #about-title {
+    margin-right: 80px;
+  }
 }

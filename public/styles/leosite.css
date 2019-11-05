@@ -4,6 +4,7 @@
 :root {
   --mobile480w: 480px;
   --mobile385w: 385px;
+  --mobile360w: 360px;
 }
 
 body {
@@ -55,7 +56,7 @@ body {
 
   overflow: hidden;
   text-align: center;
-  font-size: 120%;
+  font-size: 115%;
 }
 
 .nav-button {
@@ -75,9 +76,9 @@ body {
 /* Change color on hover/mouse-over */
 
 .nav-button:hover {
-  font-size: 125%;
-  width: 85%;
-  height: 85%;
+  font-size: 120%;
+  width: 180px;
+  height: 50px;
   background-image: linear-gradient(-360deg,rgb(25, 23, 110) 3%, rgba(0, 0, 0, 1) 50%);;
   transition: font-size 0.2s, background-image 0.2s, width 0.2s, height 0.2s;
 }
@@ -144,7 +145,7 @@ body {
 #bottom-article-row a {
   font-family: 'Merriweather', serif;
   padding-left: 10px;
-  margin-left: 230px;
+  margin-left: 300px;
 }
 #article-heart {
   width: 40px;
@@ -201,14 +202,12 @@ body {
   color: red;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the navigation links 
-stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .navbar {
     flex-direction: column;
   }
   .nav-button {
-    width: 70%;
+    /* width: 100px; */
   }
   #article-image {
     width: var(--mobile480w);
@@ -234,8 +233,26 @@ stack on top of each other instead of next to each other */
   #bottom-article-row {
     width: var(--mobile385w);
   }
+  #bottom-article-row a {
+    margin-left: 135px;
+  }
   .weekly-container iframe {
     width: var(--mobile385w);
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #article-image {
+    width: var(--mobile360w);
+  }
+  #article-title {
+    width: var(--mobile360w);
+  }
+  #bottom-article-row {
+    width: var(--mobile360w);
+  }
+  .weekly-container iframe {
+    width: var(--mobile360w);
   }
 }
 

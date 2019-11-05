@@ -24,7 +24,7 @@
     </div>
     <div class="navbar">
 
-        <a class="button" href="#popup1">Projects</a>
+        <a class="nav-button" href="#popup1">Projects</a>
         <div id="popup1" class="overlay">
             <div class="popup">
                 <div class="popup-flex-row">
@@ -41,9 +41,9 @@
             </div>
         </div>
 
-        <a class="button" href="./resume">Resume</a>
+        <a class="nav-button" href="./resume">Resume</a>
 
-        <a class="button" href="#popup5">Biography</a>
+        <a class="nav-button" href="#popup5">Biography</a>
         <div id="popup5" class="overlay">
             <div class="popup">
                 <div class="popup-flex-row">
@@ -59,7 +59,7 @@
     </div>
 
     <div class="weekly-container">
-        <span><strong>T</strong>rending JS Article</span>
+        <span><strong>T</strong>rending DEV Article</span>
         <div id="article-container">
             <div id="article-title"><%= articleTitle %></div>
             <img id="article-image" src="<%= articleImageUrl %>"></img>
@@ -67,7 +67,7 @@
                 <img id="article-heart" alt="Likes"
                     src="https://practicaldev-herokuapp-com.freetls.fastly.net/assets/emoji/emoji-one-heart-855b5a6263042e4c9448cf2cb0dd2e201598b77b1e3f1dc041492bc0128d9fb8.png"></img>
                 <div id="article-likes"><%= articleLikes %></div>
-                <a href="<%= articleUrl %>" target="_blank">Read full article on DEV</a>
+                <a href="<%= articleUrl %>" target="_blank">Full post on DEV</a>
             </div>
         </div>
     </div>
@@ -100,9 +100,9 @@
                 alt="Instagram"></img></a>
                     
         </div>
-        <ul id="footer-list">
+        <div class="footer-list">
 
-            <li><a class="footer-links" href="#popup2">What is this site about?</a></li>
+            <a class="footer-links" href="#popup2">What is this site about?</a>
             <div id="popup2" class="overlay">
                 <div class="popup">
                     <div class="popup-flex-row">
@@ -128,7 +128,7 @@
             </div>
 
 
-            <li><a class="footer-links" href="#popup3">Need help with your website?</a></li>
+            <a class="footer-links" href="#popup3">Need help with your website?</a>
             <div id="popup3" class="overlay">
                 <div class="popup">
                     <div class="popup-flex-row">
@@ -145,7 +145,7 @@
                 </div>
             </div>
 
-            <li><a class="footer-links" href="#popup4">Contact Me</a></li>
+            <a class="footer-links" href="#popup4">Contact Me</a>
             <div id="popup4" class="overlay">
                 <div class="popup">
                     <div class="popup-flex-row">
@@ -166,7 +166,7 @@
                     </div>
                 </div>
             </div>
-        </ul>
+        </div>
     </div>
 </body>
 

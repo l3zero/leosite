@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
 
 .overlay {
   display: flex;
@@ -11,7 +11,6 @@
   bottom: 0;
   left: 0;
   right: 0;
-
 
   /* text-align: start; */
   background: rgba(0, 0, 0, 0.7);
@@ -32,7 +31,7 @@
   height: auto;
 }
 #help-popup {
-  width:360px;
+  width: 360px;
 }
 #contact-popup {
   width: 200px;
@@ -47,7 +46,7 @@
 }
 .popup-title {
   color: black;
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
 }
 #about-title {
   margin-right: 330px;
@@ -85,10 +84,10 @@
   overflow: hidden;
   padding: 10px;
 }
-.popup-content>a {
+.popup-content > a {
   text-decoration: none;
 }
-.popup-content>ul {
+.popup-content > ul {
   font-style: italic;
   list-style-type: none;
 }

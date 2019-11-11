@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Bungee|Bungee+Inline|Bungee+Outline|Bungee+Shade|Montserrat|Playfair+Display+SC|Space+Mono|Spectral|Spectral+SC&display=swap");
 body {
   background-color: rgb(0, 1, 6);
+  /* background: url(../images/ep_naturalblack.png); */
 }
 
 * {

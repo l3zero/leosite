@@ -4,36 +4,28 @@ const url = "https://dev.to/api/articles";
 const tagParam = "?tag=javascript"; //for JS articles
 const topParam = "&top=3"; //for top articles in past 7 days
 module.exports = {
-  grabArticle: function(fn) {
-    fetch(`${url}${tagParam}${topParam}`)
-      .then(checkStatus)
-      .then((res) => res.json())
-      .then((json) => {
-        let articleInfo = [];
-        articleInfo.push(json[0].url);
-        articleInfo.push(json[0].title);
-        articleInfo.push(json[0].cover_image.toString());
-        articleInfo.push(json[0].positive_reactions_count);
-        fn(articleInfo);
-      })
-      .catch(function(error) {
-        console.log(JSON.stringify(error));
-        let articleInfo = [];
-        articleInfo.push(
-          "There has been an error retrieving from API. See console for more details"
-        );
-        articleInfo.push(
-          "There has been an error retrieving from API. See console for more details"
-        );
-        articleInfo.push(
-          "There has been an error retrieving from API. See console for more details"
-        );
-        articleInfo.push(
-          "There has been an error retrieving from API. See console for more details"
-        );
-        fn(articleInfo);
-      });
+  grabArticle: async () => {
+    let data, jsonData;
+    try {
+      data = await fetch(`${url}${tagParam}${topParam}`).then(checkStatus);
+      jsonData = await data.json();
+    } catch (error) {
+      console.log(JSON.stringify(error));
+    }
+
+    return jsonData;
+  },
+  convertArticle: (prom) => {
+    let articleInfo = [];
+    prom.then(result => {
+      articleInfo.push(result[0].url);
+      articleInfo.push(result[0].title);
+      articleInfo.push(result[0].cover_image.toString());
+      articleInfo.push(result[0].positive_reactions_count);
+    })
+    return articleInfo;
   }
+
 };
 
 function checkStatus(res) {

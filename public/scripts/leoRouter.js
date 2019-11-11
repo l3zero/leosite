@@ -22,10 +22,7 @@ sqlite.getVideo(db, (vid) => {
 sqlite.closeDB(db);
 
 //Dev API trending article pull
-let articleInfo = []; //Array with url, title, image, likes
-devApi.grabArticle((info) => {
-  articleInfo = [...info];
-});
+let articleInfo = devApi.convertArticle(devApi.grabArticle());
 
 //Index route
 router.get("/", (req, res) => {

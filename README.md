@@ -14,5 +14,7 @@ Upcoming features:<br>
 	Social media feed integration<br>
 </pre>
 
-Thanks for checking my site out! Please message me with any questions, requests or suggestions!
+Thanks for checking my site out! Please message me with any questions, requests or suggestions!<br>
 -Leo
+
+P.S. Feel free to borrow or remix any components / features you find on this site! I learned a lot from other coders on the web so it's only fair one day somebody else will learn from me :)

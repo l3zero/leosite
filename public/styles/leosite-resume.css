@@ -66,18 +66,18 @@ body {
   flex-wrap: wrap;
 }
 
-.blurb-list > div {
+.blurb-list>div {
   color: white;
   font-size: 18px;
   margin-top: 10px;
 }
 
-.blurb-list > div a {
+.blurb-list>div a {
   text-decoration: none;
   color: inherit;
 }
 
-.blurb-list > div a:hover {
+.blurb-list>div a:hover {
   font-size: 112%;
   color: red;
 }
@@ -117,7 +117,7 @@ body {
   color: white;
 }
 
-#grid-skills > div {
+#grid-skills>div {
   display: flex;
   width: 100%;
   height: 25px;
@@ -132,11 +132,7 @@ body {
   display: inherit;
   height: inherit;
   width: 70%;
-  background-image: linear-gradient(
-    -300deg,
-    rgb(126, 132, 218) 3%,
-    rgb(10, 27, 179) 50%
-  );
+  background-image: linear-gradient( -300deg, rgb(126, 132, 218) 3%, rgb(10, 27, 179) 50%);
   -webkit-animation: fill70 1.5s ease-in-out;
   animation: fill70 1.5s ease-in-out;
 }
@@ -145,11 +141,7 @@ body {
   color: white;
   text-align: center;
   font-size: 22px;
-  background-image: repeating-linear-gradient(
-    0deg,
-    black 10%,
-    rgb(7, 6, 82) 300%
-  );
+  background-image: repeating-linear-gradient( 0deg, black 10%, rgb(7, 6, 82) 300%);
   margin-top: 5px;
 }
 
@@ -291,7 +283,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1099px) {
   .wrapper {
     grid-column-gap: 50px;
   }
@@ -311,6 +303,21 @@ body {
     padding-bottom: 20px;
     padding-right: 110px;
   }
+  .tab button {
+    font-size: 20px;
+  }
+  #projects {
+    font-size: 18px;
+  }
+  #projects img {
+    width: 70%;
+  }
+  .main-job-title {
+    font-size: 20px;
+  }
+  .info {
+    font-size: 20px;
+  }
   @-moz-document url-prefix() {
     .right-side {
       margin-top: 80px;
@@ -319,7 +326,7 @@ body {
     }
   }
   #leo-photo {
-    width: 60%;
+    width: 70%;
     height: 45%;
   }
   .tab {
@@ -346,6 +353,9 @@ body {
     padding-bottom: 20px;
     padding-right: 0px;
   }
+  .left-side {
+    padding-left: 0px;
+  }
   @-moz-document url-prefix() {
     .right-side {
       margin-top: 130px;
@@ -359,10 +369,23 @@ body {
   .right-side {
     margin-top: 50px;
     padding-bottom: 20px;
-    padding-right: 0px;
+    padding-right: 10px;
+    padding-left: 0px;
   }
   .left-side {
     padding-left: 0px;
+  }
+  .tab {
+    grid-column-gap: 10px;
+  }
+  .tab button {
+    font-size: 20px;
+  }
+  #projects {
+    font-size: 18px;
+  }
+  #projects img {
+    width: 70%;
   }
   @-moz-document url-prefix() {
     .right-side {
@@ -371,4 +394,31 @@ body {
       padding-right: 0px;
     }
   }
+}
+
+@media screen and (min-width: 1100px) {
+  .right-side {
+    padding-top: 10px;
+    padding-right: 15px;
+    width: 100%;
+  }
+  .wrapper {
+    justify-items: center;
+    padding-left: 0px;
+    grid-column-gap: 20px;
+  }
+  .tab {
+    grid-column-gap: 10px;
+    margin-top: 0px;
+  }
+  #grid-jobs {
+    grid-column-gap: 10%;
+  }
+  /* @-moz-document url-prefix() {
+    .right-side {
+      margin-top: 160px;
+      padding-bottom: 20px;
+      padding-right: 0px;
+    }
+  } */
 }

@@ -1,60 +1,108 @@
 <!DOCTYPE html>
 
 <head>
-    <html lang="en">
-    <title>Error Page</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <lang="en">
+        <title>Error Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
-        body {
-            font-family: 'Luckiest Guy', cursive;
-            background-image: repeating-linear-gradient(5deg, black 50%, rgb(5, 4, 61) 100%);
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
+
+            body {
+                font-family: 'Luckiest Guy', cursive;
+                background-image: repeating-linear-gradient(5deg, black 50%, rgb(5, 4, 61) 100%);
+                /* Safari 4.0 - 8.0 */
+                -webkit-animation: example 800ms ease-in-out infinite;
+                /* Safari 4.0 - 8.0 */
+                animation: example 800ms ease-in-out infinite;
+                /* Activate hardware acceleration for smoother animations */
+                -webkit-transform: translate3d(0, 0, 0);
+                -webkit-backface-visibility: hidden;
+            }
+
             /* Safari 4.0 - 8.0 */
-            -webkit-animation: example 800ms ease-in-out infinite;
-            /* Safari 4.0 - 8.0 */
-            animation: example 800ms ease-in-out infinite;
-            /* Activate hardware acceleration for smoother animations */
-            -webkit-transform: translate3d(0, 0, 0);
-            -webkit-backface-visibility: hidden;
-        }
+            @-webkit-keyframes example {
+                0% {
+                    background-image: repeating-linear-gradient(0deg, rgb(19, 21, 124) 0%, rgb(5, 4, 61) 10%);
+                }
 
-        /* Safari 4.0 - 8.0 */
-        @-webkit-keyframes example {
-            0% { background-image: repeating-linear-gradient(0deg, rgb(19, 21, 124) 0%, rgb(5, 4, 61) 10%);}
-            15% { background-image: repeating-linear-gradient(25deg, black 10%, rgb(5, 4, 61) 20%);}
-            30% { background-image: repeating-linear-gradient(50deg, black 20%, rgb(5, 4, 61) 30%);}
-            45% { background-image: repeating-linear-gradient(75deg, black 30%, rgb(5, 4, 61) 40%);}
-            60% { background-image: repeating-linear-gradient(180deg, black 40%, rgb(5, 4, 61) 50%);}
-            75% { background-image: repeating-linear-gradient(200deg, black 50%, rgb(5, 4, 61) 60%);}
-            90% { background-image: repeating-linear-gradient(225deg, black 60%, rgb(5, 4, 61) 70%);}
-            100% { background-image: repeating-linear-gradient(360deg, black 70%, rgb(5, 4, 61) 80%);}
-        }
+                15% {
+                    background-image: repeating-linear-gradient(25deg, black 10%, rgb(5, 4, 61) 20%);
+                }
 
-        /* Standard syntax */
-        @keyframes example {
-            0% { background-image: repeating-linear-gradient(0deg, rgb(19, 21, 124) 0%, rgb(5, 4, 61) 10%);}
-            15% { background-image: repeating-linear-gradient(25deg, black 10%, rgb(5, 4, 61) 20%);}
-            30% { background-image: repeating-linear-gradient(50deg, black 20%, rgb(5, 4, 61) 30%);}
-            45% { background-image: repeating-linear-gradient(75deg, black 30%, rgb(5, 4, 61) 40%);}
-            60% { background-image: repeating-linear-gradient(180deg, black 40%, rgb(5, 4, 61) 50%);}
-            75% { background-image: repeating-linear-gradient(200deg, black 50%, rgb(5, 4, 61) 60%);}
-            90% { background-image: repeating-linear-gradient(225deg, black 60%, rgb(5, 4, 61) 70%);}
-            100% { background-image: repeating-linear-gradient(360deg, black 70%, rgb(5, 4, 61) 80%);}
-        }
-        
-        p {
-            padding: 200px 0;
-            text-align: center;
-        }
-    </style>
+                30% {
+                    background-image: repeating-linear-gradient(50deg, black 20%, rgb(5, 4, 61) 30%);
+                }
+
+                45% {
+                    background-image: repeating-linear-gradient(75deg, black 30%, rgb(5, 4, 61) 40%);
+                }
+
+                60% {
+                    background-image: repeating-linear-gradient(180deg, black 40%, rgb(5, 4, 61) 50%);
+                }
+
+                75% {
+                    background-image: repeating-linear-gradient(200deg, black 50%, rgb(5, 4, 61) 60%);
+                }
+
+                90% {
+                    background-image: repeating-linear-gradient(225deg, black 60%, rgb(5, 4, 61) 70%);
+                }
+
+                100% {
+                    background-image: repeating-linear-gradient(360deg, black 70%, rgb(5, 4, 61) 80%);
+                }
+            }
+
+            /* Standard syntax */
+            @keyframes example {
+                0% {
+                    background-image: repeating-linear-gradient(0deg, rgb(19, 21, 124) 0%, rgb(5, 4, 61) 10%);
+                }
+
+                15% {
+                    background-image: repeating-linear-gradient(25deg, black 10%, rgb(5, 4, 61) 20%);
+                }
+
+                30% {
+                    background-image: repeating-linear-gradient(50deg, black 20%, rgb(5, 4, 61) 30%);
+                }
+
+                45% {
+                    background-image: repeating-linear-gradient(75deg, black 30%, rgb(5, 4, 61) 40%);
+                }
+
+                60% {
+                    background-image: repeating-linear-gradient(180deg, black 40%, rgb(5, 4, 61) 50%);
+                }
+
+                75% {
+                    background-image: repeating-linear-gradient(200deg, black 50%, rgb(5, 4, 61) 60%);
+                }
+
+                90% {
+                    background-image: repeating-linear-gradient(225deg, black 60%, rgb(5, 4, 61) 70%);
+                }
+
+                100% {
+                    background-image: repeating-linear-gradient(360deg, black 70%, rgb(5, 4, 61) 80%);
+                }
+            }
+
+            p {
+                padding: 200px 0;
+                text-align: center;
+            }
+        </style>
 
 
 </head>
 
 <body>
-    <p style="color: white; font-size: 50px;">THE BROWSER IS BREAKING. WHAT DID YOU DO?!<br>GO <a href="/">BACK</a> NOW</p>
+    <p style="color: white; font-size: 50px;">THE BROWSER IS BREAKING. WHAT DID YOU DO?!<br>GO <a href="/">BACK</a> NOW
+    </p>
 
 
 </body>

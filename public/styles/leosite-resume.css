@@ -66,18 +66,18 @@ body {
   flex-wrap: wrap;
 }
 
-.blurb-list>div {
+.blurb-list > div {
   color: white;
   font-size: 18px;
   margin-top: 10px;
 }
 
-.blurb-list>div a {
+.blurb-list > div a {
   text-decoration: none;
   color: inherit;
 }
 
-.blurb-list>div a:hover {
+.blurb-list > div a:hover {
   font-size: 112%;
   color: red;
 }
@@ -117,7 +117,7 @@ body {
   color: white;
 }
 
-#grid-skills>div {
+#grid-skills > div {
   display: flex;
   width: 100%;
   height: 25px;
@@ -132,7 +132,11 @@ body {
   display: inherit;
   height: inherit;
   width: 70%;
-  background-image: linear-gradient( -300deg, rgb(126, 132, 218) 3%, rgb(10, 27, 179) 50%);
+  background-image: linear-gradient(
+    -300deg,
+    rgb(126, 132, 218) 3%,
+    rgb(10, 27, 179) 50%
+  );
   -webkit-animation: fill70 1.5s ease-in-out;
   animation: fill70 1.5s ease-in-out;
 }
@@ -141,7 +145,11 @@ body {
   color: white;
   text-align: center;
   font-size: 22px;
-  background-image: repeating-linear-gradient( 0deg, black 10%, rgb(7, 6, 82) 300%);
+  background-image: repeating-linear-gradient(
+    0deg,
+    black 10%,
+    rgb(7, 6, 82) 300%
+  );
   margin-top: 5px;
 }
 
@@ -313,10 +321,10 @@ body {
     width: 70%;
   }
   .main-job-title {
-    font-size: 20px;
+    font-size: 19px;
   }
   .info {
-    font-size: 20px;
+    font-size: 18px;
   }
   @-moz-document url-prefix() {
     .right-side {

@@ -2,12 +2,14 @@ const express = require("express"),
   ejs = require("ejs"),
   url = require("url"),
   bodyParser = require("body-parser"),
-  helmet = require("helmet");
+  helmet = require("helmet"),
+  compression = require('compression');
 const leoRouter = require("./public/scripts/leoRouter");
 
 const app = express();
 app.use(express.static("public")); //For serving css, js, imgs..
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(compression());
 app.use(helmet());
 app.use("/", leoRouter);
 

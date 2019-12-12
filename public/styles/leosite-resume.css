@@ -40,7 +40,9 @@ body {
 }
 
 #pos-title {
-  border: 5px ridge rgb(4, 4, 148);
+  /* border: 5px ridge rgb(4, 4, 148); */
+  border-width: 3px;
+  border-style: ridge;
   border-radius: 5px;
 }
 
@@ -66,18 +68,18 @@ body {
   flex-wrap: wrap;
 }
 
-.blurb-list > div {
+.blurb-list>div {
   color: white;
   font-size: 18px;
   margin-top: 10px;
 }
 
-.blurb-list > div a {
+.blurb-list>div a {
   text-decoration: none;
   color: inherit;
 }
 
-.blurb-list > div a:hover {
+.blurb-list>div a:hover {
   font-size: 112%;
   color: red;
 }
@@ -117,7 +119,7 @@ body {
   color: white;
 }
 
-#grid-skills > div {
+#grid-skills>div {
   display: flex;
   width: 100%;
   height: 25px;
@@ -130,13 +132,9 @@ body {
 
 .meter {
   display: inherit;
-  height: inherit;
+  height: 100%;
   width: 70%;
-  background-image: linear-gradient(
-    -300deg,
-    rgb(126, 132, 218) 3%,
-    rgb(10, 27, 179) 50%
-  );
+  background-image: linear-gradient( -300deg, rgb(126, 132, 218) 3%, rgb(69, 10, 179) 50%);
   -webkit-animation: fill70 1.5s ease-in-out;
   animation: fill70 1.5s ease-in-out;
 }
@@ -145,11 +143,7 @@ body {
   color: white;
   text-align: center;
   font-size: 22px;
-  background-image: repeating-linear-gradient(
-    0deg,
-    black 10%,
-    rgb(7, 6, 82) 300%
-  );
+  background-image: repeating-linear-gradient( 0deg, black 10%, rgb(39, 6, 82) 300%);
   margin-top: 5px;
 }
 
@@ -179,7 +173,7 @@ body {
   overflow: hidden;
   margin-top: 10px;
   margin-bottom: 15px;
-  border: 2px solid rgb(4, 4, 148);
+  border: 2px solid rgb(97, 21, 168);
   border-radius: 5px;
 }
 
@@ -208,13 +202,13 @@ body {
 /* Change background color of buttons on hover */
 
 .tab button:hover {
-  background-color: rgba(28, 40, 211, 0.87);
+  background-color: rgba(123, 28, 211, 0.87);
 }
 
 /* Create an active/current tablink class */
 
 .tab button.active {
-  background-color: rgba(16, 26, 173, 0.966);
+  background-color: rgba(72, 11, 141, 0.966);
 }
 
 /* Fade in tabs */
@@ -324,7 +318,7 @@ body {
     font-size: 19px;
   }
   .info {
-    font-size: 18px;
+    font-size: 17px;
   }
   @-moz-document url-prefix() {
     .right-side {

@@ -3,6 +3,9 @@
 <link rel="stylesheet" type="text/css" href="/styles/leosite.css">
 <link rel="stylesheet" type="text/css" href="/styles/leosite-popup.css">
 <link rel="stylesheet" type="text/css" href="/styles/normalize.css">
+<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 <head>
 
@@ -25,7 +28,7 @@
     </div>
     <div class="navbar">
 
-        <a class="nav-button" href="#popup1">Projects</a>
+        <a class="mdc-button--outlined nav-button" href="#popup1"> <span class="mdc-button__label">Projects</span></a>
         <div id="popup1" class="overlay">
             <div class="popup" id="project-popup">
                 <div class="popup-flex-row">
@@ -42,9 +45,9 @@
             </div>
         </div>
 
-        <a class="nav-button" href="./resume">Resume</a>
+        <a class="mdc-button--outlined nav-button" href="./resume">Resume</a>
 
-        <a class="nav-button" href="#popup5">Biography</a>
+        <a class="mdc-button--outlined nav-button" href="#popup5">Biography</a>
         <div id="popup5" class="overlay">
             <div class="popup">
                 <div class="popup-flex-row">
@@ -60,7 +63,7 @@
     </div>
 
     <div class="weekly-container">
-        <span><strong>T</strong>rending DEV Article</span>
+        <span class="mdc-button--outlined"><strong>T</strong>rending DEV Article</span>
         <div id="article-container">
             <div id="article-title"><%= articleTitle %></div>
             <img id="article-image" src="<%= articleImageUrl %>"></img>
@@ -74,7 +77,7 @@
     </div>
 
     <div class="weekly-container">
-        <span><strong>V</strong>ideo of the Week</span>
+        <span class="mdc-button--outlined"><strong>V</strong>ideo of the Week</span>
         <div id="video-container">
             <iframe width="560" height="250" src="<%= videoUrl %>" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;
             picture-in-picture"></iframe>
@@ -82,7 +85,7 @@
     </div>
 
     <div class="weekly-container">
-        <span><strong>S</strong>ong of the Week</span>
+        <span class="mdc-button--outlined"><strong>S</strong>ong of the Week</span>
         <div id="audio-container">
             <iframe width="560" height="250" src="<%= songUrl %>" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;
             picture-in-picture"></iframe>

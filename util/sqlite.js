@@ -1,6 +1,6 @@
 //HANDLES ALL SQLITE3 FUNCTIONALITY
 const sqlite3 = require('sqlite3').verbose();
-// var jsdoc = require('jsdoc'); //Change comments to JSDoc syntax
+
 module.exports = {
     //Sets up local SQlite DB and returns it
     setup: function () {

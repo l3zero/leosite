@@ -1,14 +1,8 @@
 const express = require("express");
 const router = express.Router();
 const path = require("path");
-const sqlite = require("./sqlite");
-const devApi = require("./devapi");
-
-// If I need middleware for this specific router, use here
-// router.use(function timeLog (req, res, next) {
-//   console.log('Time: ', Date.now())
-//   next()
-// })
+const sqlite = require("../util/sqlite");
+const devApi = require("../util/devapi");
 
 //Setup DB and retrieve info
 let songUrl, videoUrl;
@@ -54,7 +48,6 @@ router.get("/resume/:file(*)", (req, res) => {
   let file = req.params.file;
   let fileLocation = path.join("./public/images", file);
   res.download(fileLocation, file, (err) => {
-    // console.log(`Error downloading PDF file from ${fileLocation}`);
     res.render("error", (err, html) => {
       res.status(404);
       res.send(html);

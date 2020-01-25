@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 
 <link rel="stylesheet" type="text/css" href="/styles/leosite.css">
-<link rel="stylesheet" type="text/css" href="/styles/leosite-popup.css">
-<link rel="stylesheet" type="text/css" href="/styles/normalize.css">
+<!-- <link rel="stylesheet" type="text/css" href="/styles/normalize.css"> -->
 <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
 <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -20,47 +19,29 @@
     <p class="browsehappy">This site does not support Internet explorer...sorry not sorry.</p>
     <![endif]-->
 
-    <div class="header" id="header">
-
-        <h1>
-            I am <span class="leo">Leo</span>,<br>a <span class="software">Software</span> Guy.</span>
-        </h1>
-    </div>
-    <div class="navbar">
-
-        <a class="mdc-button--outlined nav-button" href="#popup1"> <span class="mdc-button__label">Projects</span></a>
-        <div id="popup1" class="overlay">
-            <div class="popup" id="project-popup">
-                <div class="popup-flex-row">
-                    <div class="popup-title" id="project-title">
-                        <h2>Projects</h2>
-                    </div>
-                    <a class="close" href="#header">&times;</a>
-                </div>
-                <div class="popup-content">
-                    <a href="#">Coming Soon</a><br><br>
-                    <a href="#">Coming Soon</a><br><br>
+    <div class="header">
+        <div id="banner">
+            <span id="ly-icon"><a href="/">LY</a></span>
+            <div class="navbar">
+                <a class="nav-button">Projects</a>
+                <div class="panel">
+                    <a href="#">Coming Soon</a><br>
+                    <a href="#">Coming Soon</a><br>
                     <a href="#">Coming Soon</a>
                 </div>
-            </div>
-        </div>
-
-        <a class="mdc-button--outlined nav-button" href="./resume">Resume</a>
-
-        <a class="mdc-button--outlined nav-button" href="#popup5">Biography</a>
-        <div id="popup5" class="overlay">
-            <div class="popup">
-                <div class="popup-flex-row">
-                    <div class="popup-title" style="margin-right: 100px;">
-                        <h2>My Biography</h2>
-                    </div>
-                    <a class="close" href="#header">&times;</a>
+                <a class="nav-button" href="./resume">Resume</a>
+                <a class="nav-button">My Story</a>
+                <div class="panel">
+                    Working on my story using <a
+                        href="https://glitch.com/culture/how-to-build-a-scrollytelling-map-using-mapbox-and-glitch/?utm_content=buffer0beb0&utm_medium=social&utm_source=linkedin&utm_campaign=social"
+                        target="_blank">this</a>.
                 </div>
-                <div class="popup-content">Still thinking of what to write :)</div>
             </div>
-
         </div>
+
+        <div id="header-intro">I am Leo,<br>a <span class="software">Software</span> Guy.</div>
     </div>
+
 
     <div class="weekly-container">
         <span class="mdc-button--outlined"><strong>T</strong>rending DEV Article</span>
@@ -71,7 +52,7 @@
                 <img id="article-heart" alt="Likes"
                     src="https://practicaldev-herokuapp-com.freetls.fastly.net/assets/emoji/emoji-one-heart-855b5a6263042e4c9448cf2cb0dd2e201598b77b1e3f1dc041492bc0128d9fb8.png"></img>
                 <div id="article-likes"><%= articleLikes %></div>
-                <a href="<%= articleUrl %>" target="_blank">Full post on DEV</a>
+                <a href="<%= articleUrl %>" target="_blank">Full article</a>
             </div>
         </div>
     </div>
@@ -106,78 +87,59 @@
         </div>
         <div class="footer-list">
 
-            <a class="footer-links" href="#popup2">What is this site about?</a>
-            <div id="popup2" class="overlay">
-                <div class="popup" id="about-popup">
-                    <div class="popup-flex-row">
-                        <div class="popup-title" id="about-title">
-                            <h2>About this site</h2>
-                        </div>
-                        <a class="close" href="#footer-list">&times;</a>
-                    </div>
-                    <div class="popup-content">
-                        This is my personal hub that I built from scratch.<br>I enjoy experimenting here so check back
-                        for new updates.<br><br>
-                        Things I picked up while working on this site:<br>
-                        <ul>
-                            <li>Node / NPM</li>
-                            <li>API Patterns</li>
-                            <li>SQLite3</li>
-                            <li>CSS3 / Flexbox / Grid / Animations</li>
-                            <li>Responsive Design</li>
-                            <li>HTML5</li>
-                        </ul>
-                    </div>
-                </div>
+            <a class="nav-button">About</a>
+            <div class="panel">
+                This is my personal hub that I built from scratch.<br>I enjoy experimenting here so check back for new
+                updates.<br>Things I picked up while working on this site:
+                <ul>
+                    <li>NodeJS / NPM</li>
+                    <li>API Patterns</li>
+                    <li>SQLite3</li>
+                    <li>CSS3 / Flexbox / Grid / Animations</li>
+                    <li>Responsive Design</li>
+                    <li>HTML5</li>
+                </ul>
             </div>
 
-
-            <a class="footer-links" href="#popup3">Need help with your website?</a>
-            <div id="popup3" class="overlay">
-                <div class="popup" id="help-popup">
-                    <div class="popup-flex-row">
-                        <div class="popup-title" id="help-title">
-                            <h2>Let's collab</h2>
-                        </div>
-                        <a class="close" href="#footer-list">&times;</a>
-                    </div>
-                    <div class="popup-content">
-                        Things I can help you with:<br>
-                        <ul>
-                            <li>App / API Integrations</li>
-                            <li>App Design</li>
-                            <li>Server-side Javascript</li>
-                            <li>Responsive Design</li>
-                            <li>UI Components</li>
-                            <li>Requirements</li>
-                        </ul>
-                    </div>
-                </div>
+            <a class="nav-button">Collaboration</a>
+            <div class="panel">
+                I can help you with a range of problems, including:
+                <ul>
+                    <li>App / API Integrations</li>
+                    <li>App Design / Architecture</li>
+                    <li>Server-side Javascript</li>
+                    <li>Responsive Design</li>
+                    <li>UI Components</li>
+                    <li>Requirements</li>
+                </ul>
             </div>
 
-            <a class="footer-links" href="#popup4">Contact Me</a>
-            <div id="popup4" class="overlay">
-                <div class="popup" id="contact-popup">
-                    <div class="popup-flex-row">
-                        <div class="popup-title" id="contact-title">
-                            <h2>Contact Me</h2>
-                        </div>
-                        <a class="close" href="#footer-list">&times;</a>
-                    </div>
-                    <div class="popup-content">
-
-                        <a href="mailto:leonid.yanchis@gmail.com?Subject=Hello%20Leonid" target="_top"
-                            style="text-decoration: none;">Email Me</a><br><br>
-                        <a href="tel:+1-718-629-7347" style="text-decoration: none;">Call
-                            Me</a><br><br>
-                        <a href="https://linkedin.com/in/leonidyanchis/" target="_blank"
-                            style="text-decoration: none;">My LinkedIn</a>
-
-                    </div>
-                </div>
+            <a class="nav-button">Contact</a>
+            <div class="panel">
+                <a href="mailto:leonid.yanchis@gmail.com?Subject=Hello%20Leonid" target="_top"
+                    style="text-decoration: none;">Email Me</a><br>
+                <a href="https://linkedin.com/in/leonidyanchis/" target="_blank"
+                    style="text-decoration: none;">LinkedIn</a>
             </div>
         </div>
     </div>
+
+    <script>
+        let acc = document.getElementsByClassName("nav-button");
+        let i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                let panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide|Orbitron|Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lacquer|Lobster|Permanent+Marker&display=swap");
+
+:root {
+  --mobile480w: 480px;
+  --mobile385w: 385px;
+  --mobile360w: 360px;
+  --vw50: 50vw;
+  --vw100: 100vw;
+  --vh90: 90vh;
+  --vh100: 90vh;
+}
+
+body {
+  background-color: black;
+  font-family: "Orbitron", sans-serif;
+  background: url(../images/retro.jpg) round;
+  background-size: cover;
+}
+
+/* Ensures width and height of boxes include padding */
+
+* {
+  box-sizing: border-box;
+}
+
+#banner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  /* width: 90vw; */
+}
+#ly-icon {
+  /* display: inline-block; */
+  color: black;
+  font-size: 30px;
+  font-family: "Lobster", cursive;
+  padding: 8px;
+  padding-top: 5px;
+  margin: 8px;
+  border: 5px black groove;
+  border-radius: 30px;
+}
+#ly-icon a:link,
+#ly-icon a:visited {
+  text-decoration: none;
+  color: black;
+}
+.navbar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-size: 20px;
+  margin-left: 80%;
+  padding-top: 8px;
+}
+.nav-button {
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  background: none;
+  color: black;
+  transition: color 0.2s;
+  transition-delay: 0.1s;
+}
+
+.nav-button:hover {
+  font-size: 22px;
+  color: rgb(11, 14, 139);
+  transition: font-size 0.2s, color 0.2s;
+}
+
+.active {
+  color: rgb(11, 14, 139);
+}
+
+.panel {
+  text-align: center;
+  color: rgb(11, 14, 139);
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding-top: 5px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.panel > a {
+  color: rgb(11, 14, 139);
+  text-decoration: none;
+}
+
+.weekly-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 20px;
+  /* min-height: 100vh; */
+  /* min-width: var(--vw50); */
+}
+
+.weekly-container span {
+  color: black;
+  border: none;
+}
+
+.weekly-container iframe {
+  width: var(--vw50);
+  height: 45vh;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 4px 4px 14px #000;
+  -webkit-box-shadow: 4px 4px 14px #000;
+  box-shadow: 4px 4px 14px #000;
+}
+
+#article-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  /* justify-content: center; */
+  color: black;
+  padding-bottom: 60px;
+}
+
+#article-title {
+  font-family: "Merriweather", serif;
+  font-size: 30px;
+  width: 560px;
+  padding-top: 15px;
+  /*To get shortened article title*/
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#article-image {
+  width: var(--vw50);
+  height: 45vh;
+  border-radius: 12px;
+  margin-top: 10px;
+  /* margin-bottom: 10px; */
+}
+
+#bottom-article-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-self: center;
+  justify-content: flex-start;
+  width: var(--vw50);
+}
+
+#article-container a:link,
+#article-container a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+#article-heart {
+  width: 35px;
+  height: 35px;
+}
+
+#article-likes {
+  width: 35px;
+  height: 35px;
+  color: white;
+  font-size: 15px;
+  padding-top: 7px;
+  padding-left: 10px;
+}
+
+#video-container {
+  padding-bottom: 40px;
+}
+
+#audio-container {
+  /* padding-top: 5px; */
+}
+
+.panel {
+  text-align: center;
+  /* color: rgb(11, 14, 139); */
+  color: black;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding-top: 5px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.panel > a {
+  color: rgb(11, 14, 139);
+  text-decoration: none;
+}

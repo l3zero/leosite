@@ -22,7 +22,7 @@ module.exports = {
       articleInfo.push(result[0].url);
       articleInfo.push(result[0].title);
 
-      (result[0].cover_image == undefined) ? articleInfo.push('./images/no-img.jpeg') : articleInfo.push(result[0].cover_image.toString());
+      (result[0].cover_image == undefined) ? articleInfo.push('../images/no-img.jpg') : articleInfo.push(result[0].cover_image.toString());
 
       articleInfo.push(result[0].positive_reactions_count);
     }).catch((error) => {

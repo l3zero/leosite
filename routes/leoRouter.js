@@ -20,25 +20,29 @@ let articleInfo = devApi.convertArticle(devApi.grabArticle());
 
 //Index route
 router.get("/", (req, res) => {
-  res.render(
-    "index",
-    {
-      songUrl: `${songUrl}`,
-      videoUrl: `${videoUrl}`,
-      articleTitle: `${articleInfo[1]}`,
-      articleImageUrl: `${articleInfo[2]}`,
-      articleUrl: `${articleInfo[0]}`,
-      articleLikes: `${articleInfo[3]}`
-    },
-    (err, html) => {
-      res.set("Cache-Control", ["public", "max-age=86400"]);
-      res.send(html);
-    }
+  res.render("index", (err, html) => {
+    res.set("Cache-Control", ["public", "max-age=86400"]);
+    res.send(html);
+  }
   );
 });
 //CV Route
 router.get("/resume", (req, res) => {
   res.render("resume", (err, html) => {
+    res.set("Cache-Control", ["public", "max-age=86400"]);
+    res.send(html);
+  });
+});
+//Content Route
+router.get("/content", (req, res) => {
+  res.render("content", {
+    songUrl: `${songUrl}`,
+    videoUrl: `${videoUrl}`,
+    articleTitle: `${articleInfo[1]}`,
+    articleImageUrl: `${articleInfo[2]}`,
+    articleUrl: `${articleInfo[0]}`,
+    articleLikes: `${articleInfo[3]}`
+  }, (err, html) => {
     res.set("Cache-Control", ["public", "max-age=86400"]);
     res.send(html);
   });

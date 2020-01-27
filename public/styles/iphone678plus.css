@@ -1,0 +1,58 @@
+/* Iphone 678plus */
+
+@media screen and (max-width: 414px) and (max-height: 736px) {
+  #header-intro {
+    font-size: 30px;
+    padding-top: 30%;
+  }
+  .footer-list {
+    padding-top: 30%;
+  }
+  .navbar {
+    padding-left: 160px;
+  }
+  .nav-button {
+    font-size: 22px;
+  }
+  .nav-button:hover {
+    font-size: 23px;
+  }
+  #ly-icon {
+    font-size: 40px;
+  }
+  .panel {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 736px) and (max-height: 414px) {
+  #header-intro {
+    font-size: 30px;
+    padding-top: 3%;
+  }
+  .footer-list {
+    padding-top: 10%;
+  }
+  .footer-ribbon {
+    padding-top: 15px;
+  }
+  .footer-ribbon img {
+    width: 60px;
+    height: 50px;
+  }
+  .navbar {
+    padding-left: 530px;
+  }
+  .nav-button {
+    font-size: 17px;
+  }
+  .nav-button:hover {
+    font-size: 18px;
+  }
+  #ly-icon {
+    font-size: 25px;
+  }
+  .panel {
+    font-size: 15px;
+  }
+}

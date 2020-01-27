@@ -21,7 +21,6 @@ let articleInfo = devApi.convertArticle(devApi.grabArticle());
 //Index route
 router.get("/", (req, res) => {
   res.render("index", (err, html) => {
-    res.set("Cache-Control", ["public", "max-age=86400"]);
     res.send(html);
   }
   );

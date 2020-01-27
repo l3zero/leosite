@@ -12,7 +12,7 @@
 }
 
 body {
-  background-color: black;
+  /* background-color: black; */
   font-family: "Orbitron", sans-serif;
   background: url(../images/retro.jpg) round;
   background-size: cover;
@@ -72,17 +72,17 @@ body {
 
 .nav-button:hover {
   font-size: 22px;
-  color: rgb(11, 14, 139);
+  color: white;
   transition: font-size 0.2s, color 0.2s;
 }
 
 .active {
-  color: rgb(11, 14, 139);
+  color: white;
 }
 
 .panel {
   text-align: center;
-  color: rgb(11, 14, 139);
+  color: white;
   font-size: 15px;
   letter-spacing: 1px;
   padding-top: 5px;
@@ -92,7 +92,7 @@ body {
 }
 
 .panel > a {
-  color: rgb(11, 14, 139);
+  color: black;
   text-decoration: none;
 }
 
@@ -118,6 +118,7 @@ body {
 .weekly-container iframe {
   width: var(--vw50);
   height: 45vh;
+  opacity: 0.9;
   margin-top: 15px;
   margin-bottom: 10px;
   -moz-border-radius: 12px;
@@ -135,7 +136,7 @@ body {
   align-items: center;
   /* justify-content: center; */
   color: black;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 
 #article-title {
@@ -192,21 +193,4 @@ body {
 
 #audio-container {
   /* padding-top: 5px; */
-}
-
-.panel {
-  text-align: center;
-  /* color: rgb(11, 14, 139); */
-  color: black;
-  font-size: 15px;
-  letter-spacing: 1px;
-  padding-top: 5px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-
-.panel > a {
-  color: rgb(11, 14, 139);
-  text-decoration: none;
 }

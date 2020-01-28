@@ -1,8 +1,8 @@
 /* Iphone X */
 
-@media screen and (max-width: 375px) and (max-height: 812px) {
+@media screen and (width: 375px) and (height: 812px) {
   #header-intro {
-    font-size: 25px;
+    font-size: 27px;
     padding-top: 30%;
   }
   .footer-list {
@@ -18,14 +18,14 @@
     font-size: 21px;
   }
   #ly-icon {
-    font-size: 40px;
+    font-size: 35px;
   }
   .panel {
     font-size: 18px;
   }
 }
 
-@media screen and (max-width: 812px) and (max-height: 375px) {
+@media screen and (width: 812px) and (height: 375px) {
   #header-intro {
     font-size: 30px;
     padding-top: 3%;

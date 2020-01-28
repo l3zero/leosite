@@ -1,12 +1,12 @@
-/* Galaxy S5 */
+/* Galaxy S9 */
 
-@media screen and (width: 360px) and (height: 640px) {
+@media screen and (width: 360px) and (height: 740px) {
     #header-intro {
-        font-size: 25px;
+        font-size: 27px;
         padding-top: 25%;
     }
     .footer-list {
-        padding-top: 30%;
+        padding-top: 70%;
     }
     .navbar {
         padding-left: 190px;
@@ -25,20 +25,20 @@
         font-size: 19px;
     }
     #ly-icon {
-        font-size: 27px;
+        font-size: 30px;
     }
     .panel {
         font-size: 13px;
     }
 }
 
-@media screen and (width: 640px) and (height: 360px) {
+@media screen and (width: 740px) and (height: 360px) {
     #header-intro {
         font-size: 30px;
         padding-top: 3%;
     }
     .footer-list {
-        padding-top: 5%;
+        padding-top: 4%;
     }
     .footer-ribbon {
         padding-top: 15px;
@@ -48,7 +48,7 @@
         height: 50px;
     }
     .navbar {
-        padding-left: 440px;
+        padding-left: 530px;
     }
     .nav-button {
         font-size: 16px;
@@ -57,7 +57,7 @@
         font-size: 17px;
     }
     #ly-icon {
-        font-size: 30px;
+        font-size: 25px;
     }
     .panel {
         font-size: 13px;

@@ -1,21 +1,26 @@
 @import url("https://fonts.googleapis.com/css?family=Audiowide|Orbitron|Press+Start+2P&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lacquer|Lobster|Permanent+Marker&display=swap");
-:root {
-  --vw50: 50vw;
-  --vw100: 100vw;
-  --vh90: 90vh;
-  --vh100: 90vh;
-}
+/* :root {} */
 
 body {
-  /* background-color: black; */
+  height: 100%;
   font-family: "Orbitron", sans-serif;
   background: url(../images/retro.jpg);
-  background-repeat: no-repeat;
+  background-repeat: round;
   background-size: cover;
-  height: 100vh;
-  /* width: 90vw; */
-  /* height: 100vh; */
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr; */
+  /* grid-auto-rows: minmax(100px, auto); */
+  grid-template-areas: "headicon . nav" "intro intro intro" ". foot .";
+  grid-column-gap: 10px;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
 }
 
 /* Ensures width and height of boxes include padding */
@@ -24,43 +29,17 @@ body {
   box-sizing: border-box;
 }
 
-.header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-#header-intro {
-  color: white;
-  font-size: 90px;
-  font-family: "Press Start 2P", cursive;
-  padding-top: 5%;
-  letter-spacing: 10px;
-  text-align: center;
-  /* border: 1px solid red; */
-}
-
-#banner {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: var(--vw100);
-}
-
 #ly-icon {
-  /* display: inline-block; */
-  color: black;
-  font-size: 60px;
+  grid-area: headicon;
+  justify-self: start;
+  padding: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
   font-family: "Lobster", cursive;
-  border: 5px black groove;
+  font-size: 40px;
+  color: black;
+  border: 2px black groove;
   border-radius: 50px;
-  padding: 8px;
-  padding-top: 5px;
-  margin: 8px;
 }
 
 #ly-icon a:link, #ly-icon a:visited {
@@ -69,16 +48,17 @@ body {
 }
 
 .navbar {
+  grid-area: nav;
+  justify-self: end;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: center;
   overflow: hidden;
-  font-size: 30px;
-  /* margin-left: 80vw; */
-  padding-left: 83vw;
-  padding-top: 8px;
+  padding-right: 8px;
+  padding-top: 15px;
+  font-size: 23px;
 }
 
 .nav-button {
@@ -93,7 +73,7 @@ body {
 }
 
 .nav-button:hover {
-  font-size: 60%;
+  font-size: 24px;
   color: red;
   transition: font-size 0.2s, color 0.2s;
 }
@@ -102,16 +82,25 @@ body {
   color: red;
 }
 
-.panel {
+.header-intro {
+  grid-area: intro;
+  padding-top: 7%;
+  font-family: "Press Start 2P", cursive;
+  font-size: 80px;
+  letter-spacing: 10px;
   text-align: center;
-  /* color: rgb(11, 14, 139); */
-  color: black;
-  font-size: 15px;
+  color: white;
+}
+
+.panel {
+  font-size: 16px;
   letter-spacing: 1px;
   padding-top: 5px;
   max-height: 0;
+  text-align: center;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+  color: black;
 }
 
 .panel>a {
@@ -141,6 +130,16 @@ ration for smoother animations */
 }
 
 .footer {
+  grid-area: foot;
+  padding-top: 27%;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  font-size: 23px;
+  text-decoration: none;
   text-align: center;
   color: black;
 }
@@ -150,26 +149,13 @@ ration for smoother animations */
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 .footer-ribbon img {
   width: 70px;
   height: 60px;
   padding: 5px;
-  /* background-color: rgb(0, 2, 12); */
-}
-
-.footer-list {
-  /* list-style: none;
-  text-decoration: none; */
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  padding-top: 10%;
-  font-size: 30px;
-  color: black;
-  text-decoration: none;
 }
 
 /* Animate Background Image */
@@ -189,5 +175,173 @@ ration for smoother animations */
   }
   100% {
     background-position: 100% 50%;
+  }
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 2000px) {
+  .footer {
+    padding-top: 40%;
+  }
+  .header-intro {
+    padding-top: 8%;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .footer {
+    padding-top: 50%;
+  }
+  .header-intro {
+    padding-top: 10%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .footer {
+    padding-top: 70%;
+  }
+  .header-intro {
+    font-size: 70px;
+    padding-top: 13%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    padding-top: 80%;
+  }
+  .header-intro {
+    font-size: 60px;
+    padding-top: 20%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer {
+    padding-top: 100%;
+  }
+  .header-intro {
+    font-size: 50px;
+    padding-top: 30%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    padding-top: 150%;
+  }
+  .header-intro {
+    font-size: 40px;
+    padding-top: 35%;
+  }
+  .footer-ribbon img {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer {
+    padding-top: 120%;
+  }
+  .header-intro {
+    font-size: 40px;
+    padding-top: 35%;
+  }
+  .nav-button {
+    font-size: 20px;
+  }
+  .nav-button:hover {
+    font-size: 21px;
+  }
+  #ly-icon {
+    font-size: 30px;
+  }
+  .panel {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .footer {
+    padding-top: 130%;
+  }
+  .header-intro {
+    font-size: 30px;
+    padding-top: 35%;
+  }
+  .nav-button {
+    font-size: 18px;
+  }
+  .nav-button:hover {
+    font-size: 19px;
+  }
+  #ly-icon {
+    font-size: 25px;
+  }
+  .panel {
+    font-size: 12px;
+  }
+  .footer-ribbon img {
+    width: 50px;
+    height: 40px;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .footer {
+    padding-top: 150%;
+  }
+  .header-intro {
+    font-size: 25px;
+    padding-top: 30%;
+  }
+  .nav-button {
+    font-size: 16px;
+  }
+  .nav-button:hover {
+    font-size: 17px;
+  }
+  #ly-icon {
+    font-size: 20px;
+  }
+  .panel {
+    font-size: 12px;
+  }
+  .footer-ribbon img {
+    width: 40px;
+    height: 45px;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer {
+    padding-top: 150%;
+  }
+  .header-intro {
+    font-size: 25px;
+    padding-top: 30%;
+  }
+  .nav-button {
+    font-size: 16px;
+  }
+  .nav-button:hover {
+    font-size: 17px;
+  }
+  #ly-icon {
+    font-size: 20px;
+  }
+  .panel {
+    font-size: 12px;
+  }
+  .footer-ribbon img {
+    width: 35px;
+    height: 40px;
+    padding: 5px;
   }
 }

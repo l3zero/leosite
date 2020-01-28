@@ -1,0 +1,129 @@
+/* Laptops & hi-res */
+
+@media screen and (min-width: 2560px) and (min-height: 768px) {
+    #header-intro {
+        font-size: 100px;
+        padding-top: 5%;
+    }
+    .footer-list {
+        padding-top: 9%;
+    }
+    .navbar {
+        padding-left: 2200px;
+    }
+    .footer-ribbon {
+        padding-top: 15px;
+    }
+    .footer-ribbon img {
+        width: 100px;
+        height: 90px;
+    }
+    .nav-button {
+        font-size: 35px;
+    }
+    .nav-button:hover {
+        font-size: 36px;
+    }
+    #ly-icon {
+        font-size: 90px;
+    }
+    .panel {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1440px) and (max-height: 900px) {
+    #header-intro {
+        font-size: 80px;
+        padding-top: 5%;
+    }
+    .footer-list {
+        padding-top: 9%;
+    }
+    .navbar {
+        padding-left: 1080px;
+    }
+    .footer-ribbon {
+        padding-top: 15px;
+    }
+    .footer-ribbon img {
+        width: 90px;
+        height: 80px;
+    }
+    .nav-button {
+        font-size: 35px;
+    }
+    .nav-button:hover {
+        font-size: 36px;
+    }
+    #ly-icon {
+        font-size: 80px;
+    }
+    .panel {
+        font-size: 25px;
+    }
+}
+
+@media screen and (width: 1366px) and (min-height: 760px) {
+    #header-intro {
+        font-size: 80px;
+        padding-top: 5%;
+    }
+    .footer-list {
+        padding-top: 5%;
+    }
+    .navbar {
+        padding-left: 1000px;
+    }
+    .footer-ribbon {
+        padding-top: 15px;
+    }
+    .footer-ribbon img {
+        width: 80px;
+        height: 70px;
+    }
+    .nav-button {
+        font-size: 30px;
+    }
+    .nav-button:hover {
+        font-size: 31px;
+    }
+    #ly-icon {
+        font-size: 60px;
+    }
+    .panel {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (max-height: 768px) {
+    #header-intro {
+        font-size: 60px;
+        padding-top: 5%;
+    }
+    .footer-list {
+        padding-top: 9%;
+    }
+    .navbar {
+        padding-left: 780px;
+    }
+    .footer-ribbon {
+        padding-top: 15px;
+    }
+    .footer-ribbon img {
+        width: 70px;
+        height: 60px;
+    }
+    .nav-button {
+        font-size: 20px;
+    }
+    .nav-button:hover {
+        font-size: 21px;
+    }
+    #ly-icon {
+        font-size: 40px;
+    }
+    .panel {
+        font-size: 15px;
+    }
+}

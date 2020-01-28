@@ -1,7 +1,20 @@
 <!DOCTYPE html>
 
 <link rel="stylesheet" type="text/css" href="/styles/leosite-content.css">
-<!-- <link rel="stylesheet" type="text/css" href="/styles/normalize.css"> -->
+<link rel="stylesheet" type="text/css" href="/styles/normalize.css">
+<!-- <link rel="stylesheet" type="text/css" href="/styles/ipadPro.css">
+<link rel="stylesheet" type="text/css" href="/styles/ipad.css">
+<link rel="stylesheet" type="text/css" href="/styles/iphonex.css">
+<link rel="stylesheet" type="text/css" href="/styles/iphone678plus.css">
+<link rel="stylesheet" type="text/css" href="/styles/iphone678.css">
+<link rel="stylesheet" type="text/css" href="/styles/iphone5se.css">
+<link rel="stylesheet" type="text/css" href="/styles/pixel2xl.css">
+<link rel="stylesheet" type="text/css" href="/styles/pixel2.css">
+<link rel="stylesheet" type="text/css" href="/styles/pixel3.css">
+<link rel="stylesheet" type="text/css" href="/styles/pixel3xl.css">
+<link rel="stylesheet" type="text/css" href="/styles/laptopsAndHires.css">
+<link rel="stylesheet" type="text/css" href="/styles/galaxys5.css">
+<link rel="stylesheet" type="text/css" href="/styles/galaxys9.css"> -->
 
 <head>
 
@@ -12,73 +25,72 @@
 </head>
 
 <body>
-    <!--[if IE]>
+    <div class="wrapper">
+        <!--[if IE]>
     <p class="browsehappy">This site does not support Internet explorer...sorry not sorry.</p>
     <![endif]-->
-    <div id="banner">
-        <span id="ly-icon"><a href="/">LY</a></span>
+        <div id="ly-icon"><a href="/">LY</a></div>
         <div class="navbar">
             <a class="nav-button">Projects</a>
             <div class="panel">
-                <a href="https://github.com/kRyM1337/leo-weather" target="_blank">Weather</a><br>
-                <a href="#">Coming Soon</a><br>
-                <a href="#">Coming Soon</a>
+                <a href="https://github.com/kRyM1337/leo-weather" target="_blank">Weather</a>
             </div>
-            <a class="nav-button">My Story</a>
-            <div class="panel">
-                Working on my story using <a
-                    href="https://glitch.com/culture/how-to-build-a-scrollytelling-map-using-mapbox-and-glitch/?utm_content=buffer0beb0&utm_medium=social&utm_source=linkedin&utm_campaign=social"
-                    target="_blank"><strong>this</strong></a>
-            </div>
+
             <a class="nav-button" href="./resume">Resume</a>
-
-        </div>
-    </div>
-
-
-    <div class="weekly-container">
-        <span>Trending DEV Article</span>
-        <div id="article-container">
-            <div id="article-title"><%= articleTitle %></div>
-            <a href="<%= articleUrl %>" target="_blank"> <img id="article-image" src="<%= articleImageUrl %>"></img></a>
-            <div id="bottom-article-row">
-                <img id="article-heart" alt="Likes"
-                    src="https://practicaldev-herokuapp-com.freetls.fastly.net/assets/emoji/emoji-one-heart-855b5a6263042e4c9448cf2cb0dd2e201598b77b1e3f1dc041492bc0128d9fb8.png"></img>
-                <div id="article-likes"><strong><%= articleLikes %></strong></div>
+            <a class="nav-button">Story</a>
+            <div class="panel">
+                Coming <a
+                    href="https://glitch.com/culture/how-to-build-a-scrollytelling-map-using-mapbox-and-glitch/?utm_content=buffer0beb0&utm_medium=social&utm_source=linkedin&utm_campaign=social"
+                    target="_blank"><strong>soon</strong></a>
             </div>
         </div>
 
 
-        <span>Video of the Week</span>
-        <div id="video-container">
-            <iframe src="<%= videoUrl %>" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;
+
+        <div class="weekly-container">
+            <span>Trending DEV Article</span>
+            <div id="article-container">
+                <div id="article-title"><%= articleTitle %></div>
+                <a href="<%= articleUrl %>" target="_blank"> <img id="article-image"
+                        src="<%= articleImageUrl %>"></img></a>
+                <div id="bottom-article-row">
+                    <img id="article-heart" alt="Likes"
+                        src="https://practicaldev-herokuapp-com.freetls.fastly.net/assets/emoji/emoji-one-heart-855b5a6263042e4c9448cf2cb0dd2e201598b77b1e3f1dc041492bc0128d9fb8.png"></img>
+                    <div id="article-likes"><strong><%= articleLikes %></strong></div>
+                </div>
+            </div>
+
+
+            <span>Video of the Week</span>
+            <div id="video-container">
+                <iframe src="<%= videoUrl %>" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;
             picture-in-picture"></iframe>
+            </div>
+
+            <span>Song of the Week</span>
+            <div id="audio-container">
+                <iframe src="<%= songUrl %>" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;
+            picture-in-picture"></iframe>
+            </div>
         </div>
 
-        <span>Song of the Week</span>
-        <div id="audio-container">
-            <iframe src="<%= songUrl %>" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;
-            picture-in-picture"></iframe>
-        </div>
+        <script>
+            let acc = document.getElementsByClassName("nav-button");
+            let i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    let panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
     </div>
-
-    <script>
-        let acc = document.getElementsByClassName("nav-button");
-        let i;
-
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                let panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
-                } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                }
-            });
-        }
-    </script>
-
 </body>
 
 </html>

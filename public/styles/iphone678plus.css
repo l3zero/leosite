@@ -1,6 +1,6 @@
 /* Iphone 678plus */
 
-@media screen and (max-width: 414px) and (max-height: 736px) {
+@media screen and (width: 414px) and (height: 736px) {
   #header-intro {
     font-size: 30px;
     padding-top: 30%;
@@ -25,7 +25,7 @@
   }
 }
 
-@media screen and (max-width: 736px) and (max-height: 414px) {
+@media screen and (width: 736px) and (height: 414px) {
   #header-intro {
     font-size: 30px;
     padding-top: 3%;

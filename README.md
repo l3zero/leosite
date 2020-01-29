@@ -1,10 +1,21 @@
-My personal site<br>
+Version 2 is live!<br>
 https://www.leonid.app
 
 This is my personal hub. Features many components I build from scratch for practice and fun.<br>
 I'm always testing out things and working out kinks so bear with me.
 
-Upcoming features:<br>
+Things I picked up while working on this site:<br>
+
+<pre>
+	CSS3 / Flexbox / Grid / Animations<br>
+	Responsive Design<br>
+	NodeJS / NPM<br>
+	API Patterns<br>
+	SQLite3<br>
+	HTML5
+</pre>
+
+Future things:<br>
 <pre>
 	Progressive Web App version<br>
 	Fancy biography section<br>

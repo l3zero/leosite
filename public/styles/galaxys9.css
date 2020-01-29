@@ -1,65 +1,88 @@
 /* Galaxy S9 */
 
 @media screen and (width: 360px) and (height: 740px) {
-    #header-intro {
-        font-size: 27px;
-        padding-top: 25%;
+    .header-intro {
+        padding-top: 35%;
     }
-    .footer-list {
-        padding-top: 70%;
+    .footer {
+        padding-top: 165%;
     }
-    .navbar {
-        padding-left: 190px;
+    .right-side {
+        margin-top: 50px;
+        padding-bottom: 20px;
+        padding-right: 0px;
+        padding-left: 0px;
     }
-    .footer-ribbon {
-        padding-top: 15px;
+    .left-side {
+        padding-left: 0px;
     }
-    .footer-ribbon img {
-        width: 60px;
-        height: 50px;
+    .tab {
+        grid-column-gap: 10px;
     }
-    .nav-button {
+    .tab button {
+        font-size: 20px;
+    }
+    #projects {
         font-size: 18px;
     }
-    .nav-button:hover {
-        font-size: 19px;
+    #projects img {
+        width: 70%;
     }
-    #ly-icon {
+    @-moz-document url-prefix() {
+        .right-side {
+            margin-top: 160px;
+            padding-bottom: 20px;
+            padding-right: 0px;
+        }
+    }
+    #name-title {
         font-size: 30px;
     }
-    .panel {
-        font-size: 13px;
+    #pos-title {
+        font-size: 22px;
+    }
+    .tab button {
+        font-size: 18px;
+    }
+    .blurb-list>div {
+        font-size: 16px;
+    }
+    .skill-titles {
+        font-size: 16px;
+    }
+    .main-job-title {
+        font-size: 16px;
+    }
+    .info {
+        font-size: 16px;
+    }
+    .job-bullets {
+        font-size: 12px;
     }
 }
 
 @media screen and (width: 740px) and (height: 360px) {
-    #header-intro {
-        font-size: 30px;
-        padding-top: 3%;
+    .header-intro {
+        font-size: 40px;
+        padding-top: 5%;
     }
-    .footer-list {
-        padding-top: 4%;
-    }
-    .footer-ribbon {
-        padding-top: 15px;
+    .footer {
+        padding-top: 10%;
     }
     .footer-ribbon img {
         width: 60px;
         height: 50px;
     }
-    .navbar {
-        padding-left: 530px;
-    }
     .nav-button {
-        font-size: 16px;
+        font-size: 20px;
     }
     .nav-button:hover {
-        font-size: 17px;
+        font-size: 21px;
     }
     #ly-icon {
-        font-size: 25px;
+        font-size: 30px;
     }
     .panel {
-        font-size: 13px;
+        font-size: 15px;
     }
 }

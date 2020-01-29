@@ -3,7 +3,6 @@
 /* :root {} */
 
 body {
-  height: 100%;
   font-family: "Orbitron", sans-serif;
   background: url(../images/retro.jpg);
   background-repeat: round;
@@ -34,7 +33,7 @@ body {
   justify-self: start;
   padding: 10px;
   margin-left: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 7%;
   font-family: "Lobster", cursive;
   font-size: 40px;
   color: black;
@@ -57,7 +56,7 @@ body {
   justify-content: center;
   overflow: hidden;
   padding-right: 8px;
-  padding-top: 15px;
+  padding-top: 5%;
   font-size: 23px;
 }
 
@@ -116,6 +115,7 @@ body {
   background-clip: text;
   /* Animate Background Image */
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
   animation: title-animation 50s linear infinite;
   -webkit-animation: title-animation 50s linear infinite;
   -moz-animation: title-animation 50s linear infinite;
@@ -131,6 +131,7 @@ ration for smoother animations */
 
 .footer {
   grid-area: foot;
+  align-self: end;
   padding-top: 27%;
 }
 
@@ -147,7 +148,7 @@ ration for smoother animations */
 .footer-ribbon {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   padding-top: 20px;
 }
@@ -169,6 +170,15 @@ ration for smoother animations */
   }
 }
 
+@-moz-keyframes title-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
 @keyframes title-animation {
   0% {
     background-position: 0% 50%;
@@ -179,6 +189,18 @@ ration for smoother animations */
 }
 
 /* Responsiveness */
+
+@media screen and (max-width: 2560px) {
+  .footer {
+    padding-top: 0%;
+  }
+  .header-intro {
+    padding-top: 8%;
+  }
+  .navbar {
+    padding-top: 3%;
+  }
+}
 
 @media screen and (max-width: 2000px) {
   .footer {
@@ -213,7 +235,7 @@ ration for smoother animations */
     padding-top: 80%;
   }
   .header-intro {
-    font-size: 60px;
+    font-size: 50px;
     padding-top: 20%;
   }
 }
@@ -292,7 +314,7 @@ ration for smoother animations */
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 360px) {
   .footer {
     padding-top: 150%;
   }
@@ -343,5 +365,50 @@ ration for smoother animations */
     width: 35px;
     height: 40px;
     padding: 5px;
+  }
+}
+
+@media screen and (max-height: 1500px) {
+  .footer {
+    padding-top: 62%;
+  }
+  .header-intro {
+    padding-top: 8%;
+  }
+}
+
+@media screen and (max-height: 1250px) {
+  .footer {
+    padding-top: 44%;
+  }
+  .header-intro {
+    padding-top: 8%;
+  }
+}
+
+@media screen and (max-height: 1060px) {
+  .footer {
+    padding-top: 30%;
+  }
+  .header-intro {
+    padding-top: 8%;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .footer {
+    padding-top: 15%;
+  }
+  .header-intro {
+    padding-top: 5%;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .footer {
+    padding-top: 5%;
+  }
+  .header-intro {
+    padding-top: 2%;
   }
 }

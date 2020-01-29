@@ -1,15 +1,25 @@
 /* Iphone X */
 
 @media screen and (width: 375px) and (height: 812px) {
-  #header-intro {
-    font-size: 27px;
-    padding-top: 30%;
+  .header-intro {
+    padding-top: 40%;
   }
-  .footer-list {
-    padding-top: 70%;
+  .footer {
+    padding-top: 141%;
   }
-  .navbar {
-    padding-left: 130px;
+}
+
+@media screen and (width: 812px) and (height: 375px) {
+  .header-intro {
+    font-size: 40px;
+    padding-top: 5%;
+  }
+  .footer {
+    padding-top: 10%;
+  }
+  .footer-ribbon img {
+    width: 60px;
+    height: 50px;
   }
   .nav-button {
     font-size: 20px;
@@ -18,39 +28,7 @@
     font-size: 21px;
   }
   #ly-icon {
-    font-size: 35px;
-  }
-  .panel {
-    font-size: 18px;
-  }
-}
-
-@media screen and (width: 812px) and (height: 375px) {
-  #header-intro {
     font-size: 30px;
-    padding-top: 3%;
-  }
-  .footer-list {
-    padding-top: 5%;
-  }
-  .footer-ribbon {
-    padding-top: 15px;
-  }
-  .footer-ribbon img {
-    width: 60px;
-    height: 50px;
-  }
-  .navbar {
-    padding-left: 590px;
-  }
-  .nav-button {
-    font-size: 17px;
-  }
-  .nav-button:hover {
-    font-size: 18px;
-  }
-  #ly-icon {
-    font-size: 25px;
   }
   .panel {
     font-size: 15px;

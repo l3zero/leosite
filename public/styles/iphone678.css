@@ -1,56 +1,86 @@
 /* Iphone 678 */
 
 @media screen and (width: 375px) and (height: 667px) {
-  #header-intro {
-    font-size: 27px;
-    padding-top: 20%;
+  .header-intro {
+    padding-top: 35%;
   }
-  .footer-list {
-    padding-top: 30%;
+  .footer {
+    padding-top: 76%;
   }
-  .navbar {
-    padding-left: 160px;
+  .right-side {
+    margin-top: 50px;
+    padding-bottom: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
   }
-  .nav-button {
+  .left-side {
+    padding-left: 0px;
+  }
+  .tab {
+    grid-column-gap: 10px;
+  }
+  .tab button {
+    font-size: 20px;
+  }
+  #projects {
+    font-size: 18px;
+  }
+  #projects img {
+    width: 70%;
+  }
+  @-moz-document url-prefix() {
+    .right-side {
+      margin-top: 160px;
+      padding-bottom: 20px;
+      padding-right: 0px;
+    }
+  }
+  #name-title {
+    font-size: 30px;
+  }
+  #pos-title {
     font-size: 22px;
   }
-  .nav-button:hover {
-    font-size: 23px;
-  }
-  #ly-icon {
-    font-size: 35px;
-  }
-  .panel {
+  .tab button {
     font-size: 18px;
+  }
+  .blurb-list>div {
+    font-size: 16px;
+  }
+  .skill-titles {
+    font-size: 16px;
+  }
+  .main-job-title {
+    font-size: 16px;
+  }
+  .info {
+    font-size: 16px;
+  }
+  .job-bullets {
+    font-size: 12px;
   }
 }
 
 @media screen and (width: 667px) and (height: 375px) {
-  #header-intro {
-    font-size: 30px;
+  .header-intro {
+    font-size: 40px;
     padding-top: 5%;
   }
-  .footer-list {
-    padding-top: 5%;
-  }
-  .footer-ribbon {
-    padding-top: 15px;
+  .footer {
+    padding-top: 10%;
   }
   .footer-ribbon img {
     width: 60px;
     height: 50px;
   }
-  .navbar {
-    padding-left: 490px;
-  }
   .nav-button {
-    font-size: 17px;
+    font-size: 20px;
   }
   .nav-button:hover {
-    font-size: 18px;
+    font-size: 21px;
   }
   #ly-icon {
-    font-size: 25px;
+    font-size: 30px;
   }
   .panel {
     font-size: 15px;

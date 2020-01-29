@@ -1,51 +1,20 @@
 /* Ipad */
 
 @media screen and (width: 768px) and (height: 1024px) {
-    #header-intro {
-        font-size: 60px;
-        padding-top: 15%;
+    .header-intro {
+        padding-top: 25%;
     }
-    .footer-list {
-        padding-top: 35%;
-    }
-    .nav-button {
-        font-size: 30px;
-    }
-    .nav-button:hover {
-        font-size: 31px;
-    }
-    .navbar {
-        padding-right: 15px;
-    }
-    #ly-icon {
-        font-size: 60px;
-    }
-    .panel {
-        font-size: 20px;
+    .footer {
+        padding-top: 90%;
     }
 }
 
 @media screen and (width: 1024px) and (height: 768px) {
-    #header-intro {
-        font-size: 75px;
-        padding-top: 5%;
-    }
-    .footer-list {
+    .header-intro {
+        font-size: 80px;
         padding-top: 7%;
     }
-    .nav-button {
-        font-size: 30px;
-    }
-    .nav-button:hover {
-        font-size: 31px;
-    }
-    .navbar {
-        padding-right: 15px;
-    }
-    #ly-icon {
-        font-size: 60px;
-    }
-    .panel {
-        font-size: 20px;
+    .footer {
+        padding-top: 25%;
     }
 }

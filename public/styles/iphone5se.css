@@ -1,65 +1,88 @@
 /* Iphone 5se */
 
 @media screen and (width: 320px) and (height: 568px) {
-  #header-intro {
+  .header-intro {
+    padding-top: 35%;
+  }
+  .footer {
+    padding-top: 76%;
+  }
+  .right-side {
+    margin-top: 50px;
+    padding-bottom: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .left-side {
+    padding-left: 0px;
+  }
+  .tab {
+    grid-column-gap: 10px;
+  }
+  .tab button {
     font-size: 20px;
-    padding-top: 25%;
   }
-  .footer-list {
-    padding-top: 55%;
+  #projects {
+    font-size: 18px;
   }
-  .navbar {
-    padding-left: 140px;
+  #projects img {
+    width: 70%;
   }
-  .footer-ribbon {
-    padding-top: 15px;
+  @-moz-document url-prefix() {
+    .right-side {
+      margin-top: 160px;
+      padding-bottom: 20px;
+      padding-right: 0px;
+    }
   }
-  .footer-ribbon img {
-    width: 60px;
-    height: 50px;
+  #name-title {
+    font-size: 30px;
   }
-  .nav-button {
+  #pos-title {
+    font-size: 22px;
+  }
+  .tab button {
+    font-size: 18px;
+  }
+  .blurb-list>div {
     font-size: 16px;
   }
-  .nav-button:hover {
-    font-size: 17px;
+  .skill-titles {
+    font-size: 16px;
   }
-  #ly-icon {
-    font-size: 25px;
+  .main-job-title {
+    font-size: 16px;
   }
-  .panel {
-    font-size: 13px;
+  .info {
+    font-size: 16px;
+  }
+  .job-bullets {
+    font-size: 12px;
   }
 }
 
 @media screen and (width: 568px) and (height: 320px) {
-  #header-intro {
-    font-size: 25px;
-    padding-top: 3%;
+  .header-intro {
+    font-size: 40px;
+    padding-top: 5%;
   }
-  .footer-list {
-    padding-top: 4%;
-  }
-  .footer-ribbon {
-    padding-top: 15px;
+  .footer {
+    padding-top: 10%;
   }
   .footer-ribbon img {
     width: 60px;
     height: 50px;
   }
-  .navbar {
-    padding-left: 410px;
-  }
   .nav-button {
-    font-size: 15px;
+    font-size: 20px;
   }
   .nav-button:hover {
-    font-size: 16px;
+    font-size: 21px;
   }
   #ly-icon {
-    font-size: 23px;
+    font-size: 30px;
   }
   .panel {
-    font-size: 13px;
+    font-size: 15px;
   }
 }

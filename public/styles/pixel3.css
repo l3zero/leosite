@@ -1,65 +1,36 @@
 /* Pixel 3 */
 
 @media screen and (width: 412px) and (height: 824px) {
-    #header-intro {
-        font-size: 32px;
-        padding-top: 25%;
+    .header-intro {
+        padding-top: 40%;
     }
-    .footer-list {
-        padding-top: 55%;
-    }
-    .navbar {
-        padding-left: 190px;
-    }
-    .footer-ribbon {
-        padding-top: 15px;
-    }
-    .footer-ribbon img {
-        width: 70px;
-        height: 60px;
-    }
-    .nav-button {
-        font-size: 23px;
-    }
-    .nav-button:hover {
-        font-size: 22px;
-    }
-    #ly-icon {
-        font-size: 35px;
-    }
-    .panel {
-        font-size: 16px;
+    .footer {
+        padding-top: 162%;
     }
 }
 
 @media screen and (width: 824px) and (height: 412px) {
-    #header-intro {
-        font-size: 35px;
-        padding-top: 3%;
+    .header-intro {
+        font-size: 40px;
+        padding-top: 5%;
     }
-    .footer-list {
-        padding-top: 7%;
-    }
-    .footer-ribbon {
-        padding-top: 15px;
+    .footer {
+        padding-top: 10%;
     }
     .footer-ribbon img {
-        width: 70px;
-        height: 60px;
-    }
-    .navbar {
-        padding-left: 605px;
+        width: 60px;
+        height: 50px;
     }
     .nav-button {
-        font-size: 18px;
+        font-size: 20px;
     }
     .nav-button:hover {
-        font-size: 19px;
+        font-size: 21px;
     }
     #ly-icon {
-        font-size: 35px;
+        font-size: 30px;
     }
     .panel {
-        font-size: 14px;
+        font-size: 15px;
     }
 }

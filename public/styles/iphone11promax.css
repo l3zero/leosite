@@ -1,15 +1,19 @@
-/* Pixel 3xl */
+/* Iphone X */
 
-@media screen and (width: 412px) and (height: 847px) {
+@media screen and (width: 414px) and (height: 896px) {
     .header-intro {
-        padding-top: 40%;
+        padding-top: 50%;
     }
     .footer {
-        padding-top: 175%;
+        padding-top: 145%;
+    }
+    .footer-ribbon img {
+        width: 60px;
+        height: 50px;
     }
 }
 
-@media screen and (width: 847px) and (height: 412px) {
+@media screen and (width: 896px) and (height: 414px) {
     .header-intro {
         font-size: 40px;
         padding-top: 5%;

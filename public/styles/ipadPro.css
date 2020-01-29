@@ -1,61 +1,23 @@
 /* Ipad Pro */
 
 @media screen and (width: 1366px) and (height: 1024px) {
-  #header-intro {
+  .header-intro {
     font-size: 80px;
-    padding-top: 10%;
+    padding-top: 15%;
   }
-  .footer-list {
-    padding-top: 20%;
-  }
-  .footer-ribbon img {
-    width: 100px;
-    height: 90px;
-  }
-  .nav-button {
-    font-size: 30px;
-  }
-  .nav-button:hover {
-    font-size: 31px;
-  }
-  .navbar {
-    padding-left: 1050px;
-  }
-  #ly-icon {
-    font-size: 60px;
-  }
-  .panel {
-    font-size: 20px;
+  .footer {
+    padding-top: 50%;
   }
 }
 
 /* Ipad Pro */
 
 @media screen and (width: 1024px) and (height: 1366px) {
-  #header-intro {
+  .header-intro {
     font-size: 80px;
-    padding-top: 20%;
+    padding-top: 25%;
   }
-  .footer-list {
-    padding-top: 38%;
-  }
-  .footer-ribbon img {
-    width: 100px;
-    height: 90px;
-  }
-  .nav-button {
-    font-size: 40px;
-  }
-  .nav-button:hover {
-    font-size: 41px;
-  }
-  .navbar {
-    padding-left: 700px;
-  }
-  #ly-icon {
-    font-size: 70px;
-  }
-  .panel {
-    font-size: 20px;
+  .footer {
+    padding-top: 111%;
   }
 }

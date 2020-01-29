@@ -39,7 +39,8 @@ body {
   border-radius: 50px;
 }
 
-#ly-icon a:link, #ly-icon a:visited {
+#ly-icon a:link,
+#ly-icon a:visited {
   text-decoration: none;
   color: black;
 }
@@ -54,7 +55,7 @@ body {
   justify-content: center;
   overflow: hidden;
   padding-right: 8px;
-  padding-top: 5%;
+  padding-top: 8%;
   font-size: 23px;
 }
 
@@ -81,7 +82,7 @@ body {
 
 .header-intro {
   grid-area: intro;
-  padding-top: 7%;
+  padding-top: 5%;
   font-family: "Press Start 2P", cursive;
   font-size: 80px;
   letter-spacing: 10px;
@@ -100,7 +101,7 @@ body {
   color: black;
 }
 
-.panel>a {
+.panel > a {
   color: blue;
   text-decoration: none;
 }
@@ -116,7 +117,7 @@ body {
   color: white;
 }
 
-.panel-footer>a {
+.panel-footer > a {
   color: blue;
   text-decoration: none;
 }
@@ -146,7 +147,7 @@ ration for smoother animations */
 .footer {
   grid-area: foot;
   align-self: end;
-  padding-top: 27%;
+  padding-top: 18%;
 }
 
 .footer-list {
@@ -256,7 +257,7 @@ ration for smoother animations */
 
 @media screen and (max-width: 700px) {
   .footer {
-    padding-top: 100%;
+    padding-top: 80%;
   }
   .header-intro {
     font-size: 50px;
@@ -266,11 +267,11 @@ ration for smoother animations */
 
 @media screen and (max-width: 600px) {
   .footer {
-    padding-top: 150%;
+    padding-top: 70%;
   }
   .header-intro {
     font-size: 40px;
-    padding-top: 35%;
+    padding-top: 25%;
   }
   .footer-ribbon img {
     width: 50px;
@@ -281,11 +282,11 @@ ration for smoother animations */
 
 @media screen and (max-width: 500px) {
   .footer {
-    padding-top: 120%;
+    padding-top: 70%;
   }
   .header-intro {
     font-size: 40px;
-    padding-top: 35%;
+    padding-top: 25%;
   }
   .nav-button {
     font-size: 20px;
@@ -306,11 +307,11 @@ ration for smoother animations */
 
 @media screen and (max-width: 450px) {
   .footer {
-    padding-top: 130%;
+    padding-top: 70%;
   }
   .header-intro {
     font-size: 30px;
-    padding-top: 35%;
+    padding-top: 25%;
   }
   .nav-button {
     font-size: 18px;
@@ -336,11 +337,11 @@ ration for smoother animations */
 
 @media screen and (max-width: 360px) {
   .footer {
-    padding-top: 150%;
+    padding-top: 80%;
   }
   .header-intro {
     font-size: 25px;
-    padding-top: 30%;
+    padding-top: 25%;
   }
   .nav-button {
     font-size: 16px;
@@ -366,11 +367,11 @@ ration for smoother animations */
 
 @media screen and (max-width: 320px) {
   .footer {
-    padding-top: 150%;
+    padding-top: 80%;
   }
   .header-intro {
     font-size: 25px;
-    padding-top: 30%;
+    padding-top: 25%;
   }
   .nav-button {
     font-size: 16px;

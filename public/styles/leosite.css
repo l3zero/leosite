@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Audiowide|Orbitron|Press+Start+2P&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lacquer|Lobster|Permanent+Marker&display=swap");
-/* :root {} */
-
 body {
   font-family: "Orbitron", sans-serif;
   background: url(../images/retro.jpg);
@@ -103,6 +101,22 @@ body {
 }
 
 .panel>a {
+  color: blue;
+  text-decoration: none;
+}
+
+.panel-footer {
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding-top: 5px;
+  max-height: 0;
+  text-align: center;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  color: white;
+}
+
+.panel-footer>a {
   color: blue;
   text-decoration: none;
 }
@@ -285,6 +299,9 @@ ration for smoother animations */
   .panel {
     font-size: 15px;
   }
+  .panel-footer {
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -305,6 +322,9 @@ ration for smoother animations */
     font-size: 25px;
   }
   .panel {
+    font-size: 12px;
+  }
+  .panel-footer {
     font-size: 12px;
   }
   .footer-ribbon img {
@@ -334,6 +354,9 @@ ration for smoother animations */
   .panel {
     font-size: 12px;
   }
+  .panel-footer {
+    font-size: 12px;
+  }
   .footer-ribbon img {
     width: 40px;
     height: 45px;
@@ -361,54 +384,12 @@ ration for smoother animations */
   .panel {
     font-size: 12px;
   }
+  .panel-footer {
+    font-size: 12px;
+  }
   .footer-ribbon img {
     width: 35px;
     height: 40px;
     padding: 5px;
-  }
-}
-
-@media screen and (max-height: 1500px) {
-  .footer {
-    padding-top: 62%;
-  }
-  .header-intro {
-    padding-top: 8%;
-  }
-}
-
-@media screen and (max-height: 1250px) {
-  .footer {
-    padding-top: 44%;
-  }
-  .header-intro {
-    padding-top: 8%;
-  }
-}
-
-@media screen and (max-height: 1060px) {
-  .footer {
-    padding-top: 30%;
-  }
-  .header-intro {
-    padding-top: 8%;
-  }
-}
-
-@media screen and (max-height: 800px) {
-  .footer {
-    padding-top: 15%;
-  }
-  .header-intro {
-    padding-top: 5%;
-  }
-}
-
-@media screen and (max-height: 600px) {
-  .footer {
-    padding-top: 5%;
-  }
-  .header-intro {
-    padding-top: 2%;
   }
 }

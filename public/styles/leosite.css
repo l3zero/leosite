@@ -207,7 +207,7 @@ ration for smoother animations */
 
 @media screen and (max-width: 2560px) {
   .footer {
-    padding-top: 0%;
+    padding-top: 20%;
   }
   .header-intro {
     padding-top: 8%;
@@ -247,7 +247,7 @@ ration for smoother animations */
 
 @media screen and (max-width: 800px) {
   .footer {
-    padding-top: 80%;
+    padding-top: 90%;
   }
   .header-intro {
     font-size: 50px;
@@ -257,7 +257,7 @@ ration for smoother animations */
 
 @media screen and (max-width: 700px) {
   .footer {
-    padding-top: 80%;
+    padding-top: 90%;
   }
   .header-intro {
     font-size: 50px;
@@ -267,7 +267,7 @@ ration for smoother animations */
 
 @media screen and (max-width: 600px) {
   .footer {
-    padding-top: 70%;
+    padding-top: 80%;
   }
   .header-intro {
     font-size: 40px;
@@ -282,7 +282,7 @@ ration for smoother animations */
 
 @media screen and (max-width: 500px) {
   .footer {
-    padding-top: 70%;
+    padding-top: 80%;
   }
   .header-intro {
     font-size: 40px;
@@ -307,7 +307,7 @@ ration for smoother animations */
 
 @media screen and (max-width: 450px) {
   .footer {
-    padding-top: 70%;
+    padding-top: 80%;
   }
   .header-intro {
     font-size: 30px;
@@ -337,7 +337,7 @@ ration for smoother animations */
 
 @media screen and (max-width: 360px) {
   .footer {
-    padding-top: 80%;
+    padding-top: 90%;
   }
   .header-intro {
     font-size: 25px;
@@ -367,7 +367,7 @@ ration for smoother animations */
 
 @media screen and (max-width: 320px) {
   .footer {
-    padding-top: 80%;
+    padding-top: 90%;
   }
   .header-intro {
     font-size: 25px;

@@ -30,7 +30,9 @@ body {
   padding: 4px;
 }
 
-#name-title, #name-title a:link, #name-title a:visited {
+#name-title,
+#name-title a:link,
+#name-title a:visited {
   color: white;
   text-decoration: none;
   font-size: 40px;
@@ -53,19 +55,21 @@ body {
   flex-wrap: wrap;
 }
 
-.blurb-list>div {
+.blurb-list > div {
   font-size: 18px;
   margin-top: 10px;
 }
 
-.blurb-list>div a:link, .blurb-list>div a:visited, .blurb-list>div a {
-  color: black;
+.blurb-list > div a:link,
+.blurb-list > div a:visited,
+.blurb-list > div a {
+  color: white;
   font-weight: bold;
   text-decoration: none;
-  background-color: rgba(0, 26, 255, 0.397);
+  background-color: rgba(140, 0, 255, 0.726);
 }
 
-.blurb-list>div a:hover {
+.blurb-list > div a:hover {
   font-size: 19px;
   color: red;
 }
@@ -101,7 +105,7 @@ body {
   font-size: 20px;
 }
 
-#grid-skills>div {
+#grid-skills > div {
   display: flex;
   width: 100%;
   height: 25px;
@@ -116,7 +120,11 @@ body {
   display: inherit;
   height: 100%;
   width: 70%;
-  background-image: linear-gradient( -300deg, rgb(126, 132, 218) 3%, rgb(4, 4, 148) 50%);
+  background-image: linear-gradient(
+    -300deg,
+    rgb(126, 132, 218) 3%,
+    rgb(4, 4, 148) 50%
+  );
   border-radius: 5px;
   -webkit-animation: fill70 1.5s ease-in-out;
   animation: fill70 1.5s ease-in-out;
@@ -126,14 +134,14 @@ body {
   text-align: left;
   font-size: 20px;
   margin-top: 5px;
-  background-color: rgba(140, 0, 255, 0.397);
+  background-color: rgba(140, 0, 255, 0.658);
 }
 
 .info {
   font-size: 20px;
   text-align: center;
   margin-top: 5px;
-  background-color: rgba(140, 0, 255, 0.397);
+  background-color: rgba(140, 0, 255, 0.651);
 }
 
 .skill-titles {
@@ -372,10 +380,10 @@ body {
   .tab button {
     font-size: 18px;
   }
-  .blurb-list>div {
+  .blurb-list > div {
     font-size: 16px;
   }
-  .blurb-list>div a:hover {
+  .blurb-list > div a:hover {
     font-size: 17px;
   }
   .skill-titles {
@@ -430,10 +438,10 @@ body {
   .tab button {
     font-size: 18px;
   }
-  .blurb-list>div {
+  .blurb-list > div {
     font-size: 16px;
   }
-  .blurb-list>div a:hover {
+  .blurb-list > div a:hover {
     font-size: 17px;
   }
   .skill-titles {

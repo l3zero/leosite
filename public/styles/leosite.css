@@ -40,7 +40,8 @@ body {
   border-radius: 50px;
 }
 
-#ly-icon a:link, #ly-icon a:visited {
+#ly-icon a:link,
+#ly-icon a:visited {
   text-decoration: none;
   color: black;
 }
@@ -103,7 +104,7 @@ body {
   color: black;
 }
 
-.panel>a {
+.panel > a {
   color: blue;
   text-decoration: none;
 }
@@ -123,14 +124,17 @@ body {
   background-color: rgba(140, 0, 255, 0.781);
 }
 
-.panel-footer>a {
+.panel-footer > a {
   color: blue;
   text-decoration: none;
 }
 
 .software {
+  color: red;
+
   /* Clip Background Image */
   background: url(../images/wave.png) round;
+  background-size: contain;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -142,9 +146,9 @@ body {
   -moz-animation: title-animation 50s linear infinite;
   /* Activate hardware accele  padding-top: 10px;
 ration for smoother animations */
-  transform: translate3d(25, 15, 100);
-  -webkit-transform: translate3d(25, 15, 100);
-  -moz-transform: translate3d(25, 15, 100);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;

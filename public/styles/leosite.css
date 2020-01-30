@@ -9,10 +9,10 @@ body {
 
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   /* grid-template-rows: 1fr 1fr 1fr; */
   /* grid-auto-rows: minmax(100px, auto); */
-  grid-template-areas: "headicon . nav" "intro intro intro" ". foot .";
+  grid-template-areas: "headicon . nav" "middle middle middle";
   grid-column-gap: 10px;
   align-items: center;
   align-content: center;
@@ -28,10 +28,11 @@ body {
 
 #ly-icon {
   grid-area: headicon;
+  align-self: start;
   justify-self: start;
   padding: 10px;
   margin-left: 10px;
-  margin-bottom: 7%;
+  margin-top: 7%;
   font-family: "Lobster", cursive;
   font-size: 40px;
   color: black;
@@ -39,14 +40,14 @@ body {
   border-radius: 50px;
 }
 
-#ly-icon a:link,
-#ly-icon a:visited {
+#ly-icon a:link, #ly-icon a:visited {
   text-decoration: none;
   color: black;
 }
 
 .navbar {
   grid-area: nav;
+  align-self: start;
   justify-self: end;
   display: flex;
   flex-direction: column;
@@ -55,7 +56,7 @@ body {
   justify-content: center;
   overflow: hidden;
   padding-right: 8px;
-  padding-top: 8%;
+  padding-top: 5%;
   font-size: 23px;
 }
 
@@ -81,10 +82,11 @@ body {
 }
 
 .header-intro {
-  grid-area: intro;
-  padding-top: 5%;
+  grid-area: middle;
+  align-self: start;
+  padding-top: 3%;
   font-family: "Press Start 2P", cursive;
-  font-size: 80px;
+  font-size: 70px;
   letter-spacing: 10px;
   text-align: center;
   color: white;
@@ -101,7 +103,7 @@ body {
   color: black;
 }
 
-.panel > a {
+.panel>a {
   color: blue;
   text-decoration: none;
 }
@@ -117,7 +119,11 @@ body {
   color: white;
 }
 
-.panel-footer > a {
+.panel-footer p {
+  background-color: rgba(140, 0, 255, 0.781);
+}
+
+.panel-footer>a {
   color: blue;
   text-decoration: none;
 }
@@ -145,9 +151,9 @@ ration for smoother animations */
 }
 
 .footer {
-  grid-area: foot;
+  grid-area: middle;
   align-self: end;
-  padding-top: 18%;
+  padding-top: 25%;
 }
 
 .footer-list {
@@ -207,19 +213,19 @@ ration for smoother animations */
 
 @media screen and (max-width: 2560px) {
   .footer {
-    padding-top: 20%;
+    padding-top: 29%;
   }
   .header-intro {
     padding-top: 8%;
   }
   .navbar {
-    padding-top: 3%;
+    /* padding-top: 3%; */
   }
 }
 
-@media screen and (max-width: 2000px) {
+@media screen and (max-width: 1900px) {
   .footer {
-    padding-top: 40%;
+    padding-top: 28%;
   }
   .header-intro {
     padding-top: 8%;
@@ -228,50 +234,59 @@ ration for smoother animations */
 
 @media screen and (max-width: 1500px) {
   .footer {
-    padding-top: 50%;
+    padding-top: 30%;
   }
   .header-intro {
-    padding-top: 10%;
+    padding-top: 8%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    padding-top: 39%;
+  }
+  .header-intro {
+    padding-top: 8%;
   }
 }
 
 @media screen and (max-width: 1000px) {
   .footer {
-    padding-top: 70%;
+    padding-top: 46%;
   }
   .header-intro {
-    font-size: 70px;
-    padding-top: 13%;
+    /* font-size: 70px; */
+    padding-top: 8%;
   }
 }
 
 @media screen and (max-width: 800px) {
   .footer {
-    padding-top: 90%;
+    padding-top: 53%;
   }
   .header-intro {
-    font-size: 50px;
-    padding-top: 20%;
+    font-size: 60px;
+    padding-top: 8%;
   }
 }
 
 @media screen and (max-width: 700px) {
   .footer {
-    padding-top: 90%;
+    padding-top: 60%;
   }
   .header-intro {
-    font-size: 50px;
-    padding-top: 30%;
+    font-size: 55px;
+    padding-top: 8%;
   }
 }
 
 @media screen and (max-width: 600px) {
   .footer {
-    padding-top: 80%;
+    padding-top: 70%;
   }
   .header-intro {
-    font-size: 40px;
-    padding-top: 25%;
+    font-size: 45px;
+    padding-top: 10%;
   }
   .footer-ribbon img {
     width: 50px;
@@ -282,11 +297,11 @@ ration for smoother animations */
 
 @media screen and (max-width: 500px) {
   .footer {
-    padding-top: 80%;
+    padding-top: 86%;
   }
   .header-intro {
     font-size: 40px;
-    padding-top: 25%;
+    padding-top: 10%;
   }
   .nav-button {
     font-size: 20px;
@@ -307,11 +322,11 @@ ration for smoother animations */
 
 @media screen and (max-width: 450px) {
   .footer {
-    padding-top: 80%;
+    padding-top: 86%;
   }
   .header-intro {
     font-size: 30px;
-    padding-top: 25%;
+    padding-top: 15%;
   }
   .nav-button {
     font-size: 18px;
@@ -337,7 +352,7 @@ ration for smoother animations */
 
 @media screen and (max-width: 360px) {
   .footer {
-    padding-top: 90%;
+    padding-top: 105%;
   }
   .header-intro {
     font-size: 25px;
@@ -367,11 +382,11 @@ ration for smoother animations */
 
 @media screen and (max-width: 320px) {
   .footer {
-    padding-top: 90%;
+    padding-top: 120%;
   }
   .header-intro {
     font-size: 25px;
-    padding-top: 25%;
+    padding-top: 27%;
   }
   .nav-button {
     font-size: 16px;

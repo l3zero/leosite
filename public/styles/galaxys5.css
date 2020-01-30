@@ -5,7 +5,7 @@
         padding-top: 35%;
     }
     .footer {
-        padding-top: 125%;
+        padding-top: 115%;
     }
     .right-side {
         margin-top: 50px;
@@ -63,26 +63,26 @@
 
 @media screen and (width: 640px) and (height: 360px) {
     .header-intro {
-        font-size: 40px;
+        font-size: 30px;
         padding-top: 5%;
     }
     .footer {
-        padding-top: 10%;
+        padding-top: 20%;
     }
     .footer-ribbon img {
         width: 60px;
         height: 50px;
     }
     .nav-button {
-        font-size: 20px;
+        font-size: 17px;
     }
     .nav-button:hover {
-        font-size: 21px;
+        font-size: 18px;
     }
     #ly-icon {
-        font-size: 30px;
+        font-size: 25px;
     }
     .panel {
-        font-size: 15px;
+        font-size: 12px;
     }
 }

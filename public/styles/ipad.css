@@ -11,10 +11,10 @@
 
 @media screen and (width: 1024px) and (height: 768px) {
     .header-intro {
-        font-size: 80px;
+        font-size: 70px;
         padding-top: 7%;
     }
     .footer {
-        padding-top: 25%;
+        padding-top: 45%;
     }
 }

@@ -201,22 +201,31 @@ body {
 
 @media screen and (max-width: 1200px) {
   .weekly-container iframe {
-    height: 30vh;
+    height: 35vh;
   }
   #article-image {
     /* width: 50vw; */
-    height: 30vh;
+    height: 35vh;
   }
 }
 
 @media screen and (max-width: 600px) {
   .weekly-container iframe {
     width: 50vw;
-    height: 20vh;
+    height: 25vh;
   }
   #article-image {
     width: 50vw;
-    height: 20vh;
+    height: 25vh;
+  }
+  #article-heart {
+    width: 25px;
+    height: 25px;
+  }
+  #article-likes {
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
   }
   #bottom-article-row {
     width: 50vw;

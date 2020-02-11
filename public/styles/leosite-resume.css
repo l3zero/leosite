@@ -156,8 +156,6 @@ body {
   border: 2px solid rgba(255, 253, 253, 0.541);
   border-radius: 10px;
   padding: 5px;
-  /* background-color: white; */
-  /* opacity: 0.9; */
 }
 
 /* Style the tab */
@@ -207,6 +205,19 @@ body {
 
 .tab button.active {
   background-color: rgba(4, 4, 120, 0.966);
+}
+
+#projects ul {
+  font-size: 50px;
+  list-style-type: none;
+}
+
+#projects ul>a:visited, a:link {
+  text-decoration: none;
+}
+
+#projects li>a:hover {
+  color: black;
 }
 
 /* Fade in tabs */
@@ -309,9 +320,6 @@ body {
   #projects {
     font-size: 18px;
   }
-  #projects img {
-    width: 70%;
-  }
   .main-job-title {
     font-size: 19px;
   }
@@ -334,6 +342,9 @@ body {
   }
   .main-job-title {
     text-align: left;
+  }
+  #projects ul {
+    font-size: 30px;
   }
 }
 
@@ -390,6 +401,9 @@ body {
   .job-bullets {
     font-size: 12px;
   }
+  #projects ul {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -410,9 +424,6 @@ body {
   }
   #projects {
     font-size: 18px;
-  }
-  #projects img {
-    width: 70%;
   }
   @-moz-document url-prefix() {
     .right-side {

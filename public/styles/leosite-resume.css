@@ -22,12 +22,17 @@ body {
 }
 
 .left-side p {
-  font-size: 25px;
+  /* font-size: 25px; */
 }
 
 #pos-title {
   color: black;
+  font-size: 25px;
   padding: 4px;
+}
+
+#name-title {
+  font-size: 40px;
 }
 
 #name-title>a:link, a:visited {
@@ -62,7 +67,7 @@ body {
   color: white;
   font-weight: bold;
   text-decoration: none;
-  background-color: rgba(140, 0, 255, 0.726);
+  background-color: rgba(42, 0, 77, 0.726);
 }
 
 .blurb-list>div a:hover {
@@ -137,7 +142,7 @@ body {
 }
 
 .skill-titles {
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 20px;
   text-align: start;
@@ -162,7 +167,7 @@ body {
 
 .tab {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-column-gap: 60px;
   grid-auto-rows: minmax(10px, auto);
   overflow: hidden;
@@ -307,12 +312,12 @@ body {
     flex-direction: column;
     justify-items: center;
     justify-content: center;
-    align-items: center;
+    align-items: start;
   }
   .right-side {
     margin-top: 50px;
     padding-bottom: 20px;
-    padding-right: 110px;
+    /* padding-right: 110px; */
   }
   .tab button {
     font-size: 20px;
@@ -329,12 +334,12 @@ body {
   @-moz-document url-prefix() {
     .right-side {
       margin-top: 80px;
-      padding-bottom: 20px;
-      padding-right: 90px;
+      /* padding-bottom: 20px; */
+      /* padding-right: 90px; */
     }
   }
   #leo-photo {
-    width: 70%;
+    width: 50%;
     height: 45%;
   }
   .tab {
@@ -351,9 +356,9 @@ body {
 @media screen and (max-width: 550px) {
   @-moz-document url-prefix() {
     .right-side {
-      margin-top: 120px;
-      padding-bottom: 20px;
-      padding-right: 90px;
+      margin-top: 100px;
+      /* padding-bottom: 20px; */
+      /* padding-right: 90px; */
     }
   }
 }
@@ -362,23 +367,27 @@ body {
   .right-side {
     margin-top: 50px;
     padding-bottom: 20px;
-    padding-right: 0px;
+    /* padding-right: 0px; */
   }
   .left-side {
     padding-left: 0px;
   }
+  .left-side>p>a>img {
+    width: 30px;
+    height: 30px;
+  }
   @-moz-document url-prefix() {
     .right-side {
-      margin-top: 130px;
-      padding-bottom: 20px;
-      padding-right: 40px;
+      margin-top: 50px;
+      /* padding-bottom: 20px; */
+      /* padding-right: 40px; */
     }
   }
   #name-title {
     font-size: 30px;
   }
   #pos-title {
-    font-size: 22px;
+    font-size: 20px;
   }
   .tab button {
     font-size: 18px;
@@ -404,9 +413,16 @@ body {
   #projects ul {
     font-size: 20px;
   }
+  #leo-photo {
+    width: 270px;
+    height: 200px;
+  }
+  .tab {
+    grid-column-gap: 50px;
+  }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 340px) {
   .right-side {
     margin-top: 50px;
     padding-bottom: 20px;
@@ -415,6 +431,10 @@ body {
   }
   .left-side {
     padding-left: 0px;
+  }
+  .left-side>p>a>img {
+    width: 30px;
+    height: 30px;
   }
   .tab {
     grid-column-gap: 10px;
@@ -427,19 +447,26 @@ body {
   }
   @-moz-document url-prefix() {
     .right-side {
-      margin-top: 160px;
-      padding-bottom: 20px;
-      padding-right: 0px;
+      margin-top: 50px;
+      /* padding-bottom: 20px; */
+      /* padding-right: 0px; */
     }
   }
   #name-title {
     font-size: 30px;
   }
   #pos-title {
-    font-size: 22px;
+    font-size: 20px;
+  }
+  #leo-photo {
+    width: 200px;
+    height: 150px;
   }
   .tab button {
     font-size: 18px;
+  }
+  .tab {
+    grid-column-gap: 40px;
   }
   .blurb-list>div {
     font-size: 16px;

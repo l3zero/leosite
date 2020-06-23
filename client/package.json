@@ -27,7 +27,7 @@
     ]
   },
   "dependencies": {
-    "eslint": "^7.3.1",
+    "eslint": "^6.0.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^4.0.4",

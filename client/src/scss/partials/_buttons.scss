@@ -1,0 +1,31 @@
+@use 'colors' as colors;
+@use 'fonts' as fonts;
+
+@mixin submit() {
+    cursor: pointer;
+    display: none;
+    margin-left: 30px;
+    border: 1px solid black;
+    background-color: black;
+    @include fonts.font-size(25px);
+}
+
+@mixin go() {
+    display: none;
+    letter-spacing: 1px;
+    border: 2px solid green;
+    border-radius: 15px;
+    background-color: green;
+    color: green;
+    @include fonts.font-size(25px);
+}
+
+@mixin menuButton() {
+    cursor: pointer;
+    background-color: colors.$light-blue;
+    color: colors.$dark-blue;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    padding: 3px;
+    @include fonts.font-size(16px);
+}

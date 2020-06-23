@@ -1,0 +1,88 @@
+/* Galaxy S5 / S7 */
+
+@media screen and (width: 360px) and (height: 640px) {
+    .header-intro {
+        padding-top: 35%;
+    }
+    .footer {
+        padding-top: 115%;
+    }
+    .right-side {
+        margin-top: 50px;
+        padding-bottom: 20px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .left-side {
+        padding-left: 0px;
+    }
+    .tab {
+        grid-column-gap: 10px;
+    }
+    .tab button {
+        font-size: 20px;
+    }
+    #projects {
+        font-size: 18px;
+    }
+    #projects img {
+        width: 70%;
+    }
+    @-moz-document url-prefix() {
+        .right-side {
+            margin-top: 160px;
+            padding-bottom: 20px;
+            padding-right: 0px;
+        }
+    }
+    #name-title {
+        font-size: 30px;
+    }
+    #pos-title {
+        font-size: 22px;
+    }
+    .tab button {
+        font-size: 18px;
+    }
+    .blurb-list>div {
+        font-size: 16px;
+    }
+    .skill-titles {
+        font-size: 16px;
+    }
+    .main-job-title {
+        font-size: 16px;
+    }
+    .info {
+        font-size: 16px;
+    }
+    .job-bullets {
+        font-size: 12px;
+    }
+}
+
+@media screen and (width: 640px) and (height: 360px) {
+    .header-intro {
+        font-size: 30px;
+        padding-top: 5%;
+    }
+    .footer {
+        padding-top: 20%;
+    }
+    .footer-ribbon img {
+        width: 60px;
+        height: 50px;
+    }
+    .nav-button {
+        font-size: 17px;
+    }
+    .nav-button:hover {
+        font-size: 18px;
+    }
+    #ly-icon {
+        font-size: 25px;
+    }
+    .panel {
+        font-size: 12px;
+    }
+}

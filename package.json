@@ -1,0 +1,31 @@
+{
+  "name": "leonid.app",
+  "version": "3.0.0",
+  "description": "My website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "start": "npx nodemon app.js"
+  },
+  "engines": {
+    "npm": ">=6.10.0",
+    "node": ">=12.6.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kRyM1337/leosite.git"
+  },
+  "author": "Leonid Yanchis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kRyM1337/leosite/issues"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0"
+  }
+}

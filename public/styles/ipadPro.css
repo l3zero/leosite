@@ -1,0 +1,23 @@
+/* Ipad Pro */
+
+@media screen and (width: 1366px) and (height: 1024px) {
+  .header-intro {
+    font-size: 80px;
+    padding-top: 15%;
+  }
+  .footer {
+    padding-top: 50%;
+  }
+}
+
+/* Ipad Pro */
+
+@media screen and (width: 1024px) and (height: 1366px) {
+  .header-intro {
+    font-size: 70px;
+    padding-top: 25%;
+  }
+  .footer {
+    padding-top: 104%;
+  }
+}

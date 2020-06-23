@@ -1,0 +1,20 @@
+/* Ipad */
+
+@media screen and (width: 768px) and (height: 1024px) {
+    .header-intro {
+        padding-top: 25%;
+    }
+    .footer {
+        padding-top: 90%;
+    }
+}
+
+@media screen and (width: 1024px) and (height: 768px) {
+    .header-intro {
+        font-size: 70px;
+        padding-top: 7%;
+    }
+    .footer {
+        padding-top: 45%;
+    }
+}

@@ -1,0 +1,36 @@
+/* Pixel 2 */
+
+@media screen and (width: 411px) and (height: 731px) {
+    .header-intro {
+        padding-top: 40%;
+    }
+    .footer {
+        padding-top: 120%;
+    }
+}
+
+@media screen and (width: 731px) and (height: 411px) {
+    .header-intro {
+        font-size: 35px;
+        padding-top: 5%;
+    }
+    .footer {
+        padding-top: 23%;
+    }
+    .footer-ribbon img {
+        width: 60px;
+        height: 50px;
+    }
+    .nav-button {
+        font-size: 17px;
+    }
+    .nav-button:hover {
+        font-size: 18px;
+    }
+    #ly-icon {
+        font-size: 25px;
+    }
+    .panel {
+        font-size: 12px;
+    }
+}

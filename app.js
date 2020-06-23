@@ -1,24 +1,23 @@
 const express = require("express"),
-  http = require("http"),
-  ejs = require("ejs"),
-  url = require("url"),
   bodyParser = require("body-parser"),
+  cors = require('cors'),
   helmet = require("helmet"),
-  compression = require("compression"),
-  leoRouter = require("./routes/leoRouter");
+  compression = require("compression")
 
 const app = express();
-app.use(express.static("public")); //For serving css, js, imgs..
+const corsOptions = {
+   allowedHeaders: 'Access-Control-Allow-Headers,Origin, X-Requested-With, Content-Type, Accept',
+   origin: '*',
+};
+app.use(cors(corsOptions));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(compression());
 app.use(helmet());
-app.use("/", leoRouter);
-
-app.set("views", "./views");
-app.set("view engine", "ejs");
-app.engine("html", ejs.renderFile);
-
-const port = (process.env.PORT || '8000')
-const server = app.listen(port, () => {
-console.log(`Express running → PORT ${port}`);
+app.use(helmet.referrerPolicy({policy: 'same-origin'}));
+app.use(express.static(path.join(__dirname, 'build')));
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
+
+const port = process.env.PORT || '9000';
+app.listen(port);

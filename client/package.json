@@ -1,0 +1,44 @@
+{
+  "name": "leonid.app",
+  "version": "3.0.0",
+  "private": true,
+  "engines": {
+    "npm": ">=6.10.0",
+    "node": ">=12.6.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "postbuild": "mv build ../",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "scss": "sass --watch src/scss:src/styles"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "eslint": "^7.3.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.4",
+    "eslint-plugin-security": "^1.4.0",
+    "gsap": "^3.3.4",
+    "node-fetch": "^2.6.0",
+    "p5": "^1.0.0",
+    "prettier": "^2.0.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
+    "sass": "^1.26.9"
+  }
+}

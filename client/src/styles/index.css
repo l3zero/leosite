@@ -22,7 +22,7 @@ body {
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-areas: "title-photo my-info" "my-links my-info";
+  grid-template-areas: "my-photo my-info" "my-links my-info";
   justify-items: center;
   align-items: center;
 }

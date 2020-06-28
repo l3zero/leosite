@@ -8,7 +8,8 @@ export default function Links() {
             {links.map((link) => {
                return (
                   <div id={link.title.toLowerCase().trim()} key={link.title.toLowerCase().trim()}>
-                     <img src={require(link.image)} alt=''></img>
+                     <img src={link.icon} alt='' style={{width: '20px', height: '20px'}}></img>
+                     {link.title}
                   </div>
                )
             })}

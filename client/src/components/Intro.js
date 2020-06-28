@@ -12,11 +12,11 @@ export default function Intro() {
             <span>Sleek</span>?
          </div>
          <div id='intro-answer'>What a coincidence. So do I.</div>
-         <img
-            src={require('../img/Main-Leo-Job-Photo-2.jpg')}
+         {/* <img
+            src={require('/Main-Leo-Job-Photo-2.jpg')}
             alt='Leonid-Yanchis-Photo'
             style={{width: '200px', height: '200px'}}
-         />
+         /> */}
          <div id='intro-statement'>Hi. My name is Leo and I love the world of web development.</div>
       </React.Fragment>
    )

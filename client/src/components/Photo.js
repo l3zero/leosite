@@ -6,10 +6,18 @@ export default function Photo() {
          <div id='photo-section' style={{gridArea: 'my-photo'}}>
             <div>Leonid Yanchis</div>
             <div>Software Engineer</div>
-            <img id='resume' src={require('../img/download.svg')} />
+            <a
+               href='/Leonid_Yanchis2020.pdf'
+               target='_blank'
+               type='application/pdf'
+               download
+               referrerPolicy='no-referrer'>
+               <img id='resume' src='/download.svg' style={{width: '20px', height: '20px'}} />
+            </a>
+
             <img
                id='my-photo'
-               src={require('../img/Main-Leo-Job-Photo-2.jpg')}
+               src='/Main-Leo-Job-Photo-2.jpg'
                alt='Leonid-Yanchis-Photo'
                style={{width: '200px', height: '200px'}}
             />

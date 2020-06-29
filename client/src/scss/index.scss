@@ -6,13 +6,13 @@
 }
 
 html {
-  width: 100%;
-  height: 100%;
+  // width: 100%;
+  // height: 100%;
 }
 
 body {
-  width: 100%;
-  height: 100%;
+  // width: 100%;
+  // height: 100%;
   margin: 0;
 
   background-color: white;
@@ -25,12 +25,12 @@ body {
   grid-column-gap: 10px;
   // justify-content: center;
   // align-content: center;
-  height: 100vh;
+  height: 95vh;
   width: 100vw;
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-areas: "title-photo my-info" "my-links my-info";
+  grid-template-areas: "my-photo my-info" "my-links my-info";
   justify-items: center;
   align-items: center;
 }

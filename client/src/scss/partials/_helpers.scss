@@ -61,3 +61,33 @@
     justify-content: $position;
     align-items: $position;
 }
+@mixin meterFill($percent) {
+    @if ($percent == 70%) {
+        @keyframes fill70 {
+            0% {
+                width: 0%;
+            }
+            100% {
+                width: 70%;
+            }
+        }
+    } @else if ($percent == 65%) {
+        @keyframes fill65 {
+            0% {
+                width: 0%;
+            }
+            100% {
+                width: 65%;
+            }
+        }
+    } @else if ($percent == 55%) {
+        @keyframes fill55 {
+            0% {
+                width: 0%;
+            }
+            100% {
+                width: 55%;
+            }
+        }
+    }
+}

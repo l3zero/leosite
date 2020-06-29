@@ -1,5 +1,6 @@
 import React, {Component, useEffect} from 'react'
 import {skills} from '../data/skills.js'
+import {projects} from '../data/projects.js'
 import '../styles/myInfo.css'
 
 export default function Info() {
@@ -30,46 +31,35 @@ export default function Info() {
             <div id='skills-container' className='tabcontent'>
                {skills.map((skill) => {
                   return (
-                     <div id={link.title.toLowerCase().trim()} key={link.title.toLowerCase().trim()}>
-                        <img src={link.icon} alt='' style={{width: '20px', height: '20px'}}></img>
-                        {link.title}
+                     <React.Fragment>
+                        <span className='skill-titles'>
+                           {skill.title}
+                           <img
+                              src={skill.icon}
+                              alt=''
+                              key={skill.title.toLowerCase().trim()}
+                              style={{width: '30px', height: '30px'}}></img>
+                        </span>
+                        <div>
+                           <span
+                              className='meter'
+                              style={{
+                                 width: `${skill.percent}%`,
+                                 animation: `fill${skill.percent} 1.5s ease-in-out`,
+                              }}></span>
+                        </div>
+                     </React.Fragment>
+                  )
+               })}
+            </div>
+            <div id='projects-container' className='tabcontent'>
+               {projects.map((project) => {
+                  return (
+                     <div id={project.title.toLowerCase().trim()} key={project.title.toLowerCase().trim()}>
+                        {project.title}
                      </div>
                   )
                })}
-
-               {/* <span className='skill-titles'>Javascript</span>
-               <div>
-                  <span className='meter'></span>
-               </div>
-               <span className='skill-titles'>NodeJS</span>
-               <div>
-                  <span className='meter' style={{width: '55%', animation: 'fill55 1.5s ease-in-out'}}></span>
-               </div>
-               <span className='skill-titles'>ReactJS</span>
-               <div>
-                  <span className='meter' style={{width: '55%', animation: 'fill55 1.5s ease-in-out'}}></span>
-               </div>
-               <span className='skill-titles'>CSS / HTML</span>
-               <div>
-                  <span className='meter' style={{width: '65%', animation: 'fill65 1.5s ease-in-out'}}></span>
-               </div>
-
-               <span className='skill-titles'>Linux / Bash</span>
-               <div>
-                  <span className='meter' style={{width: '55%', animation: 'fill55 1.5s ease-in-out'}}></span>
-               </div>
-               <span className='skill-titles'>Team Management</span>
-               <div>
-                  <span className='meter' style={{width: '70%'}}></span>
-               </div> */}
-            </div>
-            <div id='projects' className='tabcontent'>
-               <div>
-                  <a href='/'>this</a> 🙃
-               </div>
-               <div>
-                  <a href='https://leo-weather1337.herokuapp.com/'>Weather</a> ⛅
-               </div>
             </div>
          </div>
       </React.Fragment>

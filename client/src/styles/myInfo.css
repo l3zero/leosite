@@ -52,16 +52,16 @@
   animation: fill70 1.5s ease-in-out;
 }
 
-#projects {
+#projects-container {
   display: flex;
   flex-flow: column wrap;
   font-size: 50px;
 }
-#projects a:visited,
-#projects a:link {
+#projects-container a:visited,
+#projects-container a:link {
   text-decoration: none;
 }
-#projects a:hover {
+#projects-container a:hover {
   color: black;
 }
 

@@ -55,7 +55,7 @@
 #projects-container {
   display: flex;
   flex-flow: column wrap;
-  font-size: 50px;
+  font-size: 20px;
 }
 #projects-container a:visited,
 #projects-container a:link {

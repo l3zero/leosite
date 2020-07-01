@@ -1,0 +1,22 @@
+#photo-section {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  align-self: start;
+  width: 100%;
+  height: min-content;
+}
+#photo-section div:nth-child(2) {
+  display: flex;
+  flex-flow: column nowrap;
+}
+#photo-section a {
+  margin-top: 100%;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+#photo-section span {
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=photoSection.css.map */

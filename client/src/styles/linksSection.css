@@ -1,0 +1,17 @@
+#links-section {
+  display: flex;
+  flex-flow: column nowrap;
+  align-self: start;
+  justify-self: start;
+  font-size: 25px;
+  margin-top: 0px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+#links-section img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/*# sourceMappingURL=linksSection.css.map */

@@ -9,8 +9,8 @@ body {
 }
 
 #root {
-  grid-column-gap: 10px;
-  height: 95vh;
+  grid-column-gap: 20px;
+  height: 100vh;
   width: 100vw;
   overflow: hidden;
   display: grid;

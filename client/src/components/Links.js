@@ -9,8 +9,9 @@ export default function Links() {
             {links.map((link) => {
                return (
                   <div id={link.title.toLowerCase().trim()} key={link.title.toLowerCase().trim()}>
-                     <img src={link.icon} alt='' style={{width: '10%', height: 'auto'}}></img>
-                     <span>{link.title}</span>
+                     <a href={link.url}>
+                        <img src={link.icon} alt={link.title} style={{width: '10%', height: 'auto'}}></img>
+                     </a>
                   </div>
                )
             })}

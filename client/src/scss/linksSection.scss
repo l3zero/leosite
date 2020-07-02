@@ -7,10 +7,18 @@
     flex-flow: column nowrap;
     align-self: start;
     justify-self: start;
-    font-size: 25px;
+    font-size: 18px;
+    div {
+        padding-bottom: 10px;
+        a,
+        a:visited {
+            text-decoration: none;
+            color: black;
+        }
+    }
     @include helpers.margin(0px, 0, 0, 5px);
     img {
         vertical-align: middle;
-        margin-right: 5px;
+        margin-left: 5px;
     }
 }

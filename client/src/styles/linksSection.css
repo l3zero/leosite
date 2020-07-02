@@ -3,15 +3,23 @@
   flex-flow: column nowrap;
   align-self: start;
   justify-self: start;
-  font-size: 25px;
+  font-size: 18px;
   margin-top: 0px;
   margin-right: 0;
   margin-bottom: 0;
   margin-left: 5px;
 }
+#links-section div {
+  padding-bottom: 10px;
+}
+#links-section div a,
+#links-section div a:visited {
+  text-decoration: none;
+  color: black;
+}
 #links-section img {
   vertical-align: middle;
-  margin-right: 5px;
+  margin-left: 5px;
 }
 
 /*# sourceMappingURL=linksSection.css.map */

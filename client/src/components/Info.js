@@ -2,11 +2,32 @@ import React, {Component, useEffect} from 'react'
 import {skills} from '../data/skills.js'
 import {projects} from '../data/projects.js'
 import '../styles/myInfo.css'
+import * as PIXI from 'pixi.js'
 
 export default function Info() {
    useEffect(() => {
       // Get the element with id="defaultOpen" and click on it
-      document.getElementById('defaultOpen').click()
+      // document.getElementById('defaultOpen').click()
+
+      const app = new PIXI.Application({backgroundColor: 0x1099bb})
+      document.body.appendChild(app.view)
+
+      const loader = PIXI.Loader.shared
+
+      loader.add('karma', '../karma.ttf')
+      loader.load((loader, resources) => {
+         const bitmapFontText = new PIXI.BitmapText('bitmap fonts are supported!\nWoo yay!', {
+            font: '55px karma',
+            align: 'left',
+         })
+
+         bitmapFontText.x = 50
+         bitmapFontText.y = 200
+
+         app.stage.addChild(bitmapFontText)
+      })
+
+      loader.load()
    }, [])
    return (
       <React.Fragment>
@@ -25,21 +46,25 @@ export default function Info() {
             <div id='about-me' className='tabcontent'>
                <p>
                   I am a Full Stack Software Developer passionate about Front-End technologies and Web Architectures. In
-                  my early 20's I got into computer building, video games, music production and photography-inspired
-                  art. I aligned my creativity and love for art & design with Software Engineering when my first
-                  daughter was born. I spent 4 years in Arizona State's strong SE curriculum. I learned the ins and outs
-                  of the SDLC, OS & Networks, Computer Science fundamentals and all aspects of software engineering in
-                  various fields. Close to graduation I completely fell in love with web development and the endless
-                  possibilities it provides. I quickly realized all my interests and passions align in web development
-                  and the future is truly exciting.
+                  my late teens I got into computer building, video games, music production and photography-inspired
+                  art. Later on I decided to align my creativity with Software Engineering when my first daughter was
+                  born. I studied at Arizona State's strong SE program. I learned the ins and outs of the SDLC, OS &
+                  Networks, Computer Science fundamentals and other aspects of software engineering and design. Close to
+                  graduation I realized my interests and passions align in web development and the future is truly
+                  exciting.
                   <br />
                   <br />
-                  Currently I enjoy working on projects (personal and freelance) in the Javascript, Node & React
-                  eco-system, with a growing fondness for the JAMstack and static site generators. I'm always reading
-                  weekly newsletters and trying out new frameworks in my personal projects. One of my main missions is
-                  to create a future web experience that is more lively and animated. With those goals in mind, I plan
-                  on learning and utilizing technologies like GreenSock, Pixi.js, Phaser, Web AR/VR and more, while
-                  leveraging the immense reusability of the modern web components community.
+                  Presently I enjoy working on projects in the Javascript, Node & React eco-system, with a growing
+                  fondness for the JAMstack and static site generators. One of my main missions is to create a future
+                  web experience that is more lively and animated. With those goals in mind, I plan on learning and
+                  utilizing technologies like GreenSock, Pixi.js, Phaser, Web AR/VR and more, while leveraging the
+                  immense reusability of the modern web components community.
+                  <br />
+                  <br />
+                  <i>
+                     I am currently open to full-time remote roles (contract, freelance, permanent) or on-site in the
+                     NYC / NJ / PA area.
+                  </i>
                </p>
             </div>
             <div id='skills-container' className='tabcontent'>

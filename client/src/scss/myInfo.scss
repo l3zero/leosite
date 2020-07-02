@@ -3,14 +3,20 @@
 #info-section {
     place-self: start;
 }
-
+#about-me {
+    display: none;
+    font-size: 18px;
+    line-height: 35px;
+    padding-right: 10%;
+}
 .tabs {
     display: grid;
     position: fixed;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 20px;
     overflow: hidden;
-    width: 60%;
+    width: 65%;
+    padding-top: 10px;
     button {
         // color: white;
         font-size: 25px;
@@ -37,7 +43,8 @@
 }
 
 #skills-container {
-    display: flex;
+    display: none;
+    // display: flex;
     flex-flow: row wrap;
     align-items: stretch;
     justify-items: start;
@@ -63,7 +70,8 @@
 }
 
 #projects-container {
-    display: flex;
+    display: none;
+    // display: flex;
     flex-flow: column wrap;
     font-size: 20px;
     a:visited,

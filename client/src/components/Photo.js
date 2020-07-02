@@ -5,7 +5,12 @@ export default function Photo() {
    return (
       <React.Fragment>
          <div id='photo-section' style={{gridArea: 'my-photo'}}>
-            <img id='my-photo' src='/len-small.png' alt='Leonid-Yanchis' style={{width: '100%', height: 'auto'}} />
+            <img
+               id='my-photo'
+               src='/len-small.png'
+               alt='Leonid-Yanchis'
+               style={{width: '100%', height: 'auto', filter: 'drop-shadow(-5px -5px 12px orange)'}}
+            />
 
             <div>
                <span>Leonid Yanchis</span>

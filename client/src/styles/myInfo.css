@@ -40,6 +40,7 @@
   align-items: stretch;
   justify-items: start;
   font-size: 20px;
+  margin-top: 10px;
 }
 #skills-container div {
   width: 100%;

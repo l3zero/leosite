@@ -1,33 +1,13 @@
 import React, {Component, useEffect} from 'react'
-import {skills} from '../data/skills.js'
+import {skills, miniSkills} from '../data/skills.js'
 import {projects} from '../data/projects.js'
 import '../styles/myInfo.css'
-import * as PIXI from 'pixi.js'
+// import * as PIXI from 'pixi.js'
 
 export default function Info() {
    useEffect(() => {
       // Get the element with id="defaultOpen" and click on it
       // document.getElementById('defaultOpen').click()
-
-      const app = new PIXI.Application({backgroundColor: 0x1099bb})
-      document.body.appendChild(app.view)
-
-      const loader = PIXI.Loader.shared
-
-      loader.add('karma', '../karma.ttf')
-      loader.load((loader, resources) => {
-         const bitmapFontText = new PIXI.BitmapText('bitmap fonts are supported!\nWoo yay!', {
-            font: '55px karma',
-            align: 'left',
-         })
-
-         bitmapFontText.x = 50
-         bitmapFontText.y = 200
-
-         app.stage.addChild(bitmapFontText)
-      })
-
-      loader.load()
    }, [])
    return (
       <React.Fragment>
@@ -72,12 +52,12 @@ export default function Info() {
                   return (
                      <React.Fragment>
                         <span className='skill-titles'>
-                           {skill.title}
                            <img
                               src={skill.icon}
                               alt=''
                               key={skill.title.toLowerCase().trim()}
-                              style={{width: '30px', height: '30px'}}></img>
+                              style={{width: '50px', height: '50px'}}></img>
+                           {skill.title}
                         </span>
                         <div>
                            <span
@@ -90,6 +70,19 @@ export default function Info() {
                      </React.Fragment>
                   )
                })}
+               {/* <div id='mini-skills-container'>
+                  {miniSkills.map((skill) => {
+                     return (
+                        <img
+                           src={skill}
+                           alt=''
+                           style={{
+                              width: '50px',
+                              height: '50px',
+                           }}></img>
+                     )
+                  })}
+               </div> */}
             </div>
             <div id='projects-container' className='tabcontent'>
                {projects.map((project) => {
@@ -135,6 +128,7 @@ function openSkills(e) {
       tablinks[i].className = tablinks[i].className.replace(' active', '')
    }
    document.getElementById('skills-container').style.display = 'flex'
+   // document.getElementById('mini-skills-container').style.display = 'flex'
    e.currentTarget.className += ' active'
 }
 

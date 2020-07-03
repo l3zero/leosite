@@ -11,7 +11,7 @@
         flex-flow: column nowrap;
     }
     a {
-        @include helpers.margin(100%, 0, 0, 10px);
+        @include helpers.margin(105%, 0, 0, 10px);
     }
     span {
         font-size: 18px;

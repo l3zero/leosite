@@ -9,7 +9,7 @@ export default function Photo() {
                id='my-photo'
                src='/len-small.png'
                alt='Leonid-Yanchis'
-               style={{width: '100%', height: 'auto', filter: 'drop-shadow(-5px -5px 12px orange)'}}
+               style={{width: '100%', height: 'auto', filter: 'drop-shadow(-5px -5px 10px white)'}}
             />
 
             <div>

@@ -8,6 +8,7 @@
     align-self: start;
     justify-self: start;
     font-size: 18px;
+    @include helpers.margin(0px, 0, 0, 5px);
     div {
         padding-bottom: 10px;
         a,
@@ -15,10 +16,12 @@
             text-decoration: none;
             color: black;
         }
-    }
-    @include helpers.margin(0px, 0, 0, 5px);
-    img {
-        vertical-align: middle;
-        margin-left: 5px;
+        img {
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        span {
+            display: none;
+        }
     }
 }

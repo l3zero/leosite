@@ -17,9 +17,12 @@
   text-decoration: none;
   color: black;
 }
-#links-section img {
+#links-section div img {
   vertical-align: middle;
-  margin-left: 5px;
+  margin-right: 10px;
+}
+#links-section div span {
+  display: none;
 }
 
 /*# sourceMappingURL=linksSection.css.map */

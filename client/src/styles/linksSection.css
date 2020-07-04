@@ -1,4 +1,5 @@
 #links-section {
+  position: relative;
   display: flex;
   flex-flow: column nowrap;
   align-self: start;
@@ -20,9 +21,6 @@
 #links-section div img {
   vertical-align: middle;
   margin-right: 10px;
-}
-#links-section div span {
-  display: none;
 }
 
 /*# sourceMappingURL=linksSection.css.map */

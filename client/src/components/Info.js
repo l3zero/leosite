@@ -12,7 +12,10 @@ export default function Info() {
    return (
       <React.Fragment>
          <div id='info-section' style={{gridArea: 'my-info'}}>
-            <div className='tabs'>
+            <details className='tabs'>
+               <summary>
+                  <img src='/welcome.png' style={{width: '50px', height: '50px'}} />
+               </summary>
                <button id='defaultOpen' className='tablinks' onClick={openDesc}>
                   About Me
                </button>
@@ -22,7 +25,7 @@ export default function Info() {
                <button className='tablinks' onClick={openProjects}>
                   Projects
                </button>
-            </div>
+            </details>
             <div id='about-me' className='tabcontent'>
                <p>
                   I am a Full Stack Software Developer passionate about Front-End technologies and Web Architectures. In

@@ -6,20 +6,24 @@
   display: none;
   font-size: 18px;
   line-height: 35px;
-  padding-right: 10%;
+  padding-right: 15%;
 }
 
 .tabs {
   display: grid;
   position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 93%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 20px;
   overflow: hidden;
-  width: 65%;
+  width: 10%;
   padding-top: 10px;
 }
 .tabs button {
-  font-size: 25px;
+  font-size: 15px;
   letter-spacing: 1.5px;
   border: none;
   outline: none;
@@ -27,6 +31,26 @@
   cursor: pointer;
   transition: 0.3s;
 }
+.tabs button:hover {
+  color: rgba(4, 4, 148, 0.87);
+}
+.tabs button.active {
+  color: rgba(4, 4, 148, 0.87);
+}
+.tabs summary::-webkit-details-marker {
+  display: none;
+}
+.tabs summary:focus {
+  display: contents;
+}
+.tabs summary {
+  list-style: none;
+  cursor: pointer;
+}
+.tabs summary img:hover {
+  animation: spin360 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
 .tabcontent {
   font-size: 25px;
   display: none;
@@ -81,6 +105,14 @@
   }
   to {
     opacity: 1;
+  }
+}
+@keyframes spin360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 @keyframes fill70 {

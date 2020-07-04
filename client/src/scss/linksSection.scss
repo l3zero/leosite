@@ -3,6 +3,7 @@
 #links-section {
     // width: 100%;
     // height: 100%;
+    position: relative;
     display: flex;
     flex-flow: column nowrap;
     align-self: start;
@@ -19,9 +20,6 @@
         img {
             vertical-align: middle;
             margin-right: 10px;
-        }
-        span {
-            display: none;
         }
     }
 }

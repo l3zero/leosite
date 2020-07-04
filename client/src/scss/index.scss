@@ -7,7 +7,10 @@
 
 body {
   margin: 0;
-  background-color: rgba(0, 0, 0, 0.473);
+  // background-color: rgba(2, 10, 126, 0.596);
+  background: url("/smoke.jpg");
+  background-size: cover;
+  color: white;
 }
 
 #root {

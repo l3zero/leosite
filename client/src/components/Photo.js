@@ -5,11 +5,11 @@ export default function Photo() {
    return (
       <React.Fragment>
          <div id='photo-section' style={{gridArea: 'my-photo'}}>
-            <img id='my-photo' src='/len-sm.png' alt='Leonid-Yanchis' style={{width: '100%', height: 'auto'}} />
+            <img id='my-photo' src='/leo-1.png' alt='Leonid-Yanchis' style={{width: '100%', height: 'auto'}} />
 
             <div>
-               <span>Leonid Yanchis</span>
-               <span>Software Developer</span>
+               {/* <span>Leonid Yanchis</span>
+               <span>Software Developer</span> */}
                <a
                   href='/Leonid_Yanchis2020.pdf'
                   target='_blank'

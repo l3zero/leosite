@@ -10,26 +10,27 @@
 }
 
 .tabs {
+  width: 10%;
+  padding-top: 10px;
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
   position: fixed;
+  overflow: hidden;
   top: 0;
   right: 0;
   bottom: 0;
-  left: 93%;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 20px;
-  overflow: hidden;
-  width: 10%;
-  padding-top: 10px;
+  left: 92%;
 }
 .tabs button {
   font-size: 15px;
+  font-family: "Alloyink";
   letter-spacing: 1.5px;
   border: none;
   outline: none;
   background: none;
   cursor: pointer;
-  transition: 0.3s;
+  animation: fadeEffect 1s;
 }
 .tabs button:hover {
   color: rgba(4, 4, 148, 0.87);

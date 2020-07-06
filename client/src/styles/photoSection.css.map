@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../scss/photoSection.scss","../scss/partials/_helpers.scss"],"names":[],"mappings":"AAEA;EACI;EACA;EACA;EACA;EACA;;AACA;EACI;EACA;;AAEJ;ECLA,YDM4B;ECL5B,cDKkC;ECJlC,eDIqC;ECHrC,aDGwC;;AAExC;EACI","file":"photoSection.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/photoSection.scss","../scss/partials/_helpers.scss"],"names":[],"mappings":"AACQ;AAER;EACI;EACA;EACA;EACA;EAEA;;AACA;EACI;EACA;;AAEJ;ECPA,YDQ4B;ECP5B,cDOkC;ECNlC,eDMqC;ECLrC,aDKwC;EACpC;;AAKJ;EACI;EAGA","file":"photoSection.css"}

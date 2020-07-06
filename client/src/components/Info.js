@@ -7,7 +7,7 @@ import '../styles/myInfo.css'
 export default function Info() {
    useEffect(() => {
       // Get the element with id="defaultOpen" and click on it
-      // document.getElementById('defaultOpen').click()
+      document.getElementById('defaultOpen').click()
    }, [])
    return (
       <React.Fragment>
@@ -17,7 +17,7 @@ export default function Info() {
                   <img src='/welcome.png' style={{width: '50px', height: '50px'}} />
                </summary>
                <button id='defaultOpen' className='tablinks' onClick={openDesc}>
-                  About Me
+                  About
                </button>
                <button className='tablinks' onClick={openSkills}>
                   Skills

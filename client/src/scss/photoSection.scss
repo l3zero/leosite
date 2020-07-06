@@ -1,19 +1,28 @@
 @use 'partials/helpers';
+@import url("https://fonts.googleapis.com/css2?family=Modak&display=swap");
 
 #photo-section {
     display: grid;
     grid-template-columns: 1fr 0.5fr;
     align-self: start;
     width: 100%;
-    height: min-content;
+    // height: 0%;
+    font-size: 18px;
     div:nth-child(2) {
         display: flex;
         flex-flow: column nowrap;
     }
     a {
-        @include helpers.margin(105%, 0, 0, 10px);
+        @include helpers.margin(150%, 0, 0, 10px);
+        position: sticky;
     }
-    span {
-        font-size: 18px;
+    span:nth-child(1) {
+        // font-family: "Modak", cursive;
+    }
+    span:nth-child(2) {
+        position: sticky;
+        // @include helpers.pos(0, 0, 0, 20%);
+        // font-family: "Modak", cursive;
+        transform: rotate(-10deg);
     }
 }

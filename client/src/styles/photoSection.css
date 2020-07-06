@@ -1,22 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Modak&display=swap");
 #photo-section {
   display: grid;
   grid-template-columns: 1fr 0.5fr;
   align-self: start;
   width: 100%;
-  height: min-content;
+  font-size: 18px;
 }
 #photo-section div:nth-child(2) {
   display: flex;
   flex-flow: column nowrap;
 }
 #photo-section a {
-  margin-top: 105%;
+  margin-top: 150%;
   margin-right: 0;
   margin-bottom: 0;
   margin-left: 10px;
+  position: sticky;
 }
-#photo-section span {
-  font-size: 18px;
+#photo-section span:nth-child(2) {
+  position: sticky;
+  transform: rotate(-10deg);
 }
 
 /*# sourceMappingURL=photoSection.css.map */

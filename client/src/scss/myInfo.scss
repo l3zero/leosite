@@ -10,23 +10,24 @@
     padding-right: 15%;
 }
 .tabs {
-    display: grid;
-    position: fixed;
-    @include helpers.pos(0, 0, 0, 93%);
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 20px;
-    overflow: hidden;
     width: 10%;
     padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    position: fixed;
+    overflow: hidden;
+    @include helpers.pos(0, 0, 0, 92%);
     button {
         // color: white;
         font-size: 15px;
+        font-family: "Alloyink";
         letter-spacing: 1.5px;
         border: none;
         outline: none;
         background: none;
         cursor: pointer;
-        transition: 0.3s;
+        animation: fadeEffect 1s;
     }
     button:hover {
         color: rgba(4, 4, 148, 0.87);
@@ -112,6 +113,7 @@
         opacity: 1;
     }
 }
+
 @keyframes spin360 {
     from {
         transform: rotate(0deg);

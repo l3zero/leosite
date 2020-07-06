@@ -1,11 +1,16 @@
+@font-face {
+  font-family: "Alloyink";
+  src: url("/Alloyink.otf") format("opentype");
+  src: url("/Alloyink.ttf") format("truetype");
+}
 #links-section {
-  position: relative;
   display: flex;
   flex-flow: column nowrap;
   align-self: start;
   justify-self: start;
-  font-size: 18px;
-  margin-top: 0px;
+  font-size: 20px;
+  font-family: "Alloyink";
+  margin-top: 0;
   margin-right: 0;
   margin-bottom: 0;
   margin-left: 5px;

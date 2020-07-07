@@ -7,3 +7,16 @@ export const skills = [
    {title: 'Linux / Bash', icon: 'linux.svg', percent: '55'},
    {title: 'Team Management', icon: 'team.svg', percent: '55'},
 ]
+export const miniSkills = [
+   'babel.png',
+   'eslint.png',
+   'express.png',
+   'http.png',
+   'jest.png',
+   'mongodb.png',
+   'nginx.png',
+   'npm.png',
+   'prettier.png',
+   'sass.svg',
+   'webpack.png',
+]

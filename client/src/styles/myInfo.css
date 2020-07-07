@@ -2,35 +2,75 @@
   place-self: start;
 }
 
+#about-me {
+  display: none;
+  padding-right: 15%;
+  font-size: 17px;
+  font-family: "Jua", sans-serif;
+  line-height: 33px;
+}
+#about-me p {
+  height: 90vh;
+  overflow: auto;
+}
+
 .tabs {
+  width: 10%;
+  padding-top: 10px;
   display: grid;
-  position: fixed;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 20px;
+  position: fixed;
   overflow: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 92%;
 }
 .tabs button {
-  font-size: 25px;
+  font-size: 15px;
+  font-family: "Alloyink";
   letter-spacing: 1.5px;
   border: none;
   outline: none;
   background: none;
   cursor: pointer;
-  transition: 0.3s;
+  animation: fade 1s;
 }
+.tabs button:hover {
+  color: rgba(4, 4, 148, 0.87);
+}
+.tabs button.active {
+  color: rgba(4, 4, 148, 0.87);
+}
+.tabs summary::-webkit-details-marker {
+  display: none;
+}
+.tabs summary:focus {
+  display: contents;
+}
+.tabs summary {
+  list-style: none;
+  cursor: pointer;
+}
+.tabs summary img:hover {
+  animation: spin 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
 .tabcontent {
   font-size: 25px;
   display: none;
   padding-top: 50px;
-  animation: fadeEffect 1s;
+  animation: fade 1s;
 }
 
 #skills-container {
-  display: flex;
+  display: none;
   flex-flow: row wrap;
   align-items: stretch;
   justify-items: start;
   font-size: 20px;
+  margin-top: 10px;
 }
 #skills-container div {
   width: 100%;
@@ -53,7 +93,7 @@
 }
 
 #projects-container {
-  display: flex;
+  display: none;
   flex-flow: column wrap;
   font-size: 20px;
 }
@@ -65,14 +105,6 @@
   color: black;
 }
 
-@keyframes fadeEffect {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 @keyframes fill70 {
   0% {
     width: 0%;
@@ -95,6 +127,22 @@
   }
   100% {
     width: 55%;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 

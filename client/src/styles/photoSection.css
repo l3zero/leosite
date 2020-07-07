@@ -1,0 +1,61 @@
+#photo-section {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  align-self: start;
+  font-size: 25px;
+  font-family: "Lacquer", cursive;
+}
+#photo-section div:nth-child(2) {
+  display: flex;
+  flex-flow: column nowrap;
+}
+#photo-section a {
+  margin-top: 150%;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 10px;
+  position: sticky;
+}
+#photo-section a #resume {
+  animation: wiggle-v 0.8s alternate-reverse infinite;
+}
+#photo-section span:nth-child(1) {
+  position: absolute;
+  top: 4%;
+  left: 14%;
+  transform: rotate(-10deg);
+}
+#photo-section span:nth-child(2) {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  transform: rotate(-10deg);
+  z-index: -1;
+  font-size: 40px;
+  background: url("/wave.png");
+  background-repeat: round;
+  background-size: contain;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: letters-bg 5s linear infinite;
+  backface-visibility: hidden;
+}
+
+@keyframes letters-bg {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+@keyframes wiggle-v {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+/*# sourceMappingURL=photoSection.css.map */

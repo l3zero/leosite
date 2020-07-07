@@ -45,8 +45,10 @@ export default function Info() {
                   <br />
                   <br />
                   <i>
-                     I am currently open to full-time remote roles (contract, freelance, permanent) or on-site in the
-                     NYC / NJ / PA area.
+                     <b>
+                        I am currently open to full-time remote roles (contract, freelance, permanent) or on-site in the
+                        NYC / NJ / PA area.
+                     </b>
                   </i>
                </p>
             </div>
@@ -116,7 +118,7 @@ function openDesc(e) {
    for (let i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(' active', '')
    }
-   document.getElementById('about-me').style.display = 'inherit'
+   document.getElementById('about-me').style.display = 'flex'
    e.currentTarget.className += ' active'
 }
 

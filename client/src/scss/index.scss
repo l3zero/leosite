@@ -1,5 +1,12 @@
 @use 'partials/colors' as colors;
 @use 'partials/fonts' as fonts;
+@import url("https://fonts.googleapis.com/css2?family=Lacquer&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jua&family=MuseoModerno:wght@413&display=swap");
+@font-face {
+  font-family: "Alloyink";
+  src: url("/Alloyink.otf") format("opentype");
+  src: url("/Alloyink.ttf") format("truetype");
+}
 
 * {
   box-sizing: border-box;

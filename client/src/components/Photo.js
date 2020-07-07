@@ -8,8 +8,10 @@ export default function Photo() {
             <img id='my-photo' src='/leo-1.png' alt='Leonid-Yanchis' style={{width: '100%', height: 'auto'}} />
 
             <div>
-               {/* <span>Leonid Yanchis</span>
-               <span>Software Developer</span> */}
+               <span>Leo</span>
+               <span>
+                  Software<br></br> Developer
+               </span>
                <a
                   href='/Leonid_Yanchis2020.pdf'
                   target='_blank'

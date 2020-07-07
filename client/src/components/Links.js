@@ -10,7 +10,7 @@ export default function Links() {
                return (
                   <div id={link.title.toLowerCase().trim()} key={link.title.toLowerCase().trim()}>
                      <a href={link.url}>
-                        <img src={link.icon} alt={link.title} style={{width: '10%', height: 'auto'}}></img>
+                        <img src={link.icon} alt={link.title} style={{width: '40px', height: 'auto'}}></img>
                         {link.title}
                      </a>
                   </div>

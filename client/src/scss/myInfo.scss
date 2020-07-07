@@ -1,13 +1,21 @@
 @use 'partials/helpers';
+@use 'partials/animations';
 
 #info-section {
     place-self: start;
 }
 #about-me {
     display: none;
-    font-size: 18px;
-    line-height: 35px;
     padding-right: 15%;
+    font-size: 17px;
+    font-family: "Jua", sans-serif;
+    line-height: 33px;
+    // letter-spacing: 1px;
+    p {
+        // margin-top: 10%;
+        height: 90vh;
+        overflow: auto;
+    }
 }
 .tabs {
     width: 10%;
@@ -27,7 +35,7 @@
         outline: none;
         background: none;
         cursor: pointer;
-        animation: fadeEffect 1s;
+        animation: fade 1s;
     }
     button:hover {
         color: rgba(4, 4, 148, 0.87);
@@ -46,7 +54,7 @@
         list-style: none;
         cursor: pointer;
         img:hover {
-            animation: spin360 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+            animation: spin 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
         }
     }
 }
@@ -55,7 +63,7 @@
     font-size: 25px;
     display: none;
     padding-top: 50px;
-    animation: fadeEffect 1s;
+    animation: fade 1s;
 }
 
 #skills-container {
@@ -105,23 +113,8 @@
     }
 }
 
-@keyframes fadeEffect {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes spin360 {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
 @include helpers.meterFill(70%);
 @include helpers.meterFill(65%);
 @include helpers.meterFill(55%);
+@include animations.fade();
+@include animations.spin(0deg, 360deg);

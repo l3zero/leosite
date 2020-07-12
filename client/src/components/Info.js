@@ -93,12 +93,20 @@ export default function Info() {
                {projects.map((project) => {
                   return (
                      <React.Fragment>
-                        <span>{project.title}</span>
-                        <img src={project.icon} key={project.title.toLowerCase().trim()} alt=''></img>
+                        <a href={project.url}>
+                           <img
+                              src={project.icon}
+                              key={project.title.toLowerCase().trim()}
+                              alt=''
+                              style={{width: '40px', height: 'auto'}}></img>
+                           {project.title}
+                        </a>
+
                         <p>
                            {project.desc}
                            <br />
-                           {project.tech}
+                           <br />
+                           Tech: {project.tech}
                         </p>
                      </React.Fragment>
                   )

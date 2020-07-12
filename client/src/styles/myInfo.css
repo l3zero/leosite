@@ -5,6 +5,7 @@
 #about-me {
   display: none;
   padding-right: 15%;
+  padding-top: 50px;
   font-size: 17px;
   font-family: "Jua", sans-serif;
   line-height: 33px;
@@ -60,7 +61,7 @@
 .tabcontent {
   font-size: 25px;
   display: none;
-  padding-top: 50px;
+  padding-top: 15px;
   animation: fade 1s;
 }
 
@@ -69,18 +70,26 @@
   flex-flow: row wrap;
   align-items: stretch;
   justify-items: start;
-  font-size: 20px;
+  width: 75%;
   margin-top: 10px;
 }
 #skills-container div {
   width: 100%;
   height: 25px;
+  background-color: lightblue;
+  border-radius: 5px;
 }
 
 .skill-titles {
+  font-family: "Jua", sans-serif;
+  font-size: 17px;
   font-weight: bold;
-  font-size: 20px;
   text-align: start;
+}
+.skill-titles img {
+  vertical-align: middle;
+  margin: 5px;
+  margin-left: 0;
 }
 
 .meter {
@@ -100,9 +109,10 @@
 #projects-container a:visited,
 #projects-container a:link {
   text-decoration: none;
-}
-#projects-container a:hover {
   color: black;
+}
+#projects-container img {
+  vertical-align: bottom;
 }
 
 @keyframes fill70 {

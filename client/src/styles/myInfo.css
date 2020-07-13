@@ -83,7 +83,6 @@
 .skill-titles {
   font-family: "Jua", sans-serif;
   font-size: 17px;
-  font-weight: bold;
   text-align: start;
 }
 .skill-titles img {
@@ -103,16 +102,25 @@
 
 #projects-container {
   display: none;
-  flex-flow: column wrap;
-  font-size: 20px;
+  flex-flow: row wrap;
+  justify-content: center;
+  overflow: auto;
+  width: 75%;
+  font-family: "Jua", sans-serif;
+  font-size: 16px;
 }
 #projects-container a:visited,
 #projects-container a:link {
   text-decoration: none;
-  color: black;
+  color: blue;
+  font-size: 17px;
 }
 #projects-container img {
   vertical-align: bottom;
+  padding-right: 5px;
+}
+#projects-container span {
+  background-color: blue;
 }
 
 @keyframes fill70 {

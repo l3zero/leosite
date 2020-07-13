@@ -92,7 +92,7 @@ export default function Info() {
             <div id='projects-container' className='tabcontent'>
                {projects.map((project) => {
                   return (
-                     <React.Fragment>
+                     <div>
                         <a href={project.url}>
                            <img
                               src={project.icon}
@@ -106,9 +106,9 @@ export default function Info() {
                            {project.desc}
                            <br />
                            <br />
-                           Tech: {project.tech}
+                           <span>Tech: {project.tech}</span>
                         </p>
-                     </React.Fragment>
+                     </div>
                   )
                })}
             </div>

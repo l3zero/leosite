@@ -86,7 +86,7 @@
     // color: black;
     font-family: "Jua", sans-serif;
     font-size: 17px;
-    font-weight: bold;
+    // font-weight: bold;
     text-align: start;
     img {
         vertical-align: middle;
@@ -114,17 +114,28 @@
 #projects-container {
     display: none;
     // display: flex;
-    flex-flow: column wrap;
-    font-size: 20px;
+    flex-flow: row wrap;
+    justify-content: center;
+    // padding-right: 15%;
+    overflow: auto;
+    width: 75%;
+    font-family: "Jua", sans-serif;
+    font-size: 16px;
+    // line-height: 22px;
     a:visited,
     a:link {
         text-decoration: none;
-        color: black;
+        color: blue;
+        font-size: 17px;
     }
     a:hover {
     }
     img {
         vertical-align: bottom;
+        padding-right: 5px;
+    }
+    span {
+        background-color: blue;
     }
 }
 

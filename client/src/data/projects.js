@@ -21,6 +21,6 @@ export const projects = [
       url: 'https://github.com/kRyM1337/slide-news',
       tech: 'React, Node, Express, MongoDB + Mongoose, Sass, GSAP, p5, Helmet, ESlint, Prettier',
       desc:
-         'News web app powered by DEV.to that collects & updates trending articles based on user preference and displays in an easy to digest format. I created this app to help myself receive updated dev news and help the DEV.to community as well. For this project I learned and utilized GSAP & p5 animation, Sass, React Router, mongoDB, proxying, web security best practices, production optimization and performance techniques. It was a great learning experience and I plan to keep adding features to this app.',
+         'News web app powered by DEV.to that collects & updates trending articles based on user preference and displays in an easy to digest format. I created this app to help myself receive updated dev news and help the DEV.to community as well. For this project I learned and utilized GSAP & p5 animation, Sass, React Router, mongoDB, proxying, web security best practices, production optimization and performance techniques.',
    },
 ]

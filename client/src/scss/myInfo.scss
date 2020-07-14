@@ -115,27 +115,51 @@
     display: none;
     // display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    // padding-right: 15%;
-    overflow: auto;
+    // overflow: auto;
     width: 75%;
     font-family: "Jua", sans-serif;
-    font-size: 16px;
-    // line-height: 22px;
+    font-size: 25px;
+    line-height: 40px;
+
+    .mySlides {
+        padding-top: 5%;
+        animation: fade 1s;
+    }
     a:visited,
     a:link {
         text-decoration: none;
         color: blue;
-        font-size: 17px;
+        font-size: 35px;
     }
     a:hover {
     }
     img {
-        vertical-align: bottom;
+        vertical-align: middle;
         padding-right: 5px;
     }
     span {
         background-color: blue;
+    }
+
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        color: blue;
+        font-weight: bold;
+        font-size: 30px;
+        border-radius: 0 3px 3px 0;
+    }
+    .prev:hover,
+    .next:hover {
+        color: red;
+    }
+    .next {
+        right: 12%;
+    }
+    .prev {
+        left: 31%;
     }
 }
 

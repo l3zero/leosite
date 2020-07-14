@@ -103,24 +103,47 @@
 #projects-container {
   display: none;
   flex-flow: row wrap;
-  justify-content: center;
-  overflow: auto;
   width: 75%;
   font-family: "Jua", sans-serif;
-  font-size: 16px;
+  font-size: 25px;
+  line-height: 40px;
+}
+#projects-container .mySlides {
+  padding-top: 5%;
+  animation: fade 1s;
 }
 #projects-container a:visited,
 #projects-container a:link {
   text-decoration: none;
   color: blue;
-  font-size: 17px;
+  font-size: 35px;
 }
 #projects-container img {
-  vertical-align: bottom;
+  vertical-align: middle;
   padding-right: 5px;
 }
 #projects-container span {
   background-color: blue;
+}
+#projects-container .prev,
+#projects-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  color: blue;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 0 3px 3px 0;
+}
+#projects-container .prev:hover,
+#projects-container .next:hover {
+  color: red;
+}
+#projects-container .next {
+  right: 12%;
+}
+#projects-container .prev {
+  left: 31%;
 }
 
 @keyframes fill70 {

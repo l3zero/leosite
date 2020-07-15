@@ -1,7 +1,8 @@
 @use 'partials/colors' as colors;
 @use 'partials/fonts' as fonts;
+@use 'partials/animations';
 @import url("https://fonts.googleapis.com/css2?family=Lacquer&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Jua&family=MuseoModerno:wght@413&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
 @font-face {
   font-family: "Alloyink";
   src: url("/Alloyink.otf") format("opentype");
@@ -14,14 +15,14 @@
 
 body {
   margin: 0;
-  background-color: white;
+  // background-color: white;
 }
 
 #root {
   // grid-auto-flow: row;
   // grid-auto-rows: 100%;
   // grid-auto-rows: minmax(10px, auto);
-  grid-column-gap: 20px;
+  grid-column-gap: 50px;
   // grid-row-gap: 30px;
   // justify-content: center;
   // align-content: center;
@@ -34,6 +35,24 @@ body {
   justify-items: center;
   align-items: center;
 }
+#goo1 {
+  // display: initial;
+  position: fixed;
+  display: block;
+  top: 20%;
+  left: 50%;
+  // left: 10%;
+  z-index: -2;
+  svg {
+    #circ1 {
+      // animation: spin 2s infinite linear;
+    }
+    #circ2 {
+      // animation: spin 1s infinite linear;
+    }
+  }
+}
+@include animations.spin(0deg, 360deg);
 
 // @media only screen and (max-width: 1440px) and (max-height: 850px) {
 // }

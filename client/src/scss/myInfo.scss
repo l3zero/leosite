@@ -48,9 +48,9 @@
         display: none;
     }
 
-    summary:focus {
-        display: contents;
-    }
+    // summary:focus {
+    //     display: contents;
+    // }
     summary {
         list-style: none;
         cursor: pointer;

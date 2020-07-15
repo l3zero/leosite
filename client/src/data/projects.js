@@ -8,7 +8,7 @@ export const projects = [
          'This is version 3 of my personal website. I decided to make v3 more an interactive experience about myself than a static portfolio site. I utilized lots of timeline animation, custom fonts, background graphics and concise display that looks great on any device.',
    },
    {
-      title: 'Weather.',
+      title: 'Weather',
       icon: 'weather.png',
       url: 'https://github.com/kRyM1337/leo-weather',
       tech: 'React, Node, Node-Cache, OpenWeather API, CSS3, Heroku with add-ons',

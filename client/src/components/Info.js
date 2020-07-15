@@ -12,20 +12,22 @@ export default function Info() {
    }, [])
    return (
       <div id='info-section' style={{gridArea: 'my-info'}}>
-         <details className='tabs'>
-            <summary>
-               <img src='/welcome.png' style={{width: '50px', height: '50px'}} />
-            </summary>
-            <button id='defaultOpen' className='tablinks' onClick={openDesc}>
-               About
-            </button>
-            <button className='tablinks' onClick={openSkills}>
-               Skills
-            </button>
-            <button className='tablinks' onClick={openProjects}>
-               Projects
-            </button>
-         </details>
+         <aside>
+            <details className='tabs'>
+               <summary>
+                  <img src='/welcome.png' style={{width: '50px', height: '50px'}} />
+               </summary>
+               <button id='defaultOpen' className='tablinks' onClick={openDesc}>
+                  About
+               </button>
+               <button className='tablinks' onClick={openSkills}>
+                  Skills
+               </button>
+               <button className='tablinks' onClick={openProjects}>
+                  Projects
+               </button>
+            </details>
+         </aside>
          <About />
          <Skills />
          <Projects />

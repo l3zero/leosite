@@ -9,7 +9,10 @@
     // height: 0%;
     font-size: 25px;
     font-family: "Lacquer", cursive;
-    div:nth-child(2) {
+    .my-photos {
+        animation: fade 0.3s;
+    }
+    header {
         display: flex;
         flex-flow: column nowrap;
     }
@@ -18,8 +21,6 @@
         position: sticky;
         #resume {
             animation: wiggle-v 0.8s alternate-reverse infinite;
-        }
-        #resume:hover {
         }
     }
     span:nth-child(1) {
@@ -47,3 +48,4 @@
 }
 @include animations.letters-bg();
 @include animations.wiggle-vertical();
+@include animations.fade();

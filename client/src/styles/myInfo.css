@@ -47,9 +47,6 @@
 .tabs summary::-webkit-details-marker {
   display: none;
 }
-.tabs summary:focus {
-  display: contents;
-}
 .tabs summary {
   list-style: none;
   cursor: pointer;

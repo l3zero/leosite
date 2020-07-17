@@ -21,7 +21,7 @@ export default function Skills() {
                         className='meter'
                         style={{
                            width: `${skill.percent}%`,
-                           animation: `fill${skill.percent} 1.5s ease-in-out`,
+                           animation: `fill${skill.percent} 1.5s cubic-bezier(.29,.23,0,.81)`,
                         }}></span>
                   </div>
                </React.Fragment>

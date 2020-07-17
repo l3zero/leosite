@@ -16,13 +16,15 @@
 body {
   margin: 0;
   // background-color: white;
+  background: url("/bg5.jpg") no-repeat;
+  background-size: cover;
+  // color: white;
 }
 
 #root {
   // grid-auto-flow: row;
   // grid-auto-rows: 100%;
   // grid-auto-rows: minmax(10px, auto);
-  grid-column-gap: 50px;
   // grid-row-gap: 30px;
   // justify-content: center;
   // align-content: center;
@@ -31,6 +33,7 @@ body {
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 2fr;
+  grid-column-gap: 50px;
   grid-template-areas: "my-photo my-info" "my-links my-info";
   justify-items: center;
   align-items: center;

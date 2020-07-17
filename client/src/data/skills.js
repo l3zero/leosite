@@ -4,6 +4,6 @@ export const skills = [
    {title: 'CSS3 / HTML5 - Sass, Grid, Flexbox', icon: 'css-html.png', percent: '70'},
    {title: 'Node - Express, NPM', icon: 'node.png', percent: '55'},
    {title: 'Git - Github, Actions', icon: 'git.svg', percent: '70'},
-   {title: 'Linux / Bash', icon: 'linux.svg', percent: '55'},
+   {title: 'Linux / Bash', icon: 'linux.png', percent: '55'},
    {title: 'Team Management', icon: 'team.svg', percent: '55'},
 ]

@@ -9,8 +9,13 @@
     // height: 0%;
     font-size: 25px;
     font-family: "Lacquer", cursive;
+
     .my-photos {
         animation: fade 0.3s;
+        img {
+            border-bottom: 0px solid white;
+            border-radius: 5px;
+        }
     }
     header {
         display: flex;
@@ -21,6 +26,10 @@
         position: sticky;
         #resume {
             animation: wiggle-v 0.8s alternate-reverse infinite;
+        }
+        #resume:hover {
+            filter: invert(64%) sepia(98%) saturate(353%) hue-rotate(176deg) brightness(99%) contrast(87%);
+            transition: filter 1s;
         }
     }
     span:nth-child(1) {

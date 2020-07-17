@@ -1,12 +1,12 @@
 #links-section {
-  height: 100vh;
   display: flex;
   flex-flow: column nowrap;
   align-self: start;
   justify-self: start;
+  height: 100%;
   font-size: 18px;
   font-family: "Alloyink";
-  margin-top: 20px;
+  margin-top: 10px;
   margin-right: 0;
   margin-bottom: 0;
   margin-left: 5px;

@@ -8,6 +8,10 @@
 #photo-section .my-photos {
   animation: fade 0.3s;
 }
+#photo-section .my-photos img {
+  border-bottom: 0px solid white;
+  border-radius: 5px;
+}
 #photo-section header {
   display: flex;
   flex-flow: column nowrap;
@@ -21,6 +25,10 @@
 }
 #photo-section a #resume {
   animation: wiggle-v 0.8s alternate-reverse infinite;
+}
+#photo-section a #resume:hover {
+  filter: invert(64%) sepia(98%) saturate(353%) hue-rotate(176deg) brightness(99%) contrast(87%);
+  transition: filter 1s;
 }
 #photo-section span:nth-child(1) {
   position: absolute;

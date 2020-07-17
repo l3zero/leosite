@@ -1,17 +1,19 @@
 @use 'partials/helpers';
 
 #links-section {
-    height: 100vh;
     display: flex;
     flex-flow: column nowrap;
     align-self: start;
     justify-self: start;
+    height: 100%;
     font-size: 18px;
     font-family: "Alloyink";
+    // background: url("/bg3.jpg") no-repeat right;
+    // background-size: cover;
     // font-family: "Lacquer", cursive;
     // font-weight: bold;
 
-    @include helpers.margin(20px, 0, 0, 5px);
+    @include helpers.margin(10px, 0, 0, 5px);
     div {
         padding-bottom: 10px;
         a,

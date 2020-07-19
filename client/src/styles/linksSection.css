@@ -3,12 +3,11 @@
   flex-flow: column nowrap;
   align-self: start;
   justify-self: start;
-  height: 100%;
   font-size: 18px;
   font-family: "Alloyink";
-  margin-top: 10px;
+  margin-top: 0;
   margin-right: 0;
-  margin-bottom: 0;
+  margin-bottom: 15px;
   margin-left: 5px;
 }
 #links-section div {

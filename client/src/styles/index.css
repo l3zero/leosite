@@ -28,6 +28,20 @@ body {
   align-items: center;
 }
 
+#job-status {
+  position: fixed;
+  z-index: 1;
+  bottom: -50px;
+  right: -80px;
+  transform: rotate(-50deg);
+  font-size: 17px;
+  font-family: "Jua", sans-serif;
+  width: 200px;
+  height: 100px;
+  background-color: rgba(167, 20, 20, 0.719);
+  animation: fade 0.5s ease-in;
+}
+
 #goo1 {
   position: fixed;
   display: block;

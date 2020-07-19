@@ -6,7 +6,7 @@
   display: none;
   padding-right: 15%;
   padding-top: 50px;
-  font-size: 17px;
+  font-size: 20px;
   font-family: "Jua", sans-serif;
   line-height: 33px;
 }
@@ -127,7 +127,10 @@
 }
 #projects-container img {
   vertical-align: middle;
-  padding-right: 5px;
+  margin-right: 20px;
+}
+#projects-container img:hover {
+  animation: wiggle-h 0.8s alternate-reverse 3;
 }
 #projects-container span {
   border-bottom: 4px dotted blue;
@@ -191,6 +194,14 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@keyframes wiggle-h {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(5px);
   }
 }
 

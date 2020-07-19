@@ -17,14 +17,6 @@ export default function About() {
             that is more lively and animated. With those goals in mind, I plan on learning and utilizing technologies
             like GreenSock, Pixi.js, Phaser, Web AR/VR and more, while leveraging the immense reusability of the modern
             web components community.
-            <br />
-            <br />
-            <i>
-               <b>
-                  I am currently open to full-time remote roles (contract, freelance, permanent) or on-site in the NYC /
-                  NJ / PA area.
-               </b>
-            </i>
          </p>
       </div>
    )

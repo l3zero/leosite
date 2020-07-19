@@ -15,10 +15,8 @@
 
 body {
   margin: 0;
-  // background-color: white;
   background: url("/bg5.jpg") no-repeat;
   background-size: cover;
-  // color: white;
 }
 
 #root {
@@ -37,6 +35,21 @@ body {
   grid-template-areas: "my-photo my-info" "my-links my-info";
   justify-items: center;
   align-items: center;
+}
+#job-status {
+  position: fixed;
+  z-index: 1;
+  bottom: -50px;
+  right: -80px;
+  // padding-left: 25px;
+  transform: rotate(-50deg);
+  font-size: 17px;
+  font-family: "Jua", sans-serif;
+  width: 200px;
+  height: 100px;
+  background-color: rgba(167, 20, 20, 0.719);
+  // border-radius: 50px;
+  animation: fade 0.5s ease-in;
 }
 #goo1 {
   // display: initial;

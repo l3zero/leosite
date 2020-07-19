@@ -22,6 +22,9 @@ class App extends Component {
             <Photo />
             <Links />
             <Info />
+            <div id='job-status'>
+               {/* I am currently open to contract, freelance or permanent roles remotely or on-site in NYC / NJ / PA */}
+            </div>
          </React.Fragment>
       )
    }

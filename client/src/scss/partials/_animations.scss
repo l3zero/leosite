@@ -18,6 +18,16 @@
         }
     }
 }
+@mixin wiggle-horizontal() {
+    @keyframes wiggle-h {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(5px);
+        }
+    }
+}
 @mixin fade() {
     @keyframes fade {
         from {

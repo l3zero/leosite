@@ -8,10 +8,6 @@
 #photo-section .my-photos {
   animation: fade 0.3s;
 }
-#photo-section .my-photos img {
-  border-bottom: 0px solid white;
-  border-radius: 5px;
-}
 #photo-section header {
   display: flex;
   flex-flow: column nowrap;

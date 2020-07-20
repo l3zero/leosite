@@ -18,6 +18,9 @@
   text-decoration: none;
   color: black;
 }
+#links-section div a:hover {
+  color: rgba(4, 4, 148, 0.87);
+}
 #links-section div img {
   vertical-align: middle;
   margin-right: 10px;

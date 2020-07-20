@@ -1,7 +1,7 @@
 export const projects = [
    {
       title: 'Personal Website',
-      url: '/',
+      url: 'https://github.com/kRyM1337/leosite',
       icon: 'website.svg',
       tech: 'React, Node, GSAP, p5, CSS3 / Sass, Heroku, Github CI / CD',
       desc:

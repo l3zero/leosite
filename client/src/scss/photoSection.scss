@@ -9,7 +9,8 @@
     font-family: "Lacquer", cursive;
 
     .my-photos {
-        animation: fade 0.3s;
+        // animation: fade 0.3s;
+        animation: skew-h 0.07s ease-out 1;
     }
     header {
         display: flex;
@@ -19,7 +20,8 @@
         @include helpers.margin(150%, 0, 0, 10px);
         position: sticky;
         #resume {
-            animation: wiggle-v 0.8s alternate-reverse infinite;
+            animation: wiggle-v 0.8s infinite alternate-reverse;
+            transition: all 1s;
         }
         #resume:hover {
             filter: invert(64%) sepia(98%) saturate(353%) hue-rotate(176deg) brightness(99%) contrast(87%);
@@ -52,3 +54,4 @@
 @include animations.letters-bg();
 @include animations.wiggle-vertical();
 @include animations.fade();
+@include animations.skew-horizontal(0deg, -270deg);

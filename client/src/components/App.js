@@ -3,27 +3,29 @@ import Intro from './Intro.js'
 import Photo from './Photo.js'
 import Links from './Links.js'
 import Info from './Info.js'
-import Goo from 'gooey-react'
 import '../styles/index.css'
 
 class App extends Component {
    render() {
       return (
          <React.Fragment>
-            {/* <div id='goo1'>
-               <Goo>
-                  <svg width='10vw' height='10vh'>
-                     <circle id='circ1' cx='37%' cy='37%' fill='orchid' r='32' />
-                     <circle id='circ2' cx='63%' cy='63%' fill='mediumorchid' r='32' />
-                  </svg>
-               </Goo>
-            </div> */}
             {/* <Intro /> */}
             <Photo />
             <Links />
             <Info />
             <div id='job-status'>
-               {/* I am currently open to contract, freelance or permanent roles remotely or on-site in NYC / NJ / PA */}
+               <span>
+                  Work Status:
+                  <br /> &nbsp;&nbsp;&nbsp;&nbsp;Contract&#10003;
+                  <br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;Freelance&#10003;
+                  <br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;Permanent&#10003;
+                  <br />
+                  Locations:
+                  <br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;Remote or NYC / NJ&#10003;
+               </span>
             </div>
          </React.Fragment>
       )

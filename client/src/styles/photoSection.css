@@ -6,7 +6,7 @@
   font-family: "Lacquer", cursive;
 }
 #photo-section .my-photos {
-  animation: fade 0.3s;
+  animation: skew-h 0.07s ease-out 1;
 }
 #photo-section header {
   display: flex;
@@ -20,7 +20,8 @@
   position: sticky;
 }
 #photo-section a #resume {
-  animation: wiggle-v 0.8s alternate-reverse infinite;
+  animation: wiggle-v 0.8s infinite alternate-reverse;
+  transition: all 1s;
 }
 #photo-section a #resume:hover {
   filter: invert(64%) sepia(98%) saturate(353%) hue-rotate(176deg) brightness(99%) contrast(87%);
@@ -70,6 +71,14 @@
   }
   to {
     opacity: 1;
+  }
+}
+@keyframes skew-h {
+  0% {
+    transform: skewX(0deg);
+  }
+  100% {
+    transform: skewX(-270deg);
   }
 }
 

@@ -17,6 +17,9 @@ body {
   margin: 0;
   background: url("/bg5.jpg") no-repeat;
   background-size: cover;
+  opacity: 0;
+  animation: fade 3s ease-out 0.5s 1 normal;
+  animation-fill-mode: forwards;
 }
 
 #root {
@@ -38,37 +41,35 @@ body {
 }
 #job-status {
   position: fixed;
+  width: 200px;
+  height: 125px;
   z-index: 1;
   bottom: -50px;
   right: -80px;
-  // padding-left: 25px;
-  transform: rotate(-50deg);
+  padding-left: 15px;
+  padding-bottom: 5px;
   font-size: 17px;
   font-family: "Jua", sans-serif;
-  width: 200px;
-  height: 100px;
-  background-color: rgba(167, 20, 20, 0.719);
-  // border-radius: 50px;
-  animation: fade 0.5s ease-in;
-}
-#goo1 {
-  // display: initial;
-  position: fixed;
-  display: block;
-  top: 20%;
-  left: 50%;
-  // left: 10%;
-  z-index: -2;
-  svg {
-    #circ1 {
-      // animation: spin 2s infinite linear;
-    }
-    #circ2 {
-      // animation: spin 1s infinite linear;
-    }
+  // background-color: rgba(167, 20, 20, 0.863);
+  // border-left: 0px solid red;
+  border-top-left-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.801);
+  color: white;
+  transform: rotate(-45deg);
+  transition: all 1s linear;
+  span {
+    opacity: 0;
   }
 }
-@include animations.spin(0deg, 360deg);
-
+#job-status:hover {
+  animation: job-status-popout 0.5s linear;
+  animation-fill-mode: forwards;
+  span {
+    opacity: 1;
+    transition: opacity 1s linear 0.4s;
+  }
+}
+@include animations.job-status-popout();
+@include animations.fade();
 // @media only screen and (max-width: 1440px) and (max-height: 850px) {
 // }

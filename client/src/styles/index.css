@@ -14,6 +14,9 @@ body {
   margin: 0;
   background: url("/bg5.jpg") no-repeat;
   background-size: cover;
+  opacity: 0;
+  animation: fade 3s ease-out 0.5s 1 normal;
+  animation-fill-mode: forwards;
 }
 
 #root {
@@ -30,31 +33,47 @@ body {
 
 #job-status {
   position: fixed;
+  width: 200px;
+  height: 125px;
   z-index: 1;
   bottom: -50px;
   right: -80px;
-  transform: rotate(-50deg);
+  padding-left: 15px;
+  padding-bottom: 5px;
   font-size: 17px;
   font-family: "Jua", sans-serif;
-  width: 200px;
-  height: 100px;
-  background-color: rgba(167, 20, 20, 0.719);
-  animation: fade 0.5s ease-in;
+  border-top-left-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.801);
+  color: white;
+  transform: rotate(-45deg);
+  transition: all 1s linear;
+}
+#job-status span {
+  opacity: 0;
 }
 
-#goo1 {
-  position: fixed;
-  display: block;
-  top: 20%;
-  left: 50%;
-  z-index: -2;
+#job-status:hover {
+  animation: job-status-popout 0.5s linear;
+  animation-fill-mode: forwards;
 }
-@keyframes spin {
-  from {
+#job-status:hover span {
+  opacity: 1;
+  transition: opacity 1s linear 0.4s;
+}
+
+@keyframes job-status-popout {
+  to {
+    bottom: 0;
+    right: 0;
     transform: rotate(0deg);
   }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
   }
 }
 

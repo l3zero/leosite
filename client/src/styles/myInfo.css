@@ -18,9 +18,8 @@
 .tabs {
   width: 10%;
   padding-top: 10px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 20px;
+  display: flex;
+  flex-flow: column nowrap;
   position: fixed;
   overflow: hidden;
   top: 0;
@@ -57,15 +56,11 @@
 }
 .tabs summary img {
   margin-left: 4px;
-}
-.tabs summary img:hover {
-  animation: spin 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation: spin 15s cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s infinite normal;
 }
 
 .tabcontent {
-  font-size: 25px;
   display: none;
-  padding-top: 15px;
   animation: fade 1s;
 }
 
@@ -94,6 +89,9 @@
   margin: 5px;
   margin-left: 0;
 }
+.skill-titles img:hover {
+  animation: skew-h 0.5s ease-in-out 0.2s 1 normal;
+}
 
 .meter {
   display: inherit;
@@ -120,17 +118,18 @@
   text-decoration: none;
   color: blue;
   font-size: 35px;
+  transition: color 0.8s linear;
 }
 #projects-container a:hover {
   color: red;
-  transition: color 0.5s;
+  transition: color 1s linear 0.4s;
 }
 #projects-container img {
   vertical-align: middle;
   margin-right: 20px;
 }
 #projects-container img:hover {
-  animation: wiggle-h 0.8s alternate-reverse 3;
+  animation: wiggle-h 0.5s ease-in-out 4 alternate;
 }
 #projects-container span {
   border-bottom: 4px dotted blue;
@@ -148,6 +147,7 @@
 #projects-container .prev:hover,
 #projects-container .next:hover {
   color: red;
+  transition: color 0.5s;
 }
 #projects-container .next {
   right: 12%;
@@ -189,10 +189,13 @@
   }
 }
 @keyframes spin {
-  from {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  7% {
+    transform: rotate(360deg);
+  }
+  100% {
     transform: rotate(360deg);
   }
 }
@@ -202,6 +205,14 @@
   }
   100% {
     transform: translateX(5px);
+  }
+}
+@keyframes skew-h {
+  0% {
+    transform: skewX(0deg);
+  }
+  100% {
+    transform: skewX(180deg);
   }
 }
 

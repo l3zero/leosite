@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import Intro from './Intro.js'
+// import Intro from './Intro.js'
 import Photo from './Photo.js'
 import Links from './Links.js'
 import Info from './Info.js'
@@ -9,7 +9,6 @@ class App extends Component {
    render() {
       return (
          <React.Fragment>
-            {/* <Intro /> */}
             <Photo />
             <Links />
             <Info />
@@ -24,7 +23,7 @@ class App extends Component {
                   <br />
                   Locations:
                   <br />
-                  &nbsp;&nbsp;&nbsp;&nbsp;Remote or NYC / NJ&#10003;
+                  &nbsp;&nbsp;&nbsp;&nbsp;Remote / NYC / NJ&#10003;
                </span>
             </div>
          </React.Fragment>

@@ -6,9 +6,9 @@
   display: none;
   padding-right: 15%;
   padding-top: 50px;
-  font-size: 20px;
   font-family: "Jua", sans-serif;
-  line-height: 33px;
+  font-size: 28px;
+  line-height: 35px;
 }
 #about-me p {
   height: 90vh;
@@ -16,25 +16,23 @@
 }
 
 .tabs {
-  width: 10%;
-  padding-top: 10px;
   display: flex;
   flex-flow: column nowrap;
   position: fixed;
   overflow: hidden;
+  padding-top: 10px;
   top: 0;
   right: 0;
   bottom: 0;
   left: 92%;
 }
 .tabs button {
-  font-size: 15px;
   font-family: "Alloyink";
-  letter-spacing: 1.5px;
+  font-size: 20px;
+  cursor: pointer;
   border: none;
   outline: none;
   background: none;
-  cursor: pointer;
   animation: fade 1s;
 }
 .tabs button:hover {
@@ -55,6 +53,8 @@
   cursor: pointer;
 }
 .tabs summary img {
+  width: 80px;
+  height: auto;
   margin-left: 4px;
   animation: spin 15s cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s infinite normal;
 }
@@ -70,7 +70,7 @@
   align-items: stretch;
   justify-items: start;
   width: 75%;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 #skills-container div {
   width: 100%;
@@ -78,22 +78,22 @@
   background-color: rgba(255, 255, 255, 0.527);
   border-radius: 5px;
 }
-
-.skill-titles {
+#skills-container .skill-titles {
   font-family: "Jua", sans-serif;
-  font-size: 17px;
+  font-size: 22px;
   text-align: start;
 }
-.skill-titles img {
+#skills-container .skill-titles img {
+  width: 70px;
+  height: 70px;
   vertical-align: middle;
   margin: 5px;
   margin-left: 0;
 }
-.skill-titles img:hover {
+#skills-container .skill-titles img:hover {
   animation: skew-h 0.5s ease-in-out 0.2s 1 normal;
 }
-
-.meter {
+#skills-container .meter {
   display: inherit;
   height: 100%;
   width: 70%;
@@ -110,7 +110,7 @@
   line-height: 40px;
 }
 #projects-container .mySlides {
-  padding-top: 5%;
+  padding-top: 80px;
   animation: fade 1s;
 }
 #projects-container a:visited,
@@ -125,6 +125,8 @@
   transition: color 1s linear 0.4s;
 }
 #projects-container img {
+  width: 100px;
+  height: auto;
   vertical-align: middle;
   margin-right: 20px;
 }
@@ -213,6 +215,12 @@
   }
   100% {
     transform: skewX(180deg);
+  }
+}
+@media only screen and (max-width: 1024px) and (max-height: 850px) {
+  #about-me {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 

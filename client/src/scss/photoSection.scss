@@ -5,12 +5,15 @@
     display: grid;
     grid-template-columns: 1fr 0.5fr;
     align-self: start;
-    font-size: 25px;
+    font-size: 30px;
     font-family: "Lacquer", cursive;
 
     .my-photos {
-        // animation: fade 0.3s;
         animation: skew-h 0.07s ease-out 1;
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
     header {
         display: flex;
@@ -20,6 +23,8 @@
         @include helpers.margin(150%, 0, 0, 10px);
         position: sticky;
         #resume {
+            width: 60%;
+            height: auto;
             animation: wiggle-v 0.8s infinite alternate-reverse;
             transition: all 1s;
         }
@@ -40,7 +45,7 @@
         left: 15%;
         transform: rotate(-10deg);
         z-index: -1;
-        font-size: 40px;
+        font-size: 45px;
 
         background: url("/wave.png");
         background-repeat: round;
@@ -55,3 +60,11 @@
 @include animations.wiggle-vertical();
 @include animations.fade();
 @include animations.skew-horizontal(0deg, -270deg);
+@media only screen and (max-width: 1024px) and (max-height: 850px) {
+    #photo-section {
+        font-size: 25px;
+        span:nth-child(2) {
+            font-size: 35px;
+        }
+    }
+}

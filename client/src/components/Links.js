@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React from 'react'
 import {links} from '../data/links.js'
 import '../styles/linksSection.css'
 
@@ -10,7 +10,7 @@ export default function Links() {
                return (
                   <div id={link.title.toLowerCase().trim()} key={link.title.toLowerCase().trim()}>
                      <a href={link.url}>
-                        <img src={link.icon} alt={link.title} style={{width: '40px', height: 'auto'}}></img>
+                        <img src={link.icon} alt={link.title}></img>
                         {link.title}
                      </a>
                   </div>

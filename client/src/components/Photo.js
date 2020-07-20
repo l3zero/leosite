@@ -3,9 +3,20 @@ import {images} from '../data/images.js'
 import '../styles/photoSection.css'
 
 export default function Photo() {
-   let imgIndex = 0
-
    useEffect(() => {
+      let imgIndex = 0
+      function showPhotos() {
+         let slides = document.getElementsByClassName('my-photos')
+         for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = 'none'
+         }
+         imgIndex++
+         if (imgIndex > slides.length) {
+            imgIndex = 1
+         }
+         slides[imgIndex - 1].style.display = 'block'
+         setTimeout(showPhotos, Math.floor(Math.random() * 10001) + 5000) // Change image every 5-10s
+      }
       showPhotos()
    }, [])
    return (
@@ -14,7 +25,7 @@ export default function Photo() {
             {images.leo.map((image) => {
                return (
                   <div className='my-photos' key={image.replace('.png', '')}>
-                     <img id='my-photo' src={image} alt='Leonid-Yanchis' style={{width: '100%', height: 'auto'}} />
+                     <img src={image} alt='Leonid-Yanchis' />
                   </div>
                )
             })}
@@ -30,24 +41,10 @@ export default function Photo() {
                   type='application/pdf'
                   download
                   referrerPolicy='no-referrer'>
-                  <img id='resume' src='/download.svg' style={{width: '60%', height: 'auto'}} alt='' />
+                  <img id='resume' src='/download.svg' alt='Download Resume' />
                </a>
             </header>
          </div>
       </React.Fragment>
    )
-
-   function showPhotos() {
-      let slides = document.getElementsByClassName('my-photos')
-      for (let i = 0; i < slides.length; i++) {
-         slides[i].style.display = 'none'
-      }
-      imgIndex++
-      if (imgIndex > slides.length) {
-         imgIndex = 1
-      }
-      slides[imgIndex - 1].style.display = 'block'
-      setTimeout(showPhotos, Math.floor(Math.random() * 10001) + 5000) // Change image every 5-10s
-   }
 }
-//filter: 'drop-shadow(-5px -5px 10px white)'

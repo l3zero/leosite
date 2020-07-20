@@ -3,7 +3,7 @@
   flex-flow: column nowrap;
   align-self: start;
   justify-self: start;
-  font-size: 18px;
+  font-size: 23px;
   font-family: "Alloyink";
   margin-top: 0;
   margin-right: 0;
@@ -22,8 +22,20 @@
   color: rgba(4, 4, 148, 0.87);
 }
 #links-section div img {
+  width: 60px;
+  height: auto;
   vertical-align: middle;
   margin-right: 10px;
+}
+
+@media only screen and (max-width: 1024px) and (max-height: 850px) {
+  #links-section {
+    margin-bottom: 50px;
+    font-size: 19px;
+  }
+  #links-section div img {
+    width: 50px;
+  }
 }
 
 /*# sourceMappingURL=linksSection.css.map */

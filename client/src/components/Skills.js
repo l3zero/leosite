@@ -1,19 +1,14 @@
 import React from 'react'
-import {projects} from '../data/projects.js'
-import {skills, miniSkills} from '../data/skills.js'
+import {skills} from '../data/skills.js'
 
 export default function Skills() {
    return (
       <div id='skills-container' className='tabcontent'>
          {skills.map((skill) => {
             return (
-               <React.Fragment>
+               <React.Fragment key={skill.title.toLowerCase().trim()}>
                   <span className='skill-titles'>
-                     <img
-                        src={skill.icon}
-                        alt=''
-                        key={skill.title.toLowerCase().trim()}
-                        style={{width: '50px', height: '50px'}}></img>
+                     <img src={skill.icon} alt='Skill icon'></img>
                      {skill.title}
                   </span>
                   <div>
@@ -27,19 +22,6 @@ export default function Skills() {
                </React.Fragment>
             )
          })}
-         {/* <div id='mini-skills-container'>
-       {miniSkills.map((skill) => {
-          return (
-             <img
-                src={skill}
-                alt=''
-                style={{
-                   width: '50px',
-                   height: '50px',
-                }}></img>
-          )
-       })}
-    </div> */}
       </div>
    )
 }

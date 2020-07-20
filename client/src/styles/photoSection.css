@@ -2,11 +2,15 @@
   display: grid;
   grid-template-columns: 1fr 0.5fr;
   align-self: start;
-  font-size: 25px;
+  font-size: 30px;
   font-family: "Lacquer", cursive;
 }
 #photo-section .my-photos {
   animation: skew-h 0.07s ease-out 1;
+}
+#photo-section .my-photos img {
+  width: 100%;
+  height: auto;
 }
 #photo-section header {
   display: flex;
@@ -20,6 +24,8 @@
   position: sticky;
 }
 #photo-section a #resume {
+  width: 60%;
+  height: auto;
   animation: wiggle-v 0.8s infinite alternate-reverse;
   transition: all 1s;
 }
@@ -39,7 +45,7 @@
   left: 15%;
   transform: rotate(-10deg);
   z-index: -1;
-  font-size: 40px;
+  font-size: 45px;
   background: url("/wave.png");
   background-repeat: round;
   background-size: contain;
@@ -79,6 +85,14 @@
   }
   100% {
     transform: skewX(-270deg);
+  }
+}
+@media only screen and (max-width: 1024px) and (max-height: 850px) {
+  #photo-section {
+    font-size: 25px;
+  }
+  #photo-section span:nth-child(2) {
+    font-size: 35px;
   }
 }
 

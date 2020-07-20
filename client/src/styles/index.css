@@ -34,13 +34,13 @@ body {
 #job-status {
   position: fixed;
   width: 200px;
-  height: 125px;
+  height: 175px;
   z-index: 1;
-  bottom: -50px;
-  right: -80px;
+  bottom: -90px;
+  right: -90px;
   padding-left: 15px;
   padding-bottom: 5px;
-  font-size: 17px;
+  font-size: 20px;
   font-family: "Jua", sans-serif;
   border-top-left-radius: 20px;
   background-color: rgba(0, 0, 0, 0.801);

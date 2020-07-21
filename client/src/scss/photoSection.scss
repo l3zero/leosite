@@ -62,9 +62,46 @@
 @include animations.skew-horizontal(0deg, -270deg);
 @media only screen and (max-width: 1024px) and (max-height: 850px) {
     #photo-section {
-        font-size: 25px;
+        font-size: 23px;
         span:nth-child(2) {
-            font-size: 35px;
+            font-size: 30px;
+            top: 9%;
+        }
+    }
+}
+@media only screen and (max-width: 768px) and (max-height: 650px) {
+    #photo-section {
+        font-size: 20px;
+        span:nth-child(1) {
+            top: 2%;
+        }
+        span:nth-child(2) {
+            font-size: 25px;
+            top: 8%;
+        }
+    }
+}
+@media only screen and (max-width: 425px) and (max-height: 850px) {
+    #photo-section {
+        font-size: 13px;
+        .my-photos img {
+            width: 150%;
+        }
+        a {
+            margin-top: 230%;
+            margin-left: 0;
+            #resume {
+                // width: 70%;
+            }
+        }
+        span:nth-child(1) {
+            top: 2%;
+            left: 19%;
+        }
+        span:nth-child(2) {
+            font-size: 15px;
+            top: 8%;
+            left: 20%;
         }
     }
 }

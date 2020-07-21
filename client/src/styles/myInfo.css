@@ -104,6 +104,7 @@
 #projects-container {
   display: none;
   flex-flow: row wrap;
+  overflow: auto;
   width: 75%;
   font-family: "Jua", sans-serif;
   font-size: 25px;
@@ -113,6 +114,7 @@
   padding-top: 80px;
   animation: fade 1s;
 }
+#projects-container a,
 #projects-container a:visited,
 #projects-container a:link {
   text-decoration: none;
@@ -221,6 +223,127 @@
   #about-me {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .tabs summary img {
+    width: 60px;
+  }
+  .tabs button {
+    font-size: 16px;
+  }
+
+  #skills-container {
+    margin-top: 50px;
+  }
+  #skills-container .skill-titles {
+    font-size: 19px;
+  }
+  #skills-container .skill-titles img {
+    width: 50px;
+    height: 50px;
+  }
+
+  #projects-container {
+    font-size: 21px;
+  }
+  #projects-container .mySlides {
+    padding-top: 60px;
+  }
+}
+@media only screen and (max-width: 768px) and (max-height: 650px) {
+  #about-me {
+    font-size: 17px;
+    line-height: 21px;
+    padding-top: 30px;
+  }
+
+  .tabs summary img {
+    width: 45px;
+  }
+  .tabs button {
+    font-size: 11px;
+  }
+
+  #skills-container {
+    margin-top: 35px;
+  }
+  #skills-container div {
+    height: 20px;
+  }
+  #skills-container .skill-titles {
+    font-size: 15px;
+  }
+  #skills-container .skill-titles img {
+    width: 35px;
+    height: 35px;
+  }
+
+  #projects-container {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  #projects-container .mySlides {
+    padding-top: 50px;
+  }
+  #projects-container a,
+#projects-container a:visited,
+#projects-container a:link {
+    font-size: 25px;
+  }
+  #projects-container img {
+    width: 60px;
+  }
+}
+@media only screen and (max-width: 425px) and (max-height: 850px) {
+  #about-me {
+    font-size: 12px;
+    line-height: 15px;
+    padding-top: 30px;
+    padding-right: 23%;
+  }
+  #about-me p {
+    height: 90vh;
+  }
+
+  .tabs {
+    left: 88%;
+  }
+  .tabs summary img {
+    width: 35px;
+  }
+  .tabs button {
+    font-size: 9px;
+  }
+
+  #skills-container {
+    margin-top: 90px;
+  }
+  #skills-container div {
+    height: 15px;
+  }
+  #skills-container .skill-titles {
+    font-size: 12px;
+  }
+  #skills-container .skill-titles img {
+    width: 35px;
+    height: 35px;
+  }
+
+  #projects-container {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  #projects-container a,
+#projects-container a:visited,
+#projects-container a:link {
+    font-size: 15px;
+  }
+  #projects-container img {
+    width: 40px;
+  }
+  #projects-container .prev,
+#projects-container .next {
+    font-size: 20px;
   }
 }
 

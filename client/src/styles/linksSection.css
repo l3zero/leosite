@@ -30,11 +30,31 @@
 
 @media only screen and (max-width: 1024px) and (max-height: 850px) {
   #links-section {
-    margin-bottom: 50px;
+    margin-bottom: 0;
     font-size: 19px;
   }
   #links-section div img {
-    width: 50px;
+    width: 55px;
+  }
+}
+@media only screen and (max-width: 768px) and (max-height: 850px) {
+  #links-section {
+    font-size: 16px;
+  }
+  #links-section div img {
+    width: 40px;
+  }
+}
+@media only screen and (max-width: 425px) and (max-height: 850px) {
+  #links-section {
+    font-size: 13px;
+    margin-top: 30px;
+  }
+  #links-section div {
+    margin-bottom: 25px;
+  }
+  #links-section div img {
+    width: 30px;
   }
 }
 

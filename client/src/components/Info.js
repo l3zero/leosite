@@ -15,7 +15,7 @@ export default function Info() {
          <aside>
             <details className='tabs'>
                <summary>
-                  <img src='/welcome.png' style={{width: '50px', height: '50px'}} />
+                  <img src='/welcome.png' alt='Welcome' />
                </summary>
                <button id='defaultOpen' className='tablinks' onClick={openDesc}>
                   About

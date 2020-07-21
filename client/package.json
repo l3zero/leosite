@@ -32,7 +32,6 @@
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^4.0.4",
     "eslint-plugin-security": "^1.4.0",
-    "gooey-react": "^1.0.1",
     "gsap": "^3.3.4",
     "node-fetch": "^2.6.0",
     "p5": "^1.0.0",

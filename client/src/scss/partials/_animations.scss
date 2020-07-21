@@ -18,6 +18,27 @@
         }
     }
 }
+@mixin skew-horizontal($startDegree, $endDegree) {
+    @keyframes skew-h {
+        0% {
+            transform: skewX($startDegree);
+        }
+        100% {
+            transform: skewX($endDegree);
+        }
+    }
+}
+
+@mixin wiggle-horizontal() {
+    @keyframes wiggle-h {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(5px);
+        }
+    }
+}
 @mixin fade() {
     @keyframes fade {
         from {
@@ -30,11 +51,23 @@
 }
 @mixin spin($startDegree, $endDegree) {
     @keyframes spin {
-        from {
+        0% {
             transform: rotate($startDegree);
         }
-        to {
+        7% {
             transform: rotate($endDegree);
+        }
+        100% {
+            transform: rotate($endDegree);
+        }
+    }
+}
+@mixin job-status-popout() {
+    @keyframes job-status-popout {
+        to {
+            bottom: 0;
+            right: 0;
+            transform: rotate(0deg);
         }
     }
 }

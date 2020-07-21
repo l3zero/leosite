@@ -15,14 +15,17 @@
 
 body {
   margin: 0;
-  // background-color: white;
+  background: url("/bg5.jpg") no-repeat;
+  background-size: cover;
+  opacity: 0;
+  animation: fade 3s ease-out 0.5s 1 normal;
+  animation-fill-mode: forwards;
 }
 
 #root {
   // grid-auto-flow: row;
   // grid-auto-rows: 100%;
   // grid-auto-rows: minmax(10px, auto);
-  grid-column-gap: 50px;
   // grid-row-gap: 30px;
   // justify-content: center;
   // align-content: center;
@@ -31,28 +34,61 @@ body {
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 2fr;
+  column-gap: 50px;
   grid-template-areas: "my-photo my-info" "my-links my-info";
   justify-items: center;
   align-items: center;
 }
-#goo1 {
-  // display: initial;
+#job-status {
   position: fixed;
-  display: block;
-  top: 20%;
-  left: 50%;
-  // left: 10%;
-  z-index: -2;
-  svg {
-    #circ1 {
-      // animation: spin 2s infinite linear;
-    }
-    #circ2 {
-      // animation: spin 1s infinite linear;
-    }
+  width: 230px;
+  height: 170px;
+  z-index: 1;
+  bottom: -90px;
+  right: -95px;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  font-size: 20px;
+  font-family: "Jua", sans-serif;
+  // background-color: rgba(167, 20, 20, 0.863);
+  // border-left: 0px solid red;
+  border-top-left-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.801);
+  color: white;
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  span {
+    opacity: 0;
   }
 }
-@include animations.spin(0deg, 360deg);
+#job-status:hover {
+  animation: job-status-popout 0.5s ease;
+  animation-fill-mode: forwards;
+  span {
+    opacity: 1;
+    transition: opacity 1s linear 0.4s;
+  }
+}
+@include animations.job-status-popout();
+@include animations.fade();
 
-// @media only screen and (max-width: 1440px) and (max-height: 850px) {
-// }
+@media only screen and (max-width: 768px) and (max-height: 650px) {
+  #job-status {
+    font-size: 16px;
+    width: 180px;
+    height: 120px;
+    right: -70px;
+  }
+}
+@media only screen and (max-width: 425px) and (max-height: 850px) {
+  #root {
+    column-gap: 40px;
+  }
+  #job-status {
+    font-size: 12px;
+    width: 150px;
+    height: 90px;
+    right: -60px;
+    bottom: -60px;
+  }
+}

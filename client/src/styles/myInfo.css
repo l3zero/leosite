@@ -6,9 +6,9 @@
   display: none;
   padding-right: 15%;
   padding-top: 50px;
-  font-size: 17px;
   font-family: "Jua", sans-serif;
-  line-height: 33px;
+  font-size: 28px;
+  line-height: 35px;
 }
 #about-me p {
   height: 90vh;
@@ -16,26 +16,23 @@
 }
 
 .tabs {
-  width: 10%;
-  padding-top: 10px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 20px;
+  display: flex;
+  flex-flow: column nowrap;
   position: fixed;
   overflow: hidden;
+  padding-top: 10px;
   top: 0;
   right: 0;
   bottom: 0;
   left: 92%;
 }
 .tabs button {
-  font-size: 15px;
   font-family: "Alloyink";
-  letter-spacing: 1.5px;
+  font-size: 20px;
+  cursor: pointer;
   border: none;
   outline: none;
   background: none;
-  cursor: pointer;
   animation: fade 1s;
 }
 .tabs button:hover {
@@ -47,18 +44,23 @@
 .tabs summary::-webkit-details-marker {
   display: none;
 }
+.tabs summary:focus {
+  outline: none;
+}
 .tabs summary {
   list-style: none;
+  outline: none;
   cursor: pointer;
 }
-.tabs summary img:hover {
-  animation: spin 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+.tabs summary img {
+  width: 80px;
+  height: auto;
+  margin-left: 4px;
+  animation: spin 15s cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s infinite normal;
 }
 
 .tabcontent {
-  font-size: 25px;
   display: none;
-  padding-top: 15px;
   animation: fade 1s;
 }
 
@@ -68,59 +70,73 @@
   align-items: stretch;
   justify-items: start;
   width: 75%;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 #skills-container div {
   width: 100%;
   height: 25px;
-  background-color: lightblue;
+  background-color: rgba(255, 255, 255, 0.527);
   border-radius: 5px;
 }
-
-.skill-titles {
+#skills-container .skill-titles {
   font-family: "Jua", sans-serif;
-  font-size: 17px;
+  font-size: 22px;
   text-align: start;
 }
-.skill-titles img {
+#skills-container .skill-titles img {
+  width: 70px;
+  height: 70px;
   vertical-align: middle;
   margin: 5px;
   margin-left: 0;
 }
-
-.meter {
+#skills-container .skill-titles img:hover {
+  animation: skew-h 0.5s ease-in-out 0.2s 1 normal;
+}
+#skills-container .meter {
   display: inherit;
   height: 100%;
   width: 70%;
   background-image: linear-gradient(-300deg, #7e84da 3%, #040494 50%);
   border-radius: 5px;
-  animation: fill70 1.5s ease-in-out;
 }
 
 #projects-container {
   display: none;
   flex-flow: row wrap;
+  overflow: auto;
   width: 75%;
   font-family: "Jua", sans-serif;
   font-size: 25px;
   line-height: 40px;
 }
 #projects-container .mySlides {
-  padding-top: 5%;
+  padding-top: 80px;
   animation: fade 1s;
 }
+#projects-container a,
 #projects-container a:visited,
 #projects-container a:link {
   text-decoration: none;
   color: blue;
   font-size: 35px;
+  transition: color 0.8s linear;
+}
+#projects-container a:hover {
+  color: red;
+  transition: color 1s linear 0.4s;
 }
 #projects-container img {
+  width: 100px;
+  height: auto;
   vertical-align: middle;
-  padding-right: 5px;
+  margin-right: 20px;
+}
+#projects-container img:hover {
+  animation: wiggle-h 0.5s ease-in-out 4 alternate;
 }
 #projects-container span {
-  background-color: blue;
+  border-bottom: 4px dotted blue;
 }
 #projects-container .prev,
 #projects-container .next {
@@ -135,6 +151,7 @@
 #projects-container .prev:hover,
 #projects-container .next:hover {
   color: red;
+  transition: color 0.5s;
 }
 #projects-container .next {
   right: 12%;
@@ -176,11 +193,157 @@
   }
 }
 @keyframes spin {
-  from {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  7% {
     transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes wiggle-h {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}
+@keyframes skew-h {
+  0% {
+    transform: skewX(0deg);
+  }
+  100% {
+    transform: skewX(180deg);
+  }
+}
+@media only screen and (max-width: 1024px) and (max-height: 850px) {
+  #about-me {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .tabs summary img {
+    width: 60px;
+  }
+  .tabs button {
+    font-size: 16px;
+  }
+
+  #skills-container {
+    margin-top: 50px;
+  }
+  #skills-container .skill-titles {
+    font-size: 19px;
+  }
+  #skills-container .skill-titles img {
+    width: 50px;
+    height: 50px;
+  }
+
+  #projects-container {
+    font-size: 21px;
+  }
+  #projects-container .mySlides {
+    padding-top: 60px;
+  }
+}
+@media only screen and (max-width: 768px) and (max-height: 650px) {
+  #about-me {
+    font-size: 17px;
+    line-height: 21px;
+    padding-top: 30px;
+  }
+
+  .tabs summary img {
+    width: 45px;
+  }
+  .tabs button {
+    font-size: 11px;
+  }
+
+  #skills-container {
+    margin-top: 35px;
+  }
+  #skills-container div {
+    height: 20px;
+  }
+  #skills-container .skill-titles {
+    font-size: 15px;
+  }
+  #skills-container .skill-titles img {
+    width: 35px;
+    height: 35px;
+  }
+
+  #projects-container {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  #projects-container .mySlides {
+    padding-top: 50px;
+  }
+  #projects-container a,
+#projects-container a:visited,
+#projects-container a:link {
+    font-size: 25px;
+  }
+  #projects-container img {
+    width: 60px;
+  }
+}
+@media only screen and (max-width: 425px) and (max-height: 850px) {
+  #about-me {
+    font-size: 12px;
+    line-height: 15px;
+    padding-top: 30px;
+    padding-right: 23%;
+  }
+  #about-me p {
+    height: 90vh;
+  }
+
+  .tabs {
+    left: 88%;
+  }
+  .tabs summary img {
+    width: 35px;
+  }
+  .tabs button {
+    font-size: 9px;
+  }
+
+  #skills-container {
+    margin-top: 90px;
+  }
+  #skills-container div {
+    height: 15px;
+  }
+  #skills-container .skill-titles {
+    font-size: 12px;
+  }
+  #skills-container .skill-titles img {
+    width: 35px;
+    height: 35px;
+  }
+
+  #projects-container {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  #projects-container a,
+#projects-container a:visited,
+#projects-container a:link {
+    font-size: 15px;
+  }
+  #projects-container img {
+    width: 40px;
+  }
+  #projects-container .prev,
+#projects-container .next {
+    font-size: 20px;
   }
 }
 

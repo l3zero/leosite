@@ -1,14 +1,13 @@
 #links-section {
-  height: 100vh;
   display: flex;
   flex-flow: column nowrap;
   align-self: start;
   justify-self: start;
-  font-size: 18px;
+  font-size: 23px;
   font-family: "Alloyink";
-  margin-top: 20px;
+  margin-top: 0;
   margin-right: 0;
-  margin-bottom: 0;
+  margin-bottom: 15px;
   margin-left: 5px;
 }
 #links-section div {
@@ -19,9 +18,44 @@
   text-decoration: none;
   color: black;
 }
+#links-section div a:hover {
+  color: rgba(4, 4, 148, 0.87);
+}
 #links-section div img {
+  width: 60px;
+  height: auto;
   vertical-align: middle;
   margin-right: 10px;
+}
+
+@media only screen and (max-width: 1024px) and (max-height: 850px) {
+  #links-section {
+    margin-bottom: 0;
+    font-size: 19px;
+  }
+  #links-section div img {
+    width: 55px;
+  }
+}
+@media only screen and (max-width: 768px) and (max-height: 850px) {
+  #links-section {
+    font-size: 16px;
+  }
+  #links-section div img {
+    width: 40px;
+  }
+}
+@media only screen and (max-width: 425px) and (max-height: 850px) {
+  #links-section {
+    font-size: 13px;
+    margin-top: 30px;
+  }
+  #links-section div {
+    margin-bottom: 25px;
+  }
+  #links-section div img {
+    width: 30px;
+  }
 }
 
 /*# sourceMappingURL=linksSection.css.map */

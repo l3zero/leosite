@@ -2,11 +2,15 @@
   display: grid;
   grid-template-columns: 1fr 0.5fr;
   align-self: start;
-  font-size: 25px;
+  font-size: 30px;
   font-family: "Lacquer", cursive;
 }
 #photo-section .my-photos {
-  animation: fade 0.3s;
+  animation: skew-h 0.07s ease-out 1;
+}
+#photo-section .my-photos img {
+  width: 100%;
+  height: auto;
 }
 #photo-section header {
   display: flex;
@@ -20,7 +24,14 @@
   position: sticky;
 }
 #photo-section a #resume {
-  animation: wiggle-v 0.8s alternate-reverse infinite;
+  width: 60%;
+  height: auto;
+  animation: wiggle-v 0.8s infinite alternate-reverse;
+  transition: all 1s;
+}
+#photo-section a #resume:hover {
+  filter: invert(64%) sepia(98%) saturate(353%) hue-rotate(176deg) brightness(99%) contrast(87%);
+  transition: filter 1s;
 }
 #photo-section span:nth-child(1) {
   position: absolute;
@@ -34,7 +45,7 @@
   left: 15%;
   transform: rotate(-10deg);
   z-index: -1;
-  font-size: 40px;
+  font-size: 45px;
   background: url("/wave.png");
   background-repeat: round;
   background-size: contain;
@@ -66,6 +77,56 @@
   }
   to {
     opacity: 1;
+  }
+}
+@keyframes skew-h {
+  0% {
+    transform: skewX(0deg);
+  }
+  100% {
+    transform: skewX(-270deg);
+  }
+}
+@media only screen and (max-width: 1024px) and (max-height: 850px) {
+  #photo-section {
+    font-size: 23px;
+  }
+  #photo-section span:nth-child(2) {
+    font-size: 30px;
+    top: 9%;
+  }
+}
+@media only screen and (max-width: 768px) and (max-height: 650px) {
+  #photo-section {
+    font-size: 20px;
+  }
+  #photo-section span:nth-child(1) {
+    top: 2%;
+  }
+  #photo-section span:nth-child(2) {
+    font-size: 25px;
+    top: 8%;
+  }
+}
+@media only screen and (max-width: 425px) and (max-height: 850px) {
+  #photo-section {
+    font-size: 13px;
+  }
+  #photo-section .my-photos img {
+    width: 150%;
+  }
+  #photo-section a {
+    margin-top: 230%;
+    margin-left: 0;
+  }
+  #photo-section span:nth-child(1) {
+    top: 2%;
+    left: 19%;
+  }
+  #photo-section span:nth-child(2) {
+    font-size: 15px;
+    top: 8%;
+    left: 20%;
   }
 }
 

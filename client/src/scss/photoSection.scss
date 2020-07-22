@@ -70,7 +70,7 @@
         }
     }
 }
-@media only screen and (max-width: 1024px) and (min-height: 650px) {
+@media only screen and (max-width: 1024px) and (min-height: 700px) {
     #photo-section {
         font-size: 23px;
         span:nth-child(2) {
@@ -79,18 +79,28 @@
         }
     }
 }
-@media only screen and (max-width: 768px) and (min-height: 550px) {
+@media only screen and (max-width: 768px) and (min-height: 600px) {
     #photo-section {
-        .my-photos img {
-            // width: 100%;
-        }
         font-size: 20px;
+
+        .my-photos img {
+            width: 150%;
+        }
+        a {
+            margin-top: 220%;
+            margin-left: 0;
+            #resume {
+                width: 80%;
+            }
+        }
         span:nth-child(1) {
             top: 2%;
+            left: 19%;
         }
         span:nth-child(2) {
-            font-size: 22px;
+            font-size: 25px;
             top: 8%;
+            left: 20%;
         }
     }
 }

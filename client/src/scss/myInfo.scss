@@ -9,12 +9,26 @@
     padding-right: 15%;
     padding-top: 50px;
     font-family: "Jua", sans-serif;
-    font-size: 28px;
+    font-size: 20px;
     line-height: 35px;
-    // letter-spacing: 5px;
     p {
         height: 90vh;
         overflow: auto;
+    }
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: rgba(255, 0, 0, 0.788);
+        border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgba(148, 4, 4, 0.904);
     }
 }
 .tabs {
@@ -26,7 +40,7 @@
     @include helpers.pos(0, 0, 0, 92%);
     button {
         font-family: "Alloyink";
-        font-size: 20px;
+        font-size: 17px;
         cursor: pointer;
         border: none;
         outline: none;
@@ -51,7 +65,7 @@
         outline: none;
         cursor: pointer;
         img {
-            width: 80px;
+            width: 60px;
             height: auto;
             margin-left: 4px;
             animation: spin 15s cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s infinite normal;
@@ -79,11 +93,11 @@
     }
     .skill-titles {
         font-family: "Jua", sans-serif;
-        font-size: 22px;
+        font-size: 18px;
         text-align: start;
         img {
-            width: 70px;
-            height: 70px;
+            width: 50px;
+            height: 50px;
             vertical-align: middle;
             margin: 5px;
             margin-left: 0;
@@ -107,7 +121,7 @@
     overflow: auto;
     width: 75%;
     font-family: "Jua", sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 40px;
 
     .mySlides {
@@ -119,7 +133,7 @@
     a:link {
         text-decoration: none;
         color: blue;
-        font-size: 35px;
+        font-size: 30px;
         transition: color 0.8s linear;
     }
     a:hover {
@@ -127,10 +141,10 @@
         transition: color 1s linear 0.4s;
     }
     img {
-        width: 100px;
+        width: 80px;
         height: auto;
         vertical-align: middle;
-        margin-right: 20px;
+        margin-right: 10px;
     }
     img:hover {
         animation: wiggle-h 0.5s ease-in-out 4 alternate;
@@ -171,7 +185,98 @@
 @include animations.wiggle-horizontal();
 @include animations.skew-horizontal(0deg, 180deg);
 
-@media only screen and (max-width: 1024px) and (max-height: 850px) {
+@media only screen and (min-width: 2200px) and (min-height: 1300px) {
+    #about-me {
+        font-size: 45px;
+        line-height: 80px;
+    }
+    .tabs {
+        summary img {
+            width: 150px;
+        }
+        button {
+            font-size: 35px;
+        }
+    }
+    #skills-container {
+        div {
+            height: 70px;
+        }
+
+        margin-top: 160px;
+        .skill-titles {
+            font-size: 40px;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+
+    #projects-container {
+        font-size: 50px;
+        line-height: 80px;
+        .mySlides {
+            padding-top: 120px;
+        }
+        a,
+        a:visited,
+        a:link {
+            font-size: 80px;
+        }
+        img {
+            width: 200px;
+        }
+        .prev,
+        .next {
+            font-size: 70px;
+        }
+    }
+}
+@media only screen and (max-width: 1440px) and (min-height: 750px) {
+    #about-me {
+        font-size: 25px;
+        line-height: 40px;
+    }
+    .tabs {
+        summary img {
+            width: 80px;
+        }
+        button {
+            font-size: 20px;
+        }
+    }
+    #skills-container {
+        div {
+            height: 30px;
+        }
+
+        margin-top: 70px;
+        .skill-titles {
+            font-size: 23px;
+            img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+
+    #projects-container {
+        font-size: 28px;
+        .mySlides {
+            // padding-top: 60px;
+        }
+        a,
+        a:visited,
+        a:link {
+            font-size: 40px;
+        }
+        img {
+            width: 100px;
+        }
+    }
+}
+@media only screen and (max-width: 1024px) and (min-height: 650px) {
     #about-me {
         font-size: 20px;
         line-height: 30px;
@@ -209,7 +314,7 @@
         }
     }
 }
-@media only screen and (max-width: 768px) and (max-height: 650px) {
+@media only screen and (max-width: 768px) and (min-height: 550px) {
     #about-me {
         font-size: 17px;
         line-height: 21px;
@@ -257,10 +362,10 @@
     #about-me {
         font-size: 12px;
         line-height: 15px;
-        padding-top: 30px;
+        padding-top: 80px;
         padding-right: 23%;
         p {
-            height: 90vh;
+            height: 60vh;
         }
     }
     .tabs {
@@ -287,7 +392,7 @@
     }
     #projects-container {
         .mySlides {
-            // padding-top: 50px;
+            padding-top: 100px;
         }
 
         font-size: 13px;
@@ -302,7 +407,88 @@
         }
         .prev,
         .next {
-            font-size: 20px;
+            font-size: 17px;
+        }
+    }
+}
+@media only screen and (max-width: 375px) and (max-height: 850px) {
+    #about-me {
+        font-size: 11px;
+        p {
+            height: 57vh;
+        }
+    }
+    #skills-container {
+        margin-top: 80px;
+    }
+    .tabs {
+        summary img {
+            width: 30px;
+        }
+        button {
+            font-size: 8px;
+        }
+    }
+    #projects-container {
+        .mySlides {
+            padding-top: 90px;
+        }
+    }
+}
+// @media only screen and (max-width: 375px) and (min-height: 600px) {
+//     #about-me p {
+//         height: 48vh;
+//     }
+// }
+
+@media only screen and (max-width: 320px) and (max-height: 850px) {
+    #about-me {
+        padding-top: 60px;
+        p {
+            height: 50vh;
+        }
+    }
+
+    .tabs {
+        left: 86%;
+        summary img {
+            width: 30px;
+        }
+        button {
+            font-size: 8px;
+        }
+    }
+    #skills-container {
+        div {
+            height: 12px;
+        }
+        margin-top: 70px;
+        .skill-titles {
+            font-size: 11px;
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+    #projects-container {
+        .mySlides {
+            padding-top: 70px;
+        }
+
+        font-size: 11px;
+        a,
+        a:visited,
+        a:link {
+            font-size: 15px;
+        }
+        img {
+            width: 40px;
+        }
+        .prev,
+        .next {
+            font-size: 15px;
+            top: 40%;
         }
     }
 }

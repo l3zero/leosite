@@ -104,7 +104,7 @@
     top: 9%;
   }
 }
-@media only screen and (max-width: 768px) and (min-height: 600px) {
+@media only screen and (max-width: 768px) and (min-height: 550px) {
   #photo-section {
     font-size: 20px;
   }

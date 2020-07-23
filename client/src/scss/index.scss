@@ -72,7 +72,7 @@ body {
 @include animations.job-status-popout();
 @include animations.fade();
 
-@media only screen and (max-width: 768px) and (min-height: 750px) {
+@media only screen and (max-width: 768px) and (min-height: 550px) {
   #job-status {
     font-size: 13px;
     width: 160px;

@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
-    "start": "npx nodemon app.js"
+    "start": "node app.js",
+    "heroku-postbuild": "cd client && npm install && npm run build && npm run postbuild"
   },
   "engines": {
     "npm": ">=6.10.0",

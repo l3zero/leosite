@@ -5,8 +5,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
 @font-face {
   font-family: "Alloyink";
-  src: url("/Alloyink.otf") format("opentype");
-  src: url("/Alloyink.ttf") format("truetype");
+  src: url("../assets/Alloyink.otf") format("opentype");
+  src: url("../assets/Alloyink.ttf") format("truetype");
 }
 
 * {
@@ -15,7 +15,7 @@
 
 body {
   margin: 0;
-  background: url("/bg5.jpg") no-repeat;
+  background: url("../assets/bg5.jpg") no-repeat;
   background-size: cover;
   opacity: 0;
   animation: fade 3s ease-out 0.5s 1 normal;

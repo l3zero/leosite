@@ -1,5 +1,5 @@
 import React from 'react'
-import {skills} from '../data/skills.js'
+import skills from '../data/skills.js'
 
 export default function Skills() {
    return (
@@ -8,7 +8,7 @@ export default function Skills() {
             return (
                <React.Fragment key={skill.title.toLowerCase().trim()}>
                   <span className='skill-titles'>
-                     <img src={skill.icon} alt='Skill icon'></img>
+                     <img src={require(`../assets/${skill.icon}`)} alt='Skill icon'></img>
                      {skill.title}
                   </span>
                   <div>

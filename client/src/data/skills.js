@@ -1,4 +1,4 @@
-export const skills = [
+export default [
    {title: 'Javascript - ES6+', icon: 'javascript.svg', percent: '70'},
    {title: 'React - Router, Hooks', icon: 'react.svg', percent: '65'},
    {title: 'CSS3 / HTML5 - Sass, Grid', icon: 'css-html.png', percent: '70'},

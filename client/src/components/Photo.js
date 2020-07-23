@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import {images} from '../data/images.js'
+import images from '../data/images.js'
 import '../styles/photoSection.css'
 
 export default function Photo() {
@@ -25,7 +25,7 @@ export default function Photo() {
             {images.leo.map((image) => {
                return (
                   <div className='my-photos' key={image.replace('.png', '')}>
-                     <img src={image} alt='Leonid-Yanchis' />
+                     <img src={require(`../assets/${image}`)} alt='Leonid-Yanchis' />
                   </div>
                )
             })}
@@ -36,12 +36,11 @@ export default function Photo() {
                   Software<br></br> Developer
                </span>
                <a
-                  href='/Leonid_Yanchis2020.pdf'
-                  target='_blank'
+                  href={require(`../assets/Leonid_Yanchis2020.pdf`)}
                   type='application/pdf'
                   download
                   referrerPolicy='no-referrer'>
-                  <img id='resume' src='/download.svg' alt='Download Resume' />
+                  <img id='resume' src={require(`../assets/download.svg`)} alt='Download Resume' />
                </a>
             </header>
          </div>

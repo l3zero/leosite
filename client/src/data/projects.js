@@ -1,4 +1,4 @@
-export const projects = [
+export default [
    {
       title: 'My Website',
       url: 'https://github.com/kRyM1337/leosite',
@@ -9,7 +9,7 @@ export const projects = [
    },
    {
       title: 'Weather',
-      icon: 'weather.png',
+      icon: 'weather.svg',
       url: 'https://github.com/kRyM1337/leo-weather',
       tech: 'React, Node, Node-Cache, OpenWeather API, CSS3, Heroku',
       desc:

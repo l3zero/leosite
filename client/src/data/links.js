@@ -1,4 +1,4 @@
-export const links = [
+export default [
    {title: 'Github', icon: 'github.svg', url: 'https://github.com/kRyM1337'},
    {title: 'LinkedIn', icon: 'linkedin.svg', url: 'https://linkedin.com/in/leonidyanchis/'},
    {

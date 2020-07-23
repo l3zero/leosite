@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, {useEffect} from 'react'
-import {projects} from '../data/projects.js'
+import projects from '../data/projects.js'
 
 export default function Projects() {
    let slideIndex = 1
@@ -16,7 +16,7 @@ export default function Projects() {
             return (
                <div className='mySlides' key={project.title.toLowerCase().trim()}>
                   <a href={project.url}>
-                     <img src={project.icon} alt='Project Icon'></img>
+                     <img src={require(`../assets/${project.icon}`)} alt='Project Icon'></img>
                      {project.title}
                   </a>
 

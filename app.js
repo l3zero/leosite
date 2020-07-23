@@ -2,7 +2,8 @@ const express = require("express"),
   bodyParser = require("body-parser"),
   cors = require('cors'),
   helmet = require("helmet"),
-  compression = require("compression")
+  compression = require("compression"),
+  path = require('path')
 
 const app = express();
 const corsOptions = {

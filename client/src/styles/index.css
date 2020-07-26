@@ -14,9 +14,6 @@ body {
   margin: 0;
   background: url("../assets/bg5.jpg") no-repeat;
   background-size: cover;
-  opacity: 0;
-  animation: fade 3s ease-out 0.5s 1 normal;
-  animation-fill-mode: forwards;
 }
 
 #root {
@@ -68,14 +65,6 @@ body {
     transform: rotate(0deg);
   }
 }
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 @media only screen and (max-width: 768px) and (min-height: 550px) {
   #job-status {
     font-size: 13px;
@@ -84,9 +73,12 @@ body {
     right: -70px;
   }
 }
-@media only screen and (max-width: 425px) and (max-height: 850px) {
+@media only screen and (max-width: 550px) and (max-height: 850px) {
   #root {
-    column-gap: 20px;
+    column-gap: 0;
+    grid-template-columns: 1fr;
+    grid-template-areas: "my-photo" "my-info" "my-links";
+    grid-template-rows: 0.5fr 1fr 0.5fr;
   }
 
   #job-status {
@@ -95,6 +87,10 @@ body {
     height: 80px;
     right: -60px;
     bottom: -50px;
+  }
+
+  body {
+    background-position: 80%;
   }
 }
 

@@ -1,5 +1,6 @@
 #photo-section {
   display: grid;
+  grid-area: my-photo;
   grid-template-columns: 1fr 0.5fr;
   align-self: start;
   font-size: 30px;
@@ -128,25 +129,33 @@
     left: 20%;
   }
 }
-@media only screen and (max-width: 425px) and (max-height: 850px) {
+@media only screen and (max-width: 550px) and (max-height: 850px) {
   #photo-section {
-    font-size: 13px;
+    font-size: 15px;
   }
   #photo-section .my-photos img {
-    width: 150%;
+    filter: drop-shadow(-10px 5px 5px rgba(0, 0, 0, 0.616));
+    width: 150px;
   }
   #photo-section a {
-    margin-top: 230%;
+    margin-top: 150%;
+    margin-right: 0;
+    margin-bottom: 0;
     margin-left: 0;
+  }
+  #photo-section a #resume {
+    width: 50%;
   }
   #photo-section span:nth-child(1) {
     top: 2%;
-    left: 19%;
+    left: 46%;
+    transform: rotate(0deg);
   }
   #photo-section span:nth-child(2) {
-    font-size: 15px;
-    top: 6%;
-    left: 21%;
+    font-size: 18px;
+    top: 8%;
+    left: 47%;
+    transform: rotate(0deg);
   }
 }
 @media only screen and (max-width: 375px) and (max-height: 850px) {

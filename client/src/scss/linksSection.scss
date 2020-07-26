@@ -1,11 +1,11 @@
 @use 'partials/helpers';
 
 #links-section {
-    display: flex;
+    grid-area: my-links;
     position: sticky;
+    place-self: start;
+    display: flex;
     flex-flow: column nowrap;
-    align-self: start;
-    justify-self: start;
     font-size: 19px;
     font-family: "Alloyink";
 
@@ -65,25 +65,26 @@
 }
 @media only screen and (max-width: 768px) and (min-height: 550px) {
     #links-section {
-        font-size: 16px;
+        font-size: 14px;
         margin-bottom: 20%;
         div {
-            margin-bottom: 15px;
+            margin-bottom: 5px;
             img {
-                width: 40px;
+                width: 35px;
             }
         }
     }
 }
-@media only screen and (max-width: 425px) and (max-height: 850px) {
+@media only screen and (max-width: 550px) and (max-height: 850px) {
     #links-section {
-        font-size: 13px;
-        margin-bottom: 230%;
-
+        place-self: end center;
+        flex-flow: row nowrap;
+        @include helpers.margin(0, 0, 0, 0);
+        font-size: 0;
         div {
-            margin-bottom: 5px;
+            padding: 2px;
             img {
-                width: 30px;
+                width: 40px;
             }
         }
     }

@@ -2,6 +2,7 @@
 @use 'partials/animations';
 
 #info-section {
+    grid-area: my-info;
     place-self: start;
 }
 #about-me {
@@ -33,13 +34,14 @@
 }
 .tabs {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     position: fixed;
     overflow: hidden;
     padding-top: 10px;
     @include helpers.pos(0, 0, 0, 92%);
     button {
         font-family: "Alloyink";
+        color: black;
         font-size: 17px;
         cursor: pointer;
         border: none;
@@ -359,18 +361,22 @@
         }
     }
 }
-@media only screen and (max-width: 425px) and (max-height: 850px) {
+@media only screen and (max-width: 550px) and (max-height: 850px) {
+    #info-section {
+        position: fixed;
+        @include helpers.pos(20%, 0, 0, 15%);
+    }
     #about-me {
         font-size: 14px;
         line-height: 18px;
         padding-top: 80px;
         padding-right: 23%;
         p {
-            height: 45vh;
+            height: 40vh;
         }
     }
     .tabs {
-        left: 87%;
+        @include helpers.pos(0, 0, 0, 2%);
         summary img {
             width: 35px;
         }
@@ -380,20 +386,21 @@
     }
     #skills-container {
         div {
-            height: 15px;
+            height: 10px;
         }
-        margin-top: 90px;
+        margin-top: 50px;
         .skill-titles {
             font-size: 12px;
             img {
-                width: 35px;
-                height: 35px;
+                width: 25px;
+                height: 25px;
             }
         }
     }
     #projects-container {
+        margin-left: 5%;
         .mySlides {
-            padding-top: 100px;
+            padding-top: 90px;
         }
 
         font-size: 13px;
@@ -409,7 +416,13 @@
         .prev,
         .next {
             font-size: 17px;
-            top: 35%;
+            top: 45%;
+        }
+        .prev {
+            left: 0%;
+        }
+        .right {
+            right: 0%;
         }
     }
 }

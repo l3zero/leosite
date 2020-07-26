@@ -3,6 +3,7 @@
 
 #photo-section {
     display: grid;
+    grid-area: my-photo;
     grid-template-columns: 1fr 0.5fr;
     align-self: start;
     font-size: 30px;
@@ -104,27 +105,32 @@
         }
     }
 }
-@media only screen and (max-width: 425px) and (max-height: 850px) {
+@media only screen and (max-width: 550px) and (max-height: 850px) {
     #photo-section {
-        font-size: 13px;
-        .my-photos img {
-            width: 150%;
+        font-size: 15px;
+        .my-photos {
+            // padding-left: 20%;
+            img {
+                filter: drop-shadow(-10px 5px 5px rgba(0, 0, 0, 0.616));
+                width: 150px;
+            }
         }
         a {
-            margin-top: 230%;
-            margin-left: 0;
+            @include helpers.margin(150%, 0, 0, 0);
             #resume {
-                // width: 70%;
+                width: 50%;
             }
         }
         span:nth-child(1) {
             top: 2%;
-            left: 19%;
+            left: 46%;
+            transform: rotate(0deg);
         }
         span:nth-child(2) {
-            font-size: 15px;
-            top: 6%;
-            left: 21%;
+            font-size: 18px;
+            top: 8%;
+            left: 47%;
+            transform: rotate(0deg);
         }
     }
 }

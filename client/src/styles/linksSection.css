@@ -29,44 +29,30 @@
   margin-right: 10px;
 }
 
-@media only screen and (min-width: 2200px) and (min-height: 1300px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
   #links-section {
-    font-size: 45px;
+    place-self: end center;
+    flex-flow: row nowrap;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+    margin-left: 0;
+    font-size: 0;
   }
   #links-section div {
-    padding-bottom: 40px;
+    padding: 2px;
   }
   #links-section div img {
-    width: 100px;
+    width: 35px;
   }
 }
-@media only screen and (max-width: 1440px) and (min-height: 850px) {
-  #links-section {
-    font-size: 25px;
-  }
-  #links-section div {
-    padding-bottom: 15px;
-  }
-  #links-section div img {
-    width: 60px;
-  }
-}
-@media only screen and (max-width: 1024px) and (min-height: 700px) {
-  #links-section {
-    margin-bottom: 30%;
-    font-size: 19px;
-  }
-  #links-section div {
-    margin-bottom: 15px;
-  }
-  #links-section div img {
-    width: 50px;
-  }
-}
-@media only screen and (max-width: 768px) and (min-height: 550px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
   #links-section {
     font-size: 14px;
-    margin-bottom: 20%;
+    margin-bottom: 15%;
   }
   #links-section div {
     margin-bottom: 5px;
@@ -75,35 +61,42 @@
     width: 35px;
   }
 }
-@media only screen and (max-width: 550px) and (max-height: 850px) {
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
   #links-section {
-    place-self: end center;
-    flex-flow: row nowrap;
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    font-size: 0;
+    margin-top: 5%;
+    font-size: 17px;
   }
   #links-section div {
-    padding: 2px;
+    margin-bottom: 5px;
   }
   #links-section div img {
     width: 40px;
   }
 }
-@media only screen and (max-width: 375px) and (max-height: 850px) {
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1440px) {
   #links-section {
-    font-size: 10px;
-    margin-bottom: 250%;
+    font-size: 20px;
   }
-}
-@media only screen and (max-width: 320px) and (max-height: 850px) {
-  #links-section {
-    margin-bottom: 250%;
+  #links-section div {
+    padding-bottom: 5px;
+    padding-left: 5px;
   }
   #links-section div img {
-    width: 21px;
+    width: 55px;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  #links-section {
+    font-size: 43px;
+  }
+  #links-section div {
+    padding-bottom: 15px;
+    padding-left: 5px;
+  }
+  #links-section div img {
+    width: 110px;
   }
 }
 

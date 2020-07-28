@@ -68,15 +68,8 @@ body {
 }
 @include animations.job-status-popout();
 
-@media only screen and (max-width: 768px) and (min-height: 550px) {
-  #job-status {
-    font-size: 13px;
-    width: 160px;
-    height: 100px;
-    right: -70px;
-  }
-}
-@media only screen and (max-width: 550px) and (max-height: 850px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
   #root {
     column-gap: 0;
     grid-template-columns: 1fr;
@@ -94,5 +87,40 @@ body {
   }
   body {
     background-position: 80%;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #job-status {
+    font-size: 13px;
+    width: 160px;
+    height: 110px;
+    right: -70px;
+    bottom: -70px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1440px) {
+  #job-status {
+    font-size: 17px;
+    width: 200px;
+    height: 140px;
+    right: -80px;
+    bottom: -100px;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  #job-status {
+    font-size: 35px;
+    width: 400px;
+    height: 290px;
+    right: -170px;
+    bottom: -140px;
   }
 }

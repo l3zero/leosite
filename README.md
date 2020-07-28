@@ -1,4 +1,4 @@
-Version 2 is live! Version 3 is currently in progress! It's going to be a big change from v1 and v2<br>
+Version 3 is live!<br>
 https://www.leonid.app
 
 This is my personal hub. Features many components I build from scratch for practice and fun.<br>

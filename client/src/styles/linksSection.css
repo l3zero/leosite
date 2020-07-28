@@ -6,6 +6,7 @@
   flex-flow: column nowrap;
   font-size: 19px;
   font-family: "Alloyink";
+  z-index: 1;
   margin-top: 0;
   margin-right: 0;
   margin-bottom: 15px;
@@ -16,6 +17,7 @@
 }
 #links-section div a,
 #links-section div a:visited {
+  cursor: pointer;
   text-decoration: none;
   color: black;
 }

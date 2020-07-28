@@ -11,7 +11,10 @@ export default function Info() {
       document.getElementById('defaultOpen').click()
    }, [])
    return (
-      <div id='info-section' style={{gridArea: 'my-info'}}>
+      <div id='info-section'>
+         <About />
+         <Skills />
+         <Projects />
          <aside>
             <details className='tabs'>
                <summary>
@@ -28,9 +31,6 @@ export default function Info() {
                </button>
             </details>
          </aside>
-         <About />
-         <Skills />
-         <Projects />
       </div>
    )
 }
@@ -44,7 +44,7 @@ function openDesc(e) {
    for (let i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(' active', '')
    }
-   document.getElementById('about-me').style.display = 'flex'
+   document.getElementById('about-me').style.display = 'block'
    e.currentTarget.className += ' active'
 }
 

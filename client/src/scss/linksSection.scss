@@ -8,12 +8,13 @@
     flex-flow: column nowrap;
     font-size: 19px;
     font-family: "Alloyink";
-
+    z-index: 1;
     @include helpers.margin(0, 0, 15px, 5px);
     div {
         padding-bottom: 10px;
         a,
         a:visited {
+            cursor: pointer;
             text-decoration: none;
             color: black;
         }
@@ -34,6 +35,7 @@
     #links-section {
         place-self: end center;
         flex-flow: row nowrap;
+        // width: 100%;
         @include helpers.margin(0, 0, 10px, 0);
         font-size: 0;
         div {

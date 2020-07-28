@@ -37,6 +37,7 @@
     flex-flow: column nowrap;
     position: fixed;
     overflow: hidden;
+    width: 20%;
     padding-top: 10px;
     @include helpers.pos(0, 0, 0, 92%);
     button {

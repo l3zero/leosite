@@ -1,4 +1,5 @@
 @use 'partials/helpers';
+@use 'partials/animations';
 
 #links-section {
     grid-area: my-links;
@@ -26,6 +27,7 @@
             height: auto;
             vertical-align: middle;
             margin-right: 10px;
+            filter: drop-shadow(-5px 8px 2px rgba(0, 0, 0, 0.644));
         }
     }
 }
@@ -42,6 +44,10 @@
             padding: 2px;
             img {
                 width: 35px;
+                filter: drop-shadow(-5px 5px 2px rgba(0, 0, 0, 0.603));
+            }
+            img:hover {
+                animation: spin 10s ease 0s 1 normal;
             }
         }
     }

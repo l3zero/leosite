@@ -154,9 +154,6 @@
 #projects-container img:hover {
   animation: wiggle-h 0.5s ease-in-out 4 alternate;
 }
-#projects-container span {
-  border-bottom: 4px dotted blue;
-}
 #projects-container .prev,
 #projects-container .next {
   cursor: pointer;
@@ -250,13 +247,16 @@
   }
 
   #about-me {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 18px;
     padding-top: 80px;
   }
   #about-me p {
-    height: 40vh;
+    height: 45vh;
     overflow: auto;
+    background-color: rgba(255, 255, 255, 0.253);
+    border-radius: 5px;
+    padding: 10px;
   }
 
   .tabs {
@@ -289,11 +289,19 @@
 
   #projects-container {
     margin-left: 5%;
-    font-size: 13px;
-    line-height: 15px;
+    font-size: 15px;
+    line-height: 18px;
   }
   #projects-container .mySlides {
     padding-top: 20%;
+  }
+  #projects-container p {
+    background-color: rgba(255, 255, 255, 0.253);
+    border-radius: 5px;
+    padding: 5px;
+  }
+  #projects-container p span {
+    display: none;
   }
   #projects-container a,
 #projects-container a:visited,

@@ -22,9 +22,11 @@ export default function Projects() {
 
                   <p>
                      {project.desc}
-                     <br />
-                     <br />
-                     <span>Tech: {project.tech}</span>
+                     <span>
+                        <br />
+                        <br />
+                        {project.tech}
+                     </span>
                   </p>
                </div>
             )

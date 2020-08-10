@@ -29,6 +29,7 @@
   height: auto;
   vertical-align: middle;
   margin-right: 10px;
+  filter: drop-shadow(-5px 8px 2px rgba(0, 0, 0, 0.644));
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -47,6 +48,10 @@
   }
   #links-section div img {
     width: 35px;
+    filter: drop-shadow(-5px 5px 2px rgba(0, 0, 0, 0.603));
+  }
+  #links-section div img:hover {
+    animation: spin 10s ease 0s 1 normal;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */

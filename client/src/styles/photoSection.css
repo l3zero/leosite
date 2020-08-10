@@ -31,7 +31,7 @@
   transition: all 1s;
 }
 #photo-section a #resume:hover {
-  filter: invert(64%) sepia(98%) saturate(353%) hue-rotate(176deg) brightness(99%) contrast(87%);
+  filter: invert(64%) sepia(98%) saturate(353%) hue-rotate(176deg) brightness(99%) contrast(87%) drop-shadow(-2px 12px 2px rgba(0, 0, 0, 0.644));
   transition: filter 1s;
 }
 #photo-section span:nth-child(1) {
@@ -102,6 +102,7 @@
     width: 150px;
   }
   #photo-section a {
+    z-index: 1;
     margin-top: 120%;
     margin-right: 0;
     margin-bottom: 0;

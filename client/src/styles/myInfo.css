@@ -252,6 +252,7 @@
     padding-top: 80px;
   }
   #about-me p {
+    display: none;
     height: 45vh;
     overflow: auto;
     background-color: rgba(255, 255, 255, 0.253);
@@ -272,15 +273,18 @@
     font-size: 10px;
     padding-top: 5px;
   }
+  .tabs #defaultOpen {
+    display: none;
+  }
 
   #skills-container {
-    margin-top: 50px;
+    margin-top: 125px;
   }
   #skills-container div {
     height: 10px;
   }
   #skills-container .skill-titles {
-    font-size: 12px;
+    font-size: 13px;
   }
   #skills-container .skill-titles img {
     width: 25px;
@@ -290,10 +294,10 @@
   #projects-container {
     margin-left: 5%;
     font-size: 15px;
-    line-height: 18px;
+    line-height: 28px;
   }
   #projects-container .mySlides {
-    padding-top: 20%;
+    padding-top: 50%;
   }
   #projects-container p {
     background-color: rgba(255, 255, 255, 0.253);
@@ -306,15 +310,15 @@
   #projects-container a,
 #projects-container a:visited,
 #projects-container a:link {
-    font-size: 15px;
+    font-size: 18px;
   }
   #projects-container img {
     width: 40px;
   }
   #projects-container .prev,
 #projects-container .next {
-    font-size: 17px;
-    top: 30%;
+    font-size: 20px;
+    top: 40%;
   }
   #projects-container .prev {
     left: -5%;

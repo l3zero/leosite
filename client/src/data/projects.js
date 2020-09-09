@@ -22,6 +22,6 @@ export default [
       tech:
          'React / Node / Express / MongoDB-Mongoose / CSS3-Sass / GSAP / p5.js / Helmet / ESlint / Prettier / Heroku',
       desc:
-         'News web app powered by DEV.to that collects & updates trending articles based on user preference and displays in an easy to digest format. I created this app to help myself receive updated dev news and help the DEV.to community as well. For this project I learned and utilized GSAP & p5 animation, Sass, React Router, mongoDB, proxying, web security best practices, production optimization and performance techniques.',
+         'News web app powered by DEV.to that collects & updates trending articles based on user preference. For this project I learned and utilized GSAP & p5 animation, Sass, React Router, mongoDB, proxying, web security best practices, production optimization and performance techniques.',
    },
 ]

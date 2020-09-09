@@ -203,6 +203,7 @@
         padding-top: 80px;
 
         p {
+            display: none;
             height: 45vh;
             overflow: auto;
             background-color: rgba(255, 255, 255, 0.253);
@@ -219,14 +220,17 @@
             font-size: 10px;
             padding-top: 5px;
         }
+        #defaultOpen {
+            display: none;
+        }
     }
     #skills-container {
         div {
             height: 10px;
         }
-        margin-top: 50px;
+        margin-top: 125px;
         .skill-titles {
-            font-size: 12px;
+            font-size: 13px;
             img {
                 width: 25px;
                 height: 25px;
@@ -236,7 +240,7 @@
     #projects-container {
         margin-left: 5%;
         .mySlides {
-            padding-top: 20%;
+            padding-top: 50%;
         }
         p {
             background-color: rgba(255, 255, 255, 0.253);
@@ -248,19 +252,19 @@
         }
 
         font-size: 15px;
-        line-height: 18px;
+        line-height: 28px;
         a,
         a:visited,
         a:link {
-            font-size: 15px;
+            font-size: 18px;
         }
         img {
             width: 40px;
         }
         .prev,
         .next {
-            font-size: 17px;
-            top: 30%;
+            font-size: 20px;
+            top: 40%;
         }
         .prev {
             left: -5%;

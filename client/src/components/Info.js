@@ -7,7 +7,6 @@ import Skills from './Skills.js'
 
 export default function Info() {
    useEffect(() => {
-      // Get the element with id="defaultOpen" and click on it
       document.getElementById('defaultOpen').click()
    }, [])
    return (

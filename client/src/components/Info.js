@@ -7,7 +7,11 @@ import Skills from './Skills.js'
 
 export default function Info() {
    useEffect(() => {
-      document.getElementById('defaultOpen').click()
+      if (window.innerWidth <= 600) {
+         document.getElementsByClassName('tablinks')[0].classList.remove('defaultOpen')
+         document.getElementsByClassName('tablinks')[1].classList.add('defaultOpen')
+      }
+      document.getElementsByClassName('defaultOpen')[0].click()
    }, [])
    return (
       <div id='info-section'>
@@ -19,7 +23,7 @@ export default function Info() {
                <summary>
                   <img src={require(`../assets/welcome.png`)} alt='Welcome' />
                </summary>
-               <button id='defaultOpen' className='tablinks' onClick={openDesc}>
+               <button className='tablinks defaultOpen about' onClick={openDesc}>
                   About
                </button>
                <button className='tablinks' onClick={openSkills}>

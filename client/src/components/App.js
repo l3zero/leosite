@@ -3,9 +3,25 @@ import React, {Component} from 'react'
 import Photo from './Photo.js'
 import Links from './Links.js'
 import Info from './Info.js'
+import {createTimeline, editIntro} from '../animation/animationController.js'
 import '../styles/index.css'
 
 class App extends Component {
+   componentDidMount() {
+      if (window.innerWidth <= 600) {
+         let intro = createTimeline()
+         const elements = [
+            '.my-photos',
+            'header > span:nth-child(1)',
+            'header > span:nth-child(2)',
+            'header > a',
+            '#links-section',
+            '#skills-container',
+            'summary',
+         ]
+         editIntro(intro, elements)
+      }
+   }
    render() {
       return (
          <React.Fragment>

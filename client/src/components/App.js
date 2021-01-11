@@ -15,8 +15,8 @@ class App extends Component {
             'header > span:nth-child(1)',
             'header > span:nth-child(2)',
             'header > a',
-            '#links-section',
             '#skills-container',
+            '#links-section',
             'summary',
          ]
          editIntro(intro, elements)

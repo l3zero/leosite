@@ -36,37 +36,35 @@ body {
   justify-items: center;
   align-items: start;
 }
-#job-status {
-  position: fixed;
-  width: 180px;
-  height: 120px;
-  z-index: 1;
-  bottom: -50px;
-  right: -95px;
-  padding-left: 15px;
-  padding-bottom: 5px;
-  font-size: 15px;
-  font-family: "Jua", sans-serif;
-  // background-color: rgba(167, 20, 20, 0.863);
-  // border-left: 0px solid red;
-  border-top-left-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.801);
-  color: white;
-  transform: rotate(-45deg);
-  transition: all 0.5s ease;
-  span {
-    opacity: 0;
-  }
-}
-#job-status:hover {
-  animation: job-status-popout 0.5s ease;
-  animation-fill-mode: forwards;
-  span {
-    opacity: 1;
-    transition: opacity 1s linear 0.4s;
-  }
-}
-@include animations.job-status-popout();
+// #job-status {
+//   position: fixed;
+//   width: 180px;
+//   height: 120px;
+//   z-index: 1;
+//   bottom: -50px;
+//   right: -95px;
+//   padding-left: 15px;
+//   padding-bottom: 5px;
+//   font-size: 15px;
+//   font-family: "Jua", sans-serif;
+//   border-top-left-radius: 20px;
+//   background-color: rgba(0, 0, 0, 0.801);
+//   color: white;
+//   transform: rotate(-45deg);
+//   transition: all 0.5s ease;
+//   span {
+//     opacity: 0;
+//   }
+// }
+// #job-status:hover {
+//   animation: job-status-popout 0.5s ease;
+//   animation-fill-mode: forwards;
+//   span {
+//     opacity: 1;
+//     transition: opacity 1s linear 0.4s;
+//   }
+// }
+// @include animations.job-status-popout();
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {

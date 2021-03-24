@@ -17,22 +17,21 @@
   display: flex;
   flex-flow: column nowrap;
 }
-#photo-section a {
+#photo-section #resume {
   margin-top: 150%;
   margin-right: 0;
   margin-bottom: 0;
   margin-left: 10px;
   position: sticky;
-}
-#photo-section a #resume {
   width: 60%;
   height: auto;
   animation: wiggle-v 0.8s infinite alternate-reverse;
   transition: all 1s;
 }
-#photo-section a #resume:hover {
+#photo-section #resume:hover {
   filter: invert(64%) sepia(98%) saturate(353%) hue-rotate(176deg) brightness(99%) contrast(87%) drop-shadow(-2px 12px 2px rgba(0, 0, 0, 0.644));
   transition: filter 1s;
+  cursor: pointer;
 }
 #photo-section span:nth-child(1) {
   position: absolute;
@@ -102,14 +101,12 @@
     filter: drop-shadow(-10px 5px 5px rgba(0, 0, 0, 0.616));
     width: 55vw;
   }
-  #photo-section a {
+  #photo-section #resume {
     z-index: 1;
     margin-top: 28vh;
     margin-right: 0;
     margin-bottom: 0;
     margin-left: 0;
-  }
-  #photo-section a #resume {
     width: 13vw;
   }
   #photo-section span:nth-child(1) {
@@ -134,11 +131,9 @@
   #photo-section .my-photos img {
     width: 130%;
   }
-  #photo-section a {
+  #photo-section #resume {
     margin-top: 200%;
     margin-left: 0;
-  }
-  #photo-section a #resume {
     width: 60%;
   }
   #photo-section span:nth-child(1) {
@@ -159,11 +154,9 @@
   #photo-section .my-photos img {
     width: 100%;
   }
-  #photo-section a {
+  #photo-section #resume {
     margin-top: 150%;
     margin-left: 0;
-  }
-  #photo-section a #resume {
     width: 50%;
   }
   #photo-section span:nth-child(1) {
@@ -184,11 +177,9 @@
   #photo-section .my-photos img {
     width: 100%;
   }
-  #photo-section a {
+  #photo-section #resume {
     margin-top: 155%;
     margin-left: 0;
-  }
-  #photo-section a #resume {
     width: 50%;
   }
   #photo-section span:nth-child(1) {
@@ -207,11 +198,9 @@
   #photo-section .my-photos img {
     width: 120%;
   }
-  #photo-section a {
+  #photo-section #resume {
     margin-top: 175%;
     margin-left: 0;
-  }
-  #photo-section a #resume {
     width: 70%;
   }
   #photo-section span:nth-child(1) {

@@ -19,29 +19,31 @@ export default function Photo() {
       }
       showPhotos()
    }, [])
-   return (
-      <div id='photo-section'>
-         {images.leo.map((image) => {
-            return (
-               <div className='my-photos' key={image.replace('.png', '')}>
-                  <img src={require(`../assets/${image}`)} alt='Leonid-Yanchis' />
-               </div>
-            )
-         })}
 
-         <header>
-            <span>Leo</span>
-            <span>
-               Software<br></br> Developer
-            </span>
-            <a
-               href={require(`../assets/Leonid_Yanchis2020.pdf`)}
-               type='application/pdf'
-               download
-               referrerPolicy='no-referrer'>
-               <img id='resume' src={require(`../assets/download.svg`)} alt='Download Resume' />
-            </a>
-         </header>
-      </div>
+   return (
+      <React.Fragment>
+         <div id='photo-section'>
+            {images.leo.map((image) => {
+               return (
+                  <div className='my-photos' key={image.replace('.png', '')}>
+                     <img src={require(`../assets/${image}`)} alt='Leonid-Yanchis' />
+                  </div>
+               )
+            })}
+
+            <header>
+               <span>Leo</span>
+               <span>
+                  Software<br></br> Developer
+               </span>
+               <img id='resume' src={require(`../assets/download.svg`)} onClick={viewResume} alt='View Resume' />
+            </header>
+         </div>
+      </React.Fragment>
    )
+}
+
+function viewResume(e) {
+   e.preventDefault()
+   document.location.assign('/resume')
 }

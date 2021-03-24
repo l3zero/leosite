@@ -1,5 +1,8 @@
 import React, {Component} from 'react'
 // import Intro from './Intro.js'
+import {BrowserRouter as Router, Route} from 'react-router-dom'
+import {Worker} from '@react-pdf-viewer/core'
+import ResumePDF from './ResumePDF'
 import Photo from './Photo.js'
 import Links from './Links.js'
 import Info from './Info.js'
@@ -25,9 +28,11 @@ class App extends Component {
    render() {
       return (
          <React.Fragment>
-            <Photo />
-            <Links />
-            <Info />
+            <Worker workerUrl='https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js' />
+            <Router>
+               <Route exact path='/resume' component={ResumePDF} />
+               <Route exact path='/' component={Home} />
+            </Router>
             {/* Removing job status for now - need to make its own component */}
             {/* <div id='job-status'>
                <span>
@@ -47,5 +52,11 @@ class App extends Component {
       )
    }
 }
-
+const Home = () => (
+   <React.Fragment>
+      <Photo />
+      <Links />
+      <Info />
+   </React.Fragment>
+)
 export default App

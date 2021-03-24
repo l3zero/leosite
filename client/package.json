@@ -27,17 +27,21 @@
     ]
   },
   "dependencies": {
+    "@react-pdf-viewer/core": "^2.4.1",
+    "@react-pdf-viewer/default-layout": "^2.4.1",
     "eslint": "^6.0.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^4.0.4",
     "eslint-plugin-security": "^1.4.0",
-    "gsap": "^3.3.4",
+    "gsap": "^3.6.0",
     "node-fetch": "^2.6.1",
     "p5": "^1.0.0",
+    "pdfjs-dist": "^2.6.347",
     "prettier": "^2.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.3",
     "sass": "^1.26.9"
   }

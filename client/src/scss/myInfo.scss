@@ -10,7 +10,7 @@
     padding-right: 15%;
     padding-top: 50px;
     font-family: "Jua", sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 35px;
     p {
         height: 90vh;
@@ -183,9 +183,9 @@
     }
 }
 
-@include helpers.meterFill(70%);
-@include helpers.meterFill(65%);
-@include helpers.meterFill(55%);
+@include animations.meterFill(80%);
+@include animations.meterFill(70%);
+@include animations.meterFill(60%);
 @include animations.fade();
 @include animations.spin(0deg, 360deg);
 @include animations.wiggle-horizontal();
@@ -330,7 +330,7 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     #about-me {
-        font-size: 23px;
+        font-size: 20px;
         line-height: 28px;
     }
     .tabs {

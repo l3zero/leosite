@@ -28,7 +28,8 @@ class App extends Component {
             <Photo />
             <Links />
             <Info />
-            <div id='job-status'>
+            {/* Removing job status for now - need to make its own component */}
+            {/* <div id='job-status'>
                <span>
                   Work Status:
                   <br /> &nbsp;&nbsp;&nbsp;&nbsp;Contract&#10003;
@@ -41,7 +42,7 @@ class App extends Component {
                   <br />
                   &nbsp;&nbsp;&nbsp;&nbsp;Remote / NYC / NJ&#10003;
                </span>
-            </div>
+            </div> */}
          </React.Fragment>
       )
    }

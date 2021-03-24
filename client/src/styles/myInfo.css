@@ -8,7 +8,7 @@
   padding-right: 15%;
   padding-top: 50px;
   font-family: "Jua", sans-serif;
-  font-size: 20px;
+  font-size: 30px;
   line-height: 35px;
   /* Scrollbar */
 }
@@ -177,6 +177,14 @@
   left: 31%;
 }
 
+@keyframes fill80 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
 @keyframes fill70 {
   0% {
     width: 0%;
@@ -185,20 +193,12 @@
     width: 70%;
   }
 }
-@keyframes fill65 {
+@keyframes fill60 {
   0% {
     width: 0%;
   }
   100% {
-    width: 65%;
-  }
-}
-@keyframes fill55 {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 55%;
+    width: 60%;
   }
 }
 @keyframes fade {
@@ -380,7 +380,7 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   #about-me {
-    font-size: 23px;
+    font-size: 20px;
     line-height: 28px;
   }
 

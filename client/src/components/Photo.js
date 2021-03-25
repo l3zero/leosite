@@ -34,7 +34,7 @@ export default function Photo() {
             <header>
                <span>Leo</span>
                <span>
-                  Software<br></br> Developer
+                  Frontend<br></br> Developer
                </span>
                <img id='resume' src={require(`../assets/download.svg`)} onClick={viewResume} alt='View Resume' />
             </header>

@@ -17,6 +17,7 @@ export default function ResumePDF() {
             display: 'initial',
             position: 'fixed',
             overflowY: 'auto',
+            border: '4px ridge blue',
          }}>
          <Viewer fileUrl={myResume} plugins={[defaultLayoutPluginInstance]} />
       </div>

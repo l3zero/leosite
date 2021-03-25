@@ -1,5 +1,6 @@
 @use 'partials/helpers';
 @use 'partials/animations';
+@use 'partials/colors' as colors;
 
 #photo-section {
     display: grid;
@@ -11,9 +12,12 @@
 
     .my-photos {
         animation: skew-h 0.07s ease-out 1;
+
         img {
             width: 100%;
             height: auto;
+            border-bottom: 2px ridge colors.$base;
+            border-bottom-right-radius: 55%;
         }
     }
     header {

@@ -17,7 +17,7 @@ class App extends Component {
             '.my-photos',
             'header > span:nth-child(1)',
             'header > span:nth-child(2)',
-            'header > a',
+            'header > img',
             '#skills-container',
             '#links-section',
             'summary',

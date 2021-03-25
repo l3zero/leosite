@@ -12,6 +12,8 @@
 #photo-section .my-photos img {
   width: 100%;
   height: auto;
+  border-bottom: 2px ridge #2485b5;
+  border-bottom-right-radius: 55%;
 }
 #photo-section header {
   display: flex;

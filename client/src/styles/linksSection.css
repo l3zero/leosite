@@ -20,9 +20,12 @@
   cursor: pointer;
   text-decoration: none;
   color: black;
+  border-right: 10px groove #61a1c1;
+  border-radius: 70%;
+  padding: 5px;
 }
 #links-section div a:hover {
-  color: rgba(4, 4, 148, 0.87);
+  color: #1a5f82;
 }
 #links-section div img {
   width: 40px;
@@ -52,6 +55,11 @@
   }
   #links-section div img:hover {
     animation: spin 10s ease 0s 1 normal;
+  }
+  #links-section div a {
+    border: none;
+    border-radius: none;
+    padding: 0;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */

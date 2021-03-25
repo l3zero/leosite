@@ -1,5 +1,8 @@
 import React, {Component} from 'react'
 // import Intro from './Intro.js'
+import {BrowserRouter as Router, Route} from 'react-router-dom'
+import {Worker} from '@react-pdf-viewer/core'
+import ResumePDF from './ResumePDF'
 import Photo from './Photo.js'
 import Links from './Links.js'
 import Info from './Info.js'
@@ -14,7 +17,7 @@ class App extends Component {
             '.my-photos',
             'header > span:nth-child(1)',
             'header > span:nth-child(2)',
-            'header > a',
+            'header > img',
             '#skills-container',
             '#links-section',
             'summary',
@@ -25,10 +28,13 @@ class App extends Component {
    render() {
       return (
          <React.Fragment>
-            <Photo />
-            <Links />
-            <Info />
-            <div id='job-status'>
+            <Worker workerUrl='https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js' />
+            <Router>
+               <Route exact path='/resume' component={ResumePDF} />
+               <Route exact path='/' component={Home} />
+            </Router>
+            {/* Removing job status for now - need to make its own component */}
+            {/* <div id='job-status'>
                <span>
                   Work Status:
                   <br /> &nbsp;&nbsp;&nbsp;&nbsp;Contract&#10003;
@@ -41,10 +47,16 @@ class App extends Component {
                   <br />
                   &nbsp;&nbsp;&nbsp;&nbsp;Remote / NYC / NJ&#10003;
                </span>
-            </div>
+            </div> */}
          </React.Fragment>
       )
    }
 }
-
+const Home = () => (
+   <React.Fragment>
+      <Photo />
+      <Links />
+      <Info />
+   </React.Fragment>
+)
 export default App

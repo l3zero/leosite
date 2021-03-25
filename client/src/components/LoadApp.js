@@ -30,7 +30,7 @@ class LoadApp extends Component {
          <img
             src={require('../assets/loader.gif')}
             alt='Loading'
-            style={{position: 'absolute', top: '30vh', left: '30vw'}}></img>
+            style={{position: 'fixed', top: '40%', left: '40%'}}></img>
       )
    }
 }

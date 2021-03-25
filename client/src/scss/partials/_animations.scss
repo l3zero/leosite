@@ -71,3 +71,33 @@
         }
     }
 }
+@mixin meterFill($percent) {
+    @if ($percent == 80%) {
+        @keyframes fill80 {
+            0% {
+                width: 0%;
+            }
+            100% {
+                width: 80%;
+            }
+        }
+    } @else if ($percent == 70%) {
+        @keyframes fill70 {
+            0% {
+                width: 0%;
+            }
+            100% {
+                width: 70%;
+            }
+        }
+    } @else if ($percent == 60%) {
+        @keyframes fill60 {
+            0% {
+                width: 0%;
+            }
+            100% {
+                width: 60%;
+            }
+        }
+    }
+}
